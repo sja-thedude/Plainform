@@ -10,6 +10,7 @@ Plainform is one page. No signup, no account, nothing to install. Photograph or 
 - **A one-paragraph summary** of what the form is for and what happens after you submit it.
 - **Every field, one by one:** the label as printed, what it is actually asking for in plain words, and an example of a correctly formatted answer.
 - **A warning flag** on fields that commonly cause rejections, such as a name that doesn't match the passport, a wrong date format, or a missing signature.
+- **Ask about this form**: follow-up questions in your own language, like "what is a guarantor?". Answers explain; they never advise what to write or whether to sign.
 - **Read aloud**: every explanation can be listened to in the chosen language, using the device's own voices, for people who find reading hard. Nothing is sent anywhere for this.
 - **Documents you may need**: a checklist of what to bring or attach, such as passport, photos or insurance card.
 - **Difficult words explained**: plain definitions of the legal and medical jargon on the page, like "joint and several" or "advance directive".
@@ -80,10 +81,12 @@ The app is a standard Next.js project and deploys to Vercel as is:
 
 ```
 src/app/page.tsx              the single page: language picker, upload, camera, samples
-src/app/api/explain/route.ts  upload endpoint, in memory only
+src/app/api/explain/route.ts  upload endpoint, streams the explanation, in memory only
+src/app/api/ask/route.ts      follow-up questions, stateless
 src/lib/explain.ts            prompt and Claude call
 src/lib/languages.ts          supported languages and translated interface text
-src/components/Result.tsx     summary and field cards, RTL aware
+src/components/Result.tsx     summary, documents, field cards, key terms, read aloud
+src/components/AskPanel.tsx   follow-up question chat
 scripts/                      sample form templates and the result cache builder
 ```
 
