@@ -1,0 +1,378 @@
+{
+  "is_form": true,
+  "form_title": "সংক্ষিপ্ত-কালীন ভিসার জন্য আবেদন",
+  "summary": "এই ফর্মটি একটি সংক্ষিপ্ত-কালীন ভিসার জন্য আবেদন করতে ব্যবহৃত হয়। এটি সাধারণত সেই ব্যক্তিরা পূরণ করেন যারা অন্য দেশে অল্প সময়ের জন্য ভ্রমণ করতে চান। ফর্মটি জমা দেওয়ার পরে, এটি ভিসা কর্মকর্তা দ্বারা পর্যালোচনা করা হবে এবং একটি সিদ্ধান্ত নেওয়া হবে।",
+  "image_note": "",
+  "documents_needed": [
+    "পাসপোর্ট",
+    "সাম্প্রতিক ছবি",
+    "ভিসা",
+    "পরিচয়পত্র"
+  ],
+  "fields": [
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "১. পদবি (পারিবারিক নাম) *",
+      "legible": true,
+      "meaning": "আপনার পারিবারিক নাম লিখুন। এটি আপনার পাসপোর্টে থাকা নামের সাথে মিলতে হবে।",
+      "example": "রহমান",
+      "rejection_risk": true,
+      "rejection_reason": "নামের বানানে ভুল হলে বা পাসপোর্টের নামের সাথে না মিললে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "২. জন্মের সময় পদবি (পূর্বের পারিবারিক নাম) *",
+      "legible": true,
+      "meaning": "যদি আপনার বিবাহ বা অন্য কোনো কারণে পারিবারিক নাম পরিবর্তন হয়ে থাকে, তবে আপনার জন্মের সময়ের পারিবারিক নামটি লিখুন।",
+      "example": "খান",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "৩. প্রদত্ত নাম *",
+      "legible": true,
+      "meaning": "আপনার প্রদত্ত নাম বা নামগুলি লিখুন। এটি আপনার পাসপোর্টে থাকা নামের সাথে মিলতে হবে।",
+      "example": "মোঃ আব্দুল",
+      "rejection_risk": true,
+      "rejection_reason": "নামের বানানে ভুল হলে বা পাসপোর্টের নামের সাথে না মিললে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "৪. জন্ম তারিখ (দিন-মাস-বছর) *",
+      "legible": true,
+      "meaning": "আপনার জন্ম তারিখ দিন, মাস এবং বছর এই ক্রমে লিখুন।",
+      "example": "১৫-০৮-১৯৯০",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল ফরম্যাটে তারিখ লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "5. Place of birth *",
+      "label_translated": "৫. জন্মস্থান *",
+      "legible": true,
+      "meaning": "আপনি যেখানে জন্মগ্রহণ করেছেন সেই শহর বা স্থানের নাম লিখুন।",
+      "example": "ঢাকা",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "6. Country of birth *",
+      "label_translated": "৬. জন্ম দেশ *",
+      "legible": true,
+      "meaning": "আপনি যে দেশে জন্মগ্রহণ করেছেন তার নাম লিখুন।",
+      "example": "বাংলাদেশ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "7. Current nationality *",
+      "label_translated": "৭. বর্তমান জাতীয়তা *",
+      "legible": true,
+      "meaning": "আপনার বর্তমান জাতীয়তা লিখুন।",
+      "example": "বাংলাদেশী",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "৮. জন্মের সময় জাতীয়তা, যদি ভিন্ন হয়",
+      "legible": true,
+      "meaning": "যদি আপনার জন্মের সময় জাতীয়তা বর্তমান জাতীয়তা থেকে ভিন্ন হয়, তবে সেটি লিখুন।",
+      "example": "বাংলাদেশী",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "9. Sex *",
+      "label_translated": "৯. লিঙ্গ *",
+      "legible": true,
+      "meaning": "আপনার লিঙ্গ নির্বাচন করুন: পুরুষ (Male) অথবা মহিলা (Female)।",
+      "example": "Male",
+      "rejection_risk": true,
+      "rejection_reason": "লিঙ্গ নির্বাচন না করলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "10. Civil status *",
+      "label_translated": "১০. বৈবাহিক অবস্থা *",
+      "legible": true,
+      "meaning": "আপনার বৈবাহিক অবস্থা নির্বাচন করুন: অবিবাহিত (Single), বিবাহিত (Married), পৃথকীকৃত (Separated), বিবাহবিচ্ছিন্ন (Divorced), বা বিধবা/বিপত্নীক (Widow(er))।",
+      "example": "Married",
+      "rejection_risk": true,
+      "rejection_reason": "বৈবাহিক অবস্থা নির্বাচন না করলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ক - ব্যক্তিগত বিবরণ",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "১১. পিতামাতার কর্তৃত্ব (অপ্রাপ্তবয়স্কদের ক্ষেত্রে) / আইনি অভিভাবক: পদবি, প্রদত্ত নাম, ঠিকানা, টেলিফোন, ই-মেইল এবং জাতীয়তা",
+      "legible": true,
+      "meaning": "যদি আবেদনকারী অপ্রাপ্তবয়স্ক হন, তবে তার পিতামাতা বা আইনি অভিভাবকের পুরো নাম, ঠিকানা, ফোন নম্বর, ই-মেইল এবং জাতীয়তা লিখুন।",
+      "example": "পিতা: মোঃ করিম, ঠিকানা: বাড়ি ১২, রোড ৩, ঢাকা, ফোন: ০১৭XXXXXXXX, ই-মেইল: karim@email.com, জাতীয়তা: বাংলাদেশী",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "১২. ভ্রমণের নথির প্রকার *",
+      "legible": true,
+      "meaning": "আপনি কোন ধরনের ভ্রমণ নথি ব্যবহার করছেন তা নির্বাচন করুন: সাধারণ পাসপোর্ট (Ordinary passport), কূটনৈতিক পাসপোর্ট (Diplomatic passport), সার্ভিস পাসপোর্ট (Service), অথবা অন্য কোনো (Other - specify)।",
+      "example": "Ordinary passport",
+      "rejection_risk": true,
+      "rejection_reason": "ভ্রমণের নথির প্রকার নির্বাচন না করলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "১৩. ভ্রমণ নথির নম্বর *",
+      "legible": true,
+      "meaning": "আপনার পাসপোর্ট বা ভ্রমণ নথির নম্বরটি লিখুন।",
+      "example": "AB1234567",
+      "rejection_risk": true,
+      "rejection_reason": "ভ্রমণ নথির নম্বর ভুল লিখলে বা না লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "14. Date of issue *",
+      "label_translated": "১৪. জারির তারিখ *",
+      "legible": true,
+      "meaning": "আপনার পাসপোর্ট বা ভ্রমণ নথিটি যে তারিখে জারি করা হয়েছিল সেই তারিখটি লিখুন (দিন-মাস-বছর)।",
+      "example": "০১-০১-২০২০",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল ফরম্যাটে তারিখ লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "15. Valid until *",
+      "label_translated": "১৫. মেয়াদ উত্তীর্ণের তারিখ *",
+      "legible": true,
+      "meaning": "আপনার পাসপোর্ট বা ভ্রমণ নথির মেয়াদ কবে শেষ হবে সেই তারিখটি লিখুন (দিন-মাস-বছর)।",
+      "example": "৩১-১২-২০৩০",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল ফরম্যাটে তারিখ লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "১৬. জারি করা দেশ *",
+      "legible": true,
+      "meaning": "যে দেশ থেকে আপনার পাসপোর্ট বা ভ্রমণ নথিটি জারি করা হয়েছে তার নাম লিখুন।",
+      "example": "বাংলাদেশ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "১৭. আবেদনকারীর বাড়ির ঠিকানা এবং ই-মেইল ঠিকানা *",
+      "legible": true,
+      "meaning": "আপনার বর্তমান বাড়ির ঠিকানা এবং আপনার ই-মেইল ঠিকানা লিখুন।",
+      "example": "বাসা: ১০, রোড: ৫, এলাকা: গুলশান, ঢাকা, বাংলাদেশ। ই-মেইল: applicant@email.com",
+      "rejection_risk": true,
+      "rejection_reason": "ঠিকানা বা ই-মেইল ঠিকানা অসম্পূর্ণ বা ভুল হলে যোগাযোগ করা সম্ভব নাও হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "১৮. টেলিফোন নম্বর *",
+      "legible": true,
+      "meaning": "আপনার ফোন নম্বর লিখুন।",
+      "example": "+8801XXXXXXXXX",
+      "rejection_risk": true,
+      "rejection_reason": "যোগাযোগের জন্য ফোন নম্বর সঠিক না হলে সমস্যা হতে পারে।"
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "১৯. বর্তমান জাতীয়তার দেশ ছাড়া অন্য কোনো দেশে বসবাস",
+      "legible": true,
+      "meaning": "আপনি কি বর্তমানে এমন কোনো দেশে বসবাস করছেন যা আপনার জাতীয়তার দেশ নয়? যদি হ্যাঁ হয়, তবে 'Yes' নির্বাচন করুন এবং সেই দেশের রেসিডেন্স পারমিট বা সমতুল্য নথির নম্বর ও মেয়াদ লিখুন।",
+      "example": "Yes. Residence permit or equivalent No. XXXXXX Valid until YYYY-MM-DD",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "20. Current occupation *",
+      "label_translated": "২০. বর্তমান পেশা *",
+      "legible": true,
+      "meaning": "আপনি বর্তমানে কী কাজ করেন তা লিখুন।",
+      "example": "শিক্ষক",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ খ - ভ্রমণ নথি",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "২১. নিয়োগকর্তা এবং নিয়োগকর্তার ঠিকানা ও টেলিফোন নম্বর। শিক্ষার্থীদের জন্য, শিক্ষা প্রতিষ্ঠানের নাম ও ঠিকানা *",
+      "legible": true,
+      "meaning": "আপনার বর্তমান নিয়োগকর্তার নাম, ঠিকানা এবং ফোন নম্বর লিখুন। আপনি যদি ছাত্র হন, তবে আপনার শিক্ষা প্রতিষ্ঠানের নাম ও ঠিকানা লিখুন।",
+      "example": "নিয়োগকর্তা: XYZ কোম্পানি, ঠিকানা: প্লট ১, রোড ২, ঢাকা, বাংলাদেশ, ফোন: +8802XXXXXXXX। ছাত্র হলে: ঢাকা বিশ্ববিদ্যালয়, ঢাকা, বাংলাদেশ।",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "২২. যাত্রার প্রধান উদ্দেশ্য *",
+      "legible": true,
+      "meaning": "আপনার ভ্রমণের প্রধান উদ্দেশ্য নির্বাচন করুন: পর্যটন (Tourism), ব্যবসা (Business), পরিবার বা বন্ধুদের সাথে দেখা করা (Visiting family or friends), সাংস্কৃতিক (Cultural), সরকারি সফর (Official visit), চিকিৎসা সংক্রান্ত কারণ (Medical reasons), পড়াশোনা (Study), অথবা অন্য কিছু (Other - specify)।",
+      "example": "Tourism",
+      "rejection_risk": true,
+      "rejection_reason": "ভ্রমণের উদ্দেশ্য নির্বাচন না করলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "২৩. অনুরোধ করা প্রবেশ সংখ্যা *",
+      "legible": true,
+      "meaning": "আপনি কতবার প্রবেশ করতে চান তা নির্বাচন করুন: একবার (Single), দুইবার (Two), অথবা একাধিকবার (Multiple)।",
+      "example": "Single",
+      "rejection_risk": true,
+      "rejection_reason": "প্রবেশ সংখ্যা নির্বাচন না করলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "২৪. আগমনের প্রত্যাশিত তারিখ *",
+      "legible": true,
+      "meaning": "আপনি যে তারিখে গন্তব্যে পৌঁছানোর আশা করছেন সেই তারিখটি লিখুন (দিন-মাস-বছর)।",
+      "example": "০১-০৯-২০২৪",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল ফরম্যাটে তারিখ লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "২৫. প্রস্থানের প্রত্যাশিত তারিখ *",
+      "legible": true,
+      "meaning": "আপনি যে তারিখে গন্তব্যস্থল ত্যাগ করার আশা করছেন সেই তারিখটি লিখুন (দিন-মাস-বছর)।",
+      "example": "১৫-০৯-২০২৪",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল ফরম্যাটে তারিখ লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "২৬. বিগত তিন বছরে মেরिडিয়া প্রজাতন্ত্র কর্তৃক জারি করা ভিসা",
+      "legible": true,
+      "meaning": "বিগত তিন বছরে আপনি মেরिडিয়া প্রজাতন্ত্র থেকে কোনো ভিসা পেয়েছেন কিনা? যদি হ্যাঁ হয়, তবে 'Yes' নির্বাচন করুন এবং ভিসার মেয়াদ উত্তীর্ণের তারিখ লিখুন।",
+      "example": "Yes. Date(s) of validity from DD-MM-YYYY to DD-MM-YYYY",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "২৭. ভিসার জন্য আবেদন করার উদ্দেশ্যে পূর্বে ফিঙ্গারপ্রিন্ট নেওয়া হয়েছে কিনা",
+      "legible": true,
+      "meaning": "আপনি কি পূর্বে ভিসার জন্য আবেদন করার সময় আপনার ফিঙ্গারপ্রিন্ট দিয়েছেন? যদি হ্যাঁ হয়, তবে 'Yes' নির্বাচন করুন এবং তারিখটি লিখুন।",
+      "example": "Yes. Date, if known DD-MM-YYYY",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "২৮. মেরिडিয়াতে আমন্ত্রনকারী ব্যক্তির পদবি ও প্রদত্ত নাম। প্রযোজ্য না হলে, হোটেল বা অস্থায়ী আবাসনের নাম *",
+      "legible": true,
+      "meaning": "আপনি মেরिडিয়াতে কার বাসায় থাকবেন তার নাম লিখুন। যদি কারো বাসায় না থাকেন, তবে আপনি যে হোটেলে বা অস্থায়ী আবাসনে থাকবেন তার নাম লিখুন।",
+      "example": "আমন্ত্রনকারী: জনাব করিম, ঠিকানা: মেরिडিয়া সিটি। হোটেল: হোটেল মেরिडিয়া, মেরिडিয়া সিটি।",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "২৯. আমন্ত্রনকারী ব্যক্তি/হোটেলের ঠিকানা এবং ই-মেইল *",
+      "legible": true,
+      "meaning": "আমন্ত্রনকারী ব্যক্তি বা হোটেলের ঠিকানা এবং ই-মেইল ঠিকানা লিখুন।",
+      "example": "ঠিকানা: মেরिडিয়া সিটি, মেরिडিয়া। ই-মেইল: invitee@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "অংশ গ - যাত্রা",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "৩০. আবেদনকারীর থাকাকালীন ভ্রমণ এবং জীবনযাত্রার খরচ বহন করা হবে *",
+      "legible": true,
+      "meaning": "আপনার ভ্রমণ এবং থাকার খরচ কে বহন করবে তা নির্বাচন করুন: আবেদনকারী নিজে (by the applicant himself/herself), অথবা কোনো স্পনসর/সংস্থা (by a sponsor (host, company, organisation))। যদি স্পনসর হয়, তবে তাদের নাম উল্লেখ করুন এবং খরচের মাধ্যম লিখুন: নগদ (Cash), ভ্রমণকারীর চেক (Traveller's cheques), ক্রেডিট কার্ড (Credit card), প্রিপেইড আবাসন (Prepaid accommodation), প্রিপেইড পরিবহন (Prepaid transport)।",
+      "example": "by the applicant himself/herself. Means of support: Cash",
+      "rejection_risk": true,
+      "rejection_reason": "খরচ কে বহন করবে তা উল্লেখ না করলে বা ভুল তথ্য দিলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ঘ - ঘোষণা",
+      "label_original": "I am aware that the visa fee is not refunded if the visa is refused. I declare that to the best of my knowledge all particulars supplied by me are correct and complete. I am aware that any false statements will lead to my application being rejected or to the annulment of a visa already granted, and may also render me liable to prosecution under the law of the Republic of Meridia. I undertake to leave the territory before the expiry of the visa, if granted.",
+      "label_translated": "আমি অবগত আছি যে ভিসা প্রত্যাখ্যান হলে ভিসা ফি ফেরত দেওয়া হবে না। আমি ঘোষণা করছি যে আমার জ্ঞান ও বিশ্বাস মতে প্রদত্ত সমস্ত তথ্য সঠিক এবং সম্পূর্ণ। আমি অবগত আছি যে কোনো মিথ্যা তথ্য আমার আবেদন প্রত্যাখ্যান বা ইতিমধ্যে মঞ্জুর করা ভিসার বাতিলকরণের কারণ হতে পারে এবং মেরिडিয়া প্রজাতন্ত্রের আইন অনুযায়ী আমাকে বিচারের সম্মুখীনও করা হতে পারে। আমি ভিসা মঞ্জুর হলে, ভিসার মেয়াদ শেষ হওয়ার আগেই আমি এই অঞ্চল ত্যাগ করার অঙ্গীকার করছি।",
+      "legible": true,
+      "meaning": "এই অংশে আপনি ঘোষণা করছেন যে আপনার দেওয়া সমস্ত তথ্য সঠিক এবং আপনি ভিসা প্রত্যাখ্যান হলে ফি ফেরত পাবেন না। আপনি আরও অঙ্গীকার করছেন যে ভিসা মঞ্জুর হলে আপনি মেয়াদ শেষ হওয়ার আগেই দেশটি ত্যাগ করবেন।",
+      "example": "",
+      "rejection_risk": true,
+      "rejection_reason": "এই ঘোষণাটি না পড়লে বা না বুঝলে পরে সমস্যা হতে পারে।"
+    },
+    {
+      "section": "অংশ ঘ - ঘোষণা",
+      "label_original": "31. Place and date *",
+      "label_translated": "৩১. স্থান এবং তারিখ *",
+      "legible": true,
+      "meaning": "আপনি যেখানে ফর্মটি পূরণ করছেন সেই স্থানের নাম এবং বর্তমান তারিখ লিখুন (দিন-মাস-বছর)।",
+      "example": "ঢাকা, ২৫-০৮-২০২৪",
+      "rejection_risk": true,
+      "rejection_reason": "স্থান বা তারিখ উল্লেখ না করলে বা ভুল ফরম্যাটে লিখলে আবেদন বাতিল হতে পারে।"
+    },
+    {
+      "section": "অংশ ঘ - ঘোষণা",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "৩২. স্বাক্ষর * (পিতামাতার কর্তৃত্ব / আইনি অভিভাবকের স্বাক্ষর, যদি প্রযোজ্য হয়)",
+      "legible": true,
+      "meaning": "আপনার পুরো স্বাক্ষর করুন। যদি আবেদনকারী অপ্রাপ্তবয়স্ক হন, তবে পিতামাতা বা আইনি অভিভাবকের স্বাক্ষর প্রয়োজন হবে।",
+      "example": "স্বাক্ষর",
+      "rejection_risk": true,
+      "rejection_reason": "স্বাক্ষর না করলে বা অস্পষ্ট স্বাক্ষর দিলে আবেদন বাতিল হতে পারে।"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "SHORT-STAY VISA",
+      "meaning": "সংক্ষিপ্ত-কালীন ভিসা: একটি নির্দিষ্ট সময়ের জন্য, সাধারণত ৯০ দিনের কম, কোনো দেশে প্রবেশের অনুমতি।"
+    },
+    {
+      "term": "IMMIGRATION AND CONSULAR AFFAIRS",
+      "meaning": "অভিবাসন ও কনস্যুলার বিষয়ক: এটি সাধারণত একটি দেশের পররাষ্ট্র মন্ত্রণালয়ের একটি বিভাগ যা ভিসা, অভিবাসন এবং বিদেশে থাকা নাগরিকদের বিষয়গুলি পরিচালনা করে।"
+    },
+    {
+      "term": "BLOCK CAPITALS",
+      "meaning": "বড় হাতের অক্ষর: ইংরেজি বর্ণমালার বড় হাতের অক্ষর (A, B, C ইত্যাদি)।"
+    },
+    {
+      "term": "EXEMPT",
+      "meaning": "ছাড়প্রাপ্ত: কোনো নিয়ম বা বাধ্যবাধকতা থেকে মুক্তি।"
+    },
+    {
+      "term": "CIVIL STATUS",
+      "meaning": "বৈবাহিক অবস্থা: একজন ব্যক্তির বৈবাহিক অবস্থা, যেমন অবিবাহিত, বিবাহিত, বিবাহবিচ্ছিন্ন ইত্যাদি।"
+    },
+    {
+      "term": "PARENTAL AUTHORITY",
+      "meaning": "পিতামাতার কর্তৃত্ব: শিশুদের দেখাশোনা এবং সিদ্ধান্ত নেওয়ার পিতামাতার আইনি অধিকার।"
+    },
+    {
+      "term": "LEGAL GUARDIAN",
+      "meaning": "আইনি অভিভাবক: একজন ব্যক্তি যাকে আদালত একজন নাবালক বা অক্ষম ব্যক্তির দেখাশোনার জন্য নিযুক্ত করে।"
+    },
+    {
+      "term": "ANNULMENT",
+      "meaning": "বাতিলকরণ: কোনো কিছুকে অবৈধ বা অকার্যকর ঘোষণা করা, যেমন একটি ভিসা বাতিল করা।"
+    }
+  ]
+}

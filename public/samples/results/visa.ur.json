@@ -1,0 +1,365 @@
+{
+  "is_form": true,
+  "form_title": "مختصر قیام کے ویزا کے لیے درخواست",
+  "summary": "یہ فارم ایک مختصر قیام کے ویزا کے لیے درخواست دینے کے لیے ہے۔ یہ عام طور پر ان افراد کے ذریعہ پُر کیا جاتا ہے جو ملک میں مختصر مدت کے لیے سفر کرنا چاہتے ہیں۔ درخواست جمع کروانے کے بعد، اسے امیگریشن حکام کی طرف سے جائزہ لیا جائے گا اور ویزا کی منظوری یا رد کرنے کا فیصلہ کیا جائے گا۔",
+  "image_note": "",
+  "documents_needed": [
+    "حال کی تصویر (35 x 45 ملی میٹر، سفید پس منظر، پچھلے 6 مہینوں کے اندر لی گئی)"
+  ],
+  "fields": [
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. خاندانی نام (خاندانی نام) *",
+      "legible": true,
+      "meaning": "یہاں اپنا خاندانی نام لکھیں۔ یہ نام آپ کے پاسپورٹ پر درج نام سے بالکل مماثل ہونا چاہیے۔",
+      "example": "احمد",
+      "rejection_risk": true,
+      "rejection_reason": "اگر نام پاسپورٹ پر درج نام سے مختلف ہو تو درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. پیدائش کے وقت خاندانی نام (سابقہ خاندانی نام) *",
+      "legible": true,
+      "meaning": "اگر آپ کی شادی کے بعد یا کسی اور وجہ سے آپ کا خاندانی نام تبدیل ہوا ہے تو یہاں اپنا پرانا خاندانی نام لکھیں۔",
+      "example": "خان",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. پہلا نام (نام) *",
+      "legible": true,
+      "meaning": "یہاں اپنا پہلا نام لکھیں۔ یہ نام آپ کے پاسپورٹ پر درج نام سے بالکل مماثل ہونا چاہیے۔",
+      "example": "محمد",
+      "rejection_risk": true,
+      "rejection_reason": "اگر نام پاسپورٹ پر درج نام سے مختلف ہو تو درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. تاریخ پیدائش (دن-مہینہ-سال) *",
+      "legible": true,
+      "meaning": "اپنی تاریخ پیدائش دن، مہینے اور سال کی ترتیب میں لکھیں۔ یہ آپ کے پاسپورٹ پر درج تاریخ سے مماثل ہونی چاہیے۔",
+      "example": "25-12-1990",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ یا پاسپورٹ سے عدم مماثلت کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. جائے پیدائش *",
+      "legible": true,
+      "meaning": "جس شہر یا قصبے میں آپ پیدا ہوئے تھے، اس کا نام لکھیں۔",
+      "example": "لاہور",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. ملک پیدائش *",
+      "legible": true,
+      "meaning": "جس ملک میں آپ پیدا ہوئے تھے، اس کا نام لکھیں۔",
+      "example": "پاکستان",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. موجودہ قومیت *",
+      "legible": true,
+      "meaning": "آپ کی موجودہ قومیت کیا ہے؟",
+      "example": "پاکستانی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. پیدائش کے وقت قومیت، اگر مختلف ہو",
+      "legible": true,
+      "meaning": "اگر آپ کی پیدائش کے وقت قومیت آپ کی موجودہ قومیت سے مختلف تھی، تو یہاں وہ قومیت لکھیں۔",
+      "example": "پاکستانی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "9. Sex *",
+      "label_translated": "9. جنس *",
+      "legible": true,
+      "meaning": "اپنی جنس کے مطابق باکس کو ٹک کریں۔",
+      "example": "مرد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. سول حیثیت *",
+      "legible": true,
+      "meaning": "اپنی شادی کی موجودہ حیثیت کے مطابق باکس کو ٹک کریں۔",
+      "example": "شادی شدہ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ A - ذاتی تفصیلات",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. والدین کا اختیار (نابالغوں کی صورت میں) / قانونی سرپرست: خاندانی نام، پہلا نام، پتہ، ٹیلی فون، ای میل اور قومیت",
+      "legible": true,
+      "meaning": "اگر درخواست دہندہ نابالغ ہے، تو یہاں اس کے والدین یا قانونی سرپرست کا مکمل نام، پتہ، فون نمبر، ای میل اور قومیت لکھیں۔",
+      "example": "خاندانی نام: علی، پہلا نام: حسن، پتہ: 123 مین سٹریٹ، شہر، ملک، فون: 03001234567، ای میل: ali.hassan@email.com، قومیت: پاکستانی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. سفری دستاویز کی قسم *",
+      "legible": true,
+      "meaning": "اپنے سفری دستاویز کی قسم کے مطابق باکس کو ٹک کریں۔",
+      "example": "عام پاسپورٹ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. سفری دستاویز کا نمبر *",
+      "legible": true,
+      "meaning": "اپنے پاسپورٹ یا سفری دستاویز کا نمبر لکھیں۔",
+      "example": "A12345678",
+      "rejection_risk": true,
+      "rejection_reason": "سفری دستاویز کا نمبر درست نہ ہونے کی صورت میں درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. جاری کرنے کی تاریخ *",
+      "legible": true,
+      "meaning": "اپنے سفری دستاویز کے جاری ہونے کی تاریخ دن، مہینے اور سال کی ترتیب میں لکھیں۔",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ یا پاسپورٹ سے عدم مماثلت کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. کب تک درست ہے *",
+      "legible": true,
+      "meaning": "اپنے سفری دستاویز کی میعاد ختم ہونے کی تاریخ دن، مہینے اور سال کی ترتیب میں لکھیں۔",
+      "example": "31-12-2030",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ یا پاسپورٹ سے عدم مماثلت کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. کس ملک نے جاری کیا *",
+      "legible": true,
+      "meaning": "جس ملک نے آپ کا سفری دستاویز جاری کیا ہے، اس کا نام لکھیں۔",
+      "example": "پاکستان",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. درخواست دہندہ کا گھر کا پتہ اور ای میل پتہ *",
+      "legible": true,
+      "meaning": "اپنا مکمل رہائشی پتہ اور ای میل پتہ لکھیں۔",
+      "example": "123 مین سٹریٹ، لاہور، پاکستان، email@example.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. ٹیلی فون نمبر *",
+      "legible": true,
+      "meaning": "اپنا فون نمبر لکھیں۔",
+      "example": "+923001234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. موجودہ قومیت کے علاوہ کسی دوسرے ملک میں رہائش",
+      "legible": true,
+      "meaning": "اگر آپ فی الحال کسی ایسے ملک میں رہائش پذیر ہیں جو آپ کی موجودہ قومیت کا ملک نہیں ہے، تو 'ہاں' کو ٹک کریں اور اس ملک کا نام اور رہائشی اجازت نامہ نمبر لکھیں۔",
+      "example": "ہاں، رہائشی اجازت نامہ نمبر: XXXXXX، کب تک درست ہے: 31-12-2025",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. موجودہ پیشہ *",
+      "legible": true,
+      "meaning": "آپ فی الحال کیا کام کرتے ہیں؟",
+      "example": "انجینئر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ B - سفری دستاویز",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. آجر اور آجر کا پتہ اور ٹیلی فون نمبر۔ طلباء کے لیے، تعلیمی ادارے کا نام اور پتہ *",
+      "legible": true,
+      "meaning": "اگر آپ ملازمت کرتے ہیں تو اپنے آجر (کمپنی) کا نام، پتہ اور فون نمبر لکھیں۔ اگر آپ طالب علم ہیں تو اپنے تعلیمی ادارے کا نام اور پتہ لکھیں۔",
+      "example": "کمپنی کا نام: XYZ Corp، پتہ: 456 بزنس روڈ، شہر، ملک، فون: 0421234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. سفر کا بنیادی مقصد *",
+      "legible": true,
+      "meaning": "اپنے سفر کی بنیادی وجہ کے مطابق باکس کو ٹک کریں۔ اگر کوئی اور وجہ ہے تو اسے 'دیگر' میں بیان کریں۔",
+      "example": "سیاحت",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. مطلوبہ اندراجات کی تعداد *",
+      "legible": true,
+      "meaning": "آپ کتنی بار ملک میں داخل ہونا چاہتے ہیں؟ سنگل انٹری، ڈبل انٹری یا متعدد انٹریز کے لیے متعلقہ باکس کو ٹک کریں۔",
+      "example": "متعدد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. آمد کی متوقع تاریخ *",
+      "legible": true,
+      "meaning": "جس تاریخ کو آپ ملک میں پہنچنے کا ارادہ رکھتے ہیں، وہ دن، مہینہ اور سال کی ترتیب میں لکھیں۔",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. روانگی کی متوقع تاریخ *",
+      "legible": true,
+      "meaning": "جس تاریخ کو آپ ملک سے روانہ ہونے کا ارادہ رکھتے ہیں، وہ دن، مہینہ اور سال کی ترتیب میں لکھیں۔",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. گزشتہ تین سالوں میں جمہوریہ میڈیرا کی طرف سے جاری کردہ ویزا",
+      "legible": true,
+      "meaning": "اگر آپ نے گزشتہ تین سالوں میں جمہوریہ میڈیرا سے کوئی ویزا حاصل کیا ہے تو 'ہاں' کو ٹک کریں اور ویزا کی درستگی کی تاریخیں لکھیں۔",
+      "example": "ہاں، درستگی کی تاریخیں: 01-01-2022 سے 31-12-2022 تک",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. ویزا کی درخواست کے مقصد کے لیے پہلے فنگر پرنٹس لیے گئے ہیں",
+      "legible": true,
+      "meaning": "اگر آپ کے فنگر پرنٹس پہلے ویزا کی درخواست کے لیے لیے گئے ہیں تو 'ہاں' کو ٹک کریں اور تاریخ لکھیں۔",
+      "example": "ہاں، تاریخ: 10-05-2021",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. میڈیرا میں مدعو کرنے والے شخص/اشخاص کا خاندانی نام اور پہلا نام۔ اگر لاگو نہ ہو تو ہوٹل/ہوٹلوں یا عارضی رہائش گاہ/رہائش گاہوں کا نام *",
+      "legible": true,
+      "meaning": "اگر کوئی آپ کو میڈیرا میں مدعو کر رہا ہے تو اس شخص کا نام لکھیں۔ اگر کوئی مدعو نہیں کر رہا تو آپ جہاں ٹھہریں گے اس ہوٹل یا عارضی رہائش کا نام لکھیں۔",
+      "example": "ہوٹل کا نام: گرینڈ ہوٹل، پتہ: 789 مین روڈ، میڈیرا سٹی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. مدعو کرنے والے شخص/اشخاص / ہوٹل/ہوٹلوں کا پتہ اور ای میل *",
+      "legible": true,
+      "meaning": "مدعو کرنے والے شخص یا ہوٹل کا پتہ اور ای میل لکھیں۔",
+      "example": "پتہ: 789 مین روڈ، میڈیرا سٹی، ای میل: info@grandhotel.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ C - سفر",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. درخواست دہندہ کے قیام کے دوران سفر اور رہائش کا خرچ کون اٹھائے گا *",
+      "legible": true,
+      "meaning": "بتائیں کہ آپ کے سفر اور قیام کے اخراجات کون ادا کرے گا: خود، کوئی کفیل، یا کوئی تنظیم۔",
+      "example": "خود درخواست دہندہ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "حصہ D - اعلان",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. جگہ اور تاریخ *",
+      "legible": true,
+      "meaning": "جس جگہ سے آپ درخواست دے رہے ہیں اس کا نام اور درخواست جمع کروانے کی تاریخ دن، مہینے اور سال کی ترتیب میں لکھیں۔",
+      "example": "اسلام آباد، 10-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ یا جگہ کا نام نہ لکھنے کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    },
+    {
+      "section": "حصہ D - اعلان",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. دستخط * (والدین کے اختیار / قانونی سرپرست کے دستخط، اگر قابل اطلاق ہو)",
+      "legible": true,
+      "meaning": "یہاں اپنے دستخط کریں۔ اگر درخواست دہندہ نابالغ ہے تو والدین یا قانونی سرپرست کے دستخط درکار ہوں گے۔",
+      "example": "دستخط",
+      "rejection_risk": true,
+      "rejection_reason": "دستخط نہ کرنے یا نامکمل دستخط کی وجہ سے درخواست مسترد ہو سکتی ہے۔"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "SHORT-STAY VISA",
+      "meaning": "مختصر قیام کا ویزا: ایک ویزا جو کسی شخص کو کسی ملک میں محدود مدت کے لیے رہنے کی اجازت دیتا ہے، عام طور پر سیاحت، کاروبار یا مختصر مدت کے دوروں کے لیے۔"
+    },
+    {
+      "term": "IMMIGRATION AND CONSULAR AFFAIRS",
+      "meaning": "امیگریشن اور قونصلر امور: یہ وہ سرکاری محکمہ ہے جو امیگریشن اور ویزا سے متعلق معاملات کو سنبھالتا ہے۔"
+    },
+    {
+      "term": "PARENTAL AUTHORITY",
+      "meaning": "والدین کا اختیار: والدین کے وہ حقوق اور ذمہ داریاں جو ان کے بچوں کی پرورش اور دیکھ بھال سے متعلق ہیں۔"
+    },
+    {
+      "term": "LEGAL GUARDIAN",
+      "meaning": "قانونی سرپرست: وہ شخص جسے عدالت نے کسی ایسے شخص کی دیکھ بھال اور معاملات سنبھالنے کے لیے مقرر کیا ہو جو خود ایسا کرنے سے قاصر ہو، جیسے کہ نابالغ بچہ۔"
+    },
+    {
+      "term": "TRAVEL DOCUMENT",
+      "meaning": "سفری دستاویز: ایک سرکاری دستاویز جو کسی شخص کی شناخت اور قومیت ثابت کرتی ہے اور اسے بیرون ملک سفر کرنے کی اجازت دیتی ہے، جیسے کہ پاسپورٹ۔"
+    },
+    {
+      "term": "APPLICANT",
+      "meaning": "درخواست دہندہ: وہ شخص جو کسی چیز کے لیے باضابطہ درخواست دے رہا ہو، اس معاملے میں ویزا کے لیے۔"
+    },
+    {
+      "term": "EMPLOYER",
+      "meaning": "آجر: وہ شخص یا کمپنی جو کسی کو ملازمت پر رکھتا ہے۔"
+    },
+    {
+      "term": "DECLARATION",
+      "meaning": "اعلان: ایک باضابطہ بیان جس میں کہا گیا ہو کہ فراہم کردہ معلومات درست اور مکمل ہیں۔"
+    }
+  ]
+}

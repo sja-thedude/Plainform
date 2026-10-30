@@ -1,0 +1,245 @@
+{
+  "is_form": true,
+  "form_title": "CONTRAT DE LOCATION RÉSIDENTIELLE",
+  "summary": "Ce document est un contrat de location pour une résidence. Il est rempli par le propriétaire (ou son agent) et le(s) locataire(s). Il détaille les conditions de la location, le loyer, le dépôt de garantie, et les responsabilités des parties. Après signature, il sert de base légale pour la relation locative.",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 \n LES PARTIES",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "Nom complet du propriétaire (ou agent de gestion pour le compte du propriétaire)",
+      "legible": true,
+      "meaning": "Indiquez le nom complet du propriétaire ou de l'agent qui gère la propriété.",
+      "example": "Jean Dupont",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LES PARTIES",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "Adresse du propriétaire pour la signification des avis",
+      "legible": true,
+      "meaning": "Indiquez l'adresse où le locataire peut envoyer des avis officiels au propriétaire.",
+      "example": "10 Rue de la Paix, 75001 Paris",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LES PARTIES",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "Nom légal complet du locataire 1",
+      "legible": true,
+      "meaning": "Indiquez le nom légal complet du premier locataire.",
+      "example": "Marie Curie",
+      "rejection_risk": true,
+      "rejection_reason": "Le nom doit correspondre exactement à celui figurant sur les documents d'identité officiels pour éviter toute confusion."
+    },
+    {
+      "section": "1 \n LES PARTIES",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "Nom légal complet du locataire 2 (le cas échéant)",
+      "legible": true,
+      "meaning": "Indiquez le nom légal complet du deuxième locataire, s'il y en a un.",
+      "example": "Pierre Dubois",
+      "rejection_risk": true,
+      "rejection_reason": "Le nom doit correspondre exactement à celui figurant sur les documents d'identité officiels pour éviter toute confusion."
+    },
+    {
+      "section": "1 \n LES PARTIES",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "Noms de toutes les autres personnes autorisées à occuper les lieux (occupants autorisés)",
+      "legible": true,
+      "meaning": "Listez les noms de toutes les autres personnes qui vivront dans le logement mais ne sont pas signataires du bail.",
+      "example": "Sophie Dubois (enfant)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n LES PRÉMISES ET LE TERME",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "Adresse des lieux, y compris le numéro d'unité et tout espace de stationnement ou de rangement attribué",
+      "legible": true,
+      "meaning": "Indiquez l'adresse complète du logement loué, y compris les détails comme le numéro d'appartement, et précisez si un parking ou une cave est inclus.",
+      "example": "Appartement 3B, 15 Rue des Lilas, 33000 Bordeaux, Parking N°5",
+      "rejection_risk": true,
+      "rejection_reason": "Une adresse incorrecte ou incomplète peut entraîner des problèmes de notification et de signification légale."
+    },
+    {
+      "section": "2 \n LES PRÉMISES ET LE TERME",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "Date de début du terme",
+      "legible": true,
+      "meaning": "Indiquez la date à laquelle le contrat de location commence. Le format attendu est jour/mois/année.",
+      "example": "01/09/2024",
+      "rejection_risk": true,
+      "rejection_reason": "Un format de date incorrect ou une date ambiguë peut retarder le début du bail ou causer des litiges."
+    },
+    {
+      "section": "2 \n LES PRÉMISES ET LE TERME",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "Date d'expiration du terme",
+      "legible": true,
+      "meaning": "Indiquez la date à laquelle le contrat de location se termine. Le format attendu est jour/mois/année.",
+      "example": "31/08/2025",
+      "rejection_risk": true,
+      "rejection_reason": "Un format de date incorrect ou une date ambiguë peut retarder la fin du bail ou causer des litiges."
+    },
+    {
+      "section": "2 \n LES PRÉMISES ET LE TERME",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "À l'expiration du terme fixe, à moins que l'une des Parties n'ait donné un préavis écrit d'au moins ______ jours, le bail se poursuivra en tant que bail périodique de mois en mois aux mêmes conditions, mutatis mutandis.",
+      "legible": true,
+      "meaning": "Ce champ concerne le nombre de jours de préavis requis pour mettre fin au bail à son expiration. Si personne ne donne de préavis, le bail continue automatiquement de mois en mois.",
+      "example": "60",
+      "rejection_risk": true,
+      "rejection_reason": "Ne pas spécifier le nombre de jours de préavis peut créer une incertitude sur les conditions de résiliation du bail."
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "Loyer payable : $______ par mois calendaire",
+      "legible": true,
+      "meaning": "Indiquez le montant du loyer mensuel en chiffres.",
+      "example": "1200",
+      "rejection_risk": true,
+      "rejection_reason": "Un montant de loyer non spécifié ou incorrect peut entraîner des litiges sur le montant dû."
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "Payable d'avance le ______ jour de chaque mois",
+      "legible": true,
+      "meaning": "Indiquez le jour du mois où le loyer doit être payé. Le paiement est dû d'avance.",
+      "example": "1",
+      "rejection_risk": true,
+      "rejection_reason": "Ne pas spécifier le jour de paiement peut créer une ambiguïté sur la date d'échéance du loyer."
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "Mode de paiement",
+      "legible": true,
+      "meaning": "Cochez la case correspondant au mode de paiement convenu pour le loyer.",
+      "example": "Bank transfer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "Frais de retard de paiement : $______ après ______ jours de retard",
+      "legible": true,
+      "meaning": "Indiquez le montant des frais de retard et le nombre de jours de retard après lesquels ces frais s'appliquent.",
+      "example": "50 après 5 jours",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "Dépôt de garantie : $______",
+      "legible": true,
+      "meaning": "Indiquez le montant du dépôt de garantie versé par le locataire.",
+      "example": "1200",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "Dépôt à détenir par / référence du système de protection",
+      "legible": true,
+      "meaning": "Indiquez le nom de l'organisme qui détiendra le dépôt de garantie ou la référence du système de protection des dépôts, le cas échéant.",
+      "example": "Garantie Locative France",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n LOYER ET DÉPÔT DE GARANTIE",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "Services publics et charges payables par le Locataire",
+      "legible": true,
+      "meaning": "Cochez les services publics et charges dont le paiement incombe au locataire.",
+      "example": "Electricity, Gas, Water",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 \n OBLIGATIONS CONJOINTE ET SOLIDAIRE",
+      "label_original": "4.1 Where the Tenant comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "Lorsque le Locataire comprend plus d'une personne, les obligations du Locataire en vertu de cet Accord sont conjointes et solidaires, et le Propriétaire peut recouvrer la totalité des arriérés de loyer ou de toute autre somme due par l'un d'eux ou plusieurs d'entre eux. Initiales de chaque Locataire :",
+      "legible": true,
+      "meaning": "Si plusieurs locataires signent le bail, chacun est responsable de la totalité du loyer et des autres sommes dues, même si un seul ne paie pas. Les locataires doivent apposer leurs initiales pour confirmer qu'ils comprennent et acceptent cette clause.",
+      "example": "Initiales du locataire 1",
+      "rejection_risk": true,
+      "rejection_reason": "L'absence d'initiales pour cette clause peut indiquer que le locataire n'a pas compris ou accepté sa responsabilité solidaire, ce qui peut entraîner des litiges."
+    },
+    {
+      "section": "5 \n GARANT",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "En contrepartie de l'octroi de cette location par le Propriétaire, le Garant nommé ci-dessous garantit irrévocablement le paiement du loyer et l'exécution des engagements du Locataire et accepte d'indemniser le Propriétaire contre toutes pertes, nonobstant toute modification de cet Accord ou prolongation de délai accordée au Locataire.",
+      "legible": true,
+      "meaning": "Cette clause stipule que le garant s'engage formellement à payer le loyer et à respecter les termes du bail si le locataire ne le fait pas. Le garant accepte également de couvrir les pertes du propriétaire.",
+      "example": "",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 \n GARANT",
+      "label_original": "5.2 Guarantor's full name, address and telephone · Guarantor's initials:",
+      "label_translated": "Nom complet, adresse et téléphone du Garant · Initiales du Garant :",
+      "legible": true,
+      "meaning": "Indiquez le nom complet, l'adresse et le numéro de téléphone du garant. Le garant doit ensuite apposer ses initiales dans la case prévue.",
+      "example": "Nom: Paul Martin, Adresse: 25 Rue des Fleurs, 69000 Lyon, Téléphone: 0612345678. Initiales: PM",
+      "rejection_risk": true,
+      "rejection_reason": "Des informations incomplètes ou incorrectes sur le garant peuvent rendre la garantie invalide."
+    },
+    {
+      "section": "6 \n CLAUSE DE RÉSILIATION",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: ☐ Yes ☐ No",
+      "label_translated": "L'une ou l'autre Partie peut résilier cet Accord à l'expiration de ______ mois du Terme ou après, en donnant un préavis écrit d'au moins deux mois, à condition que le Locataire ne soit pas en retard de loyer. S'applique : ☐ Oui ☐ Non",
+      "legible": true,
+      "meaning": "Cette clause permet à l'une ou l'autre partie de mettre fin au bail après une certaine période (à remplir) en donnant un préavis de deux mois, à condition que le locataire ait payé son loyer. Cochez Oui ou Non pour indiquer si cette clause s'applique.",
+      "example": "6 mois. S'applique : Oui",
+      "rejection_risk": true,
+      "rejection_reason": "Ne pas spécifier la durée minimale avant résiliation ou ne pas indiquer si la clause s'applique peut créer une incertitude sur les conditions de résiliation anticipée du bail."
+    },
+    {
+      "section": "6 \n CLAUSE DE RÉSILIATION",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "Initiales de toutes les parties sur chaque page : Propriétaire ______ Locataire(s) ______ / ______",
+      "legible": true,
+      "meaning": "Chaque partie (propriétaire et locataire(s)) doit apposer ses initiales sur chaque page du contrat pour confirmer qu'elle a lu et accepté le contenu de chaque page. Les initiales du locataire 1 sont attendues dans la première case, et celles du locataire 2 (s'il y en a) dans la seconde.",
+      "example": "Propriétaire: JD, Locataire(s): MC / PD",
+      "rejection_risk": true,
+      "rejection_reason": "L'absence d'initiales sur une page peut indiquer que cette page n'a pas été lue ou acceptée par toutes les parties, ce qui peut invalider le contrat."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "Expression latine signifiant « les choses qui doivent être changées étant changées ». Elle est utilisée pour indiquer que les conditions s'appliquent telles quelles, sauf pour les éléments qui doivent nécessairement être différents."
+    },
+    {
+      "term": "joint and several",
+      "meaning": "Obligation conjointe et solidaire. Cela signifie que chaque personne est individuellement responsable de la totalité de la dette ou de l'obligation, et que le créancier peut exiger le paiement de la totalité de l'un quelconque des débiteurs."
+    },
+    {
+      "term": "indemnify",
+      "meaning": "Indemniser. S'engage à compenser une autre partie pour les pertes ou les dommages subis."
+    },
+    {
+      "term": "covenants",
+      "meaning": "Engagements. Ce sont des promesses formelles ou des accords contenus dans un contrat, qui obligent les parties à faire ou à ne pas faire quelque chose."
+    },
+    {
+      "term": "arrears",
+      "meaning": "Arriérés. Paiements dus mais non effectués à la date d'échéance."
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "Bail périodique. Un bail qui se renouvelle automatiquement à intervalles réguliers (par exemple, de mois en mois) jusqu'à ce qu'il soit résilié par l'une des parties avec un préavis approprié."
+    }
+  ]
+}

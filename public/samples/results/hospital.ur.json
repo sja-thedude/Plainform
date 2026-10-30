@@ -1,0 +1,586 @@
+{
+  "is_form": true,
+  "form_title": "نئے مریض کا اندراج اور صحت کی تاریخ",
+  "summary": "یہ فارم نئے مریضوں کے لیے ہے جو Riverside General Hospital میں داخل ہو رہے ہیں یا او پی ڈی میں علاج کروانے آئے ہیں۔ اس فارم کو مریض خود یا ان کا قانونی نمائندہ پُر کرتا ہے۔ اس میں مریض کی ذاتی معلومات، ہنگامی رابطے کی تفصیلات، انشورنس کی معلومات، اور طبی تاریخ شامل ہے۔ فارم جمع کروانے کے بعد، ہسپتال کا عملہ اس کا جائزہ لے گا اور مریض کے علاج کا آغاز کرے گا۔",
+  "image_note": "",
+  "documents_needed": [
+    "تصویری شناختی کارڈ",
+    "انشورنس کارڈ"
+  ],
+  "fields": [
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Legal last name",
+      "label_translated": "آخری قانونی نام",
+      "legible": true,
+      "meaning": "اپنا آخری نام لکھیں جیسا کہ سرکاری دستاویزات پر درج ہے۔",
+      "example": "خان",
+      "rejection_risk": true,
+      "rejection_reason": "نام کا درست نہ ہونا یا سرکاری دستاویزات سے مختلف ہونا اندراج میں تاخیر کا سبب بن سکتا ہے۔"
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Legal first name",
+      "label_translated": "پہلا قانونی نام",
+      "legible": true,
+      "meaning": "اپنا پہلا نام لکھیں جیسا کہ سرکاری دستاویزات پر درج ہے۔",
+      "example": "احمد",
+      "rejection_risk": true,
+      "rejection_reason": "نام کا درست نہ ہونا یا سرکاری دستاویزات سے مختلف ہونا اندراج میں تاخیر کا سبب بن سکتا ہے۔"
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "M.I.",
+      "label_translated": "درمیانی نام کا پہلا حرف",
+      "legible": true,
+      "meaning": "اپنے درمیانی نام کا پہلا حرف لکھیں۔ اگر آپ کا درمیانی نام نہیں ہے تو اسے خالی چھوڑ دیں۔",
+      "example": "A",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Preferred name (if different)",
+      "label_translated": "پسندیدہ نام (اگر مختلف ہو)",
+      "legible": true,
+      "meaning": "اگر آپ کو کسی اور نام سے پکارا جاتا ہے تو وہ نام لکھیں۔",
+      "example": "سمیر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "تاریخ پیدائش (MM/DD/YYYY)",
+      "legible": true,
+      "meaning": "اپنی تاریخ پیدائش مہینہ، دن، اور سال کی ترتیب میں لکھیں۔",
+      "example": "05/15/1990",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ اندراج میں تاخیر کا سبب بن سکتی ہے۔"
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "پیدائش کے وقت جنس",
+      "legible": true,
+      "meaning": "پیدائش کے وقت آپ کی جنس کا انتخاب کریں (مرد یا عورت)۔",
+      "example": "M",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Home address (street, apt, city, state, ZIP)",
+      "label_translated": "گھر کا پتہ (گلی، اپارٹمنٹ، شہر، ریاست، زپ کوڈ)",
+      "legible": true,
+      "meaning": "اپنا مکمل رہائشی پتہ لکھیں۔",
+      "example": "123 مین سٹریٹ، اپارٹمنٹ 4B، اینی ٹاؤن، CA 90210",
+      "rejection_risk": true,
+      "rejection_reason": "غلط یا نامکمل پتہ رابطے میں دشواری پیدا کر سکتا ہے۔"
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Primary phone",
+      "label_translated": "پرائمری فون نمبر",
+      "legible": true,
+      "meaning": "وہ فون نمبر لکھیں جس پر آپ کو آسانی سے رابطہ کیا جا سکے۔",
+      "example": "555-123-4567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "E-mail",
+      "label_translated": "ای میل",
+      "legible": true,
+      "meaning": "اپنا ای میل پتہ لکھیں۔",
+      "example": "example@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Preferred language",
+      "label_translated": "پسندیدہ زبان",
+      "legible": true,
+      "meaning": "وہ زبان لکھیں جس میں آپ بات چیت کرنا پسند کرتے ہیں۔",
+      "example": "اردو",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Interpreter required?",
+      "label_translated": "مترجم درکار ہے؟",
+      "legible": true,
+      "meaning": "اگر آپ کو بات چیت کے لیے مترجم کی ضرورت ہے تو 'Yes' کا انتخاب کریں، ورنہ 'No' کا انتخاب کریں۔",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Marital status",
+      "label_translated": "ازدواجی حیثیت",
+      "legible": true,
+      "meaning": "اپنی ازدواجی حیثیت کا انتخاب کریں (مثلاً، شادی شدہ، غیر شادی شدہ، طلاق یافتہ، بیوہ/مرد)۔",
+      "example": "شادی شدہ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "Employer / occupation",
+      "label_translated": "ملازمت / پیشہ",
+      "legible": true,
+      "meaning": "اپنے موجودہ روزگار کی جگہ اور اپنے پیشے کا نام لکھیں۔",
+      "example": "ٹیچر، اسکول کا نام",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. مریض کی معلومات",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "سوشل سیکیورٹی نمبر (صرف آخری 4 ہندسے)",
+      "legible": true,
+      "meaning": "اپنے سوشل سیکیورٹی نمبر کے آخری چار ہندسے لکھیں۔",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. ہنگامی رابطہ / قریبی رشتہ دار",
+      "label_original": "Name",
+      "label_translated": "نام",
+      "legible": true,
+      "meaning": "اس شخص کا نام لکھیں جس سے ہنگامی صورتحال میں رابطہ کیا جا سکے۔",
+      "example": "فاطمہ علی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. ہنگامی رابطہ / قریبی رشتہ دار",
+      "label_original": "Relationship to patient",
+      "label_translated": "مریض سے رشتہ",
+      "legible": true,
+      "meaning": "اس شخص کا مریض سے رشتہ لکھیں۔",
+      "example": "بیوی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. ہنگامی رابطہ / قریبی رشتہ دار",
+      "label_original": "Phone",
+      "label_translated": "فون نمبر",
+      "legible": true,
+      "meaning": "اس شخص کا فون نمبر لکھیں۔",
+      "example": "555-987-6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "پرائمری انشورنس کمپنی",
+      "legible": true,
+      "meaning": "اپنی بنیادی صحت انشورنس کمپنی کا نام لکھیں۔",
+      "example": "XYZ انشورنس",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "ممبر / سبسکرائبر آئی ڈی",
+      "legible": true,
+      "meaning": "اپنی انشورنس پالیسی کا ممبر یا سبسکرائبر نمبر لکھیں۔",
+      "example": "ABC123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Group no.",
+      "label_translated": "گروپ نمبر",
+      "legible": true,
+      "meaning": "اگر آپ کی انشورنس کسی گروپ کے تحت ہے تو اس کا نمبر لکھیں۔",
+      "example": "G7890",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "پولیسی ہولڈر کا نام (اگر مریض نہ ہو)",
+      "legible": true,
+      "meaning": "اگر انشورنس پالیسی آپ کے نام پر نہیں ہے تو پالیسی ہولڈر کا نام لکھیں۔",
+      "example": "علی رضا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Policyholder DOB",
+      "label_translated": "پولیسی ہولڈر کی تاریخ پیدائش",
+      "legible": true,
+      "meaning": "اگر انشورنس پالیسی آپ کے نام پر نہیں ہے تو پالیسی ہولڈر کی تاریخ پیدائش لکھیں۔",
+      "example": "01/01/1970",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس اور مالی ذمہ داری",
+      "label_original": "Relationship to patient",
+      "label_translated": "مریض سے رشتہ",
+      "legible": true,
+      "meaning": "اگر انشورنس پالیسی آپ کے نام پر نہیں ہے تو پالیسی ہولڈر کا مریض سے رشتہ لکھیں۔",
+      "example": "والد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. انشورنس و مالی ذمہ داری",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "خود ادائیگی / بغیر انشورنس کے۔ میں سمجھتا ہوں کہ ادائیگی کے اختیارات اور چیریٹی کیئر کی اہلیت کے بارے میں ایک مالی مشیر مجھ سے رابطہ کرے گا۔",
+      "legible": true,
+      "meaning": "اگر آپ کے پاس انشورنس نہیں ہے یا آپ خود ادائیگی کر رہے ہیں تو اس باکس کو ٹک کریں۔ اس کا مطلب ہے کہ آپ مالی مشیر سے بات کرنے کے لیے تیار ہیں۔",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "اگر آپ کے پاس انشورنس نہیں ہے اور آپ اس باکس کو ٹک نہیں کرتے ہیں تو آپ کو ادائیگی کے بارے میں معلومات نہیں مل پائے گی۔"
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "پرائمری کیئر فزیشن (نام اور کلینک)",
+      "legible": true,
+      "meaning": "اپنے بنیادی دیکھ بھال کرنے والے ڈاکٹر کا نام اور ان کے کلینک کا نام لکھیں۔",
+      "example": "ڈاکٹر سارہ خان، سٹی میڈیکل کلینک",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "موجودہ ادویات، بشمول اوور-دی-کاؤنٹر اور سپلیمنٹس (نام، خوراک، کتنی بار)",
+      "legible": true,
+      "meaning": "ان تمام ادویات، سپلیمنٹس اور اوور-دی-کاؤنٹر اشیاء کی فہرست بنائیں جو آپ فی الحال استعمال کر رہے ہیں، ان کی خوراک اور استعمال کی فریکوئنسی کے ساتھ۔",
+      "example": "Aspirin 81mg, روزانہ ایک بار",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "ادویات، خوراک یا لیٹیکس سے الرجی، اور اس کا ردعمل",
+      "legible": true,
+      "meaning": "اگر آپ کو کسی دوا، خوراک یا لیٹیکس سے الرجی ہے تو اس کا نام اور اس کے ردعمل کی تفصیل لکھیں۔ اگر کوئی الرجی نہیں ہے تو 'NKDA' (کوئی معلوم الرجی نہیں) کا انتخاب کریں۔",
+      "example": "Penicillin - جلد پر دانے",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "پچھلے آپریشن / ہسپتال میں داخلہ (سال)",
+      "legible": true,
+      "meaning": "اگر آپ کے پچھلے کوئی آپریشن ہوئے ہیں یا آپ ہسپتال میں داخل ہوئے ہیں تو ان کا سال لکھیں۔",
+      "example": "2015 - اپینڈکس کا آپریشن",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Do you have, or have you ever had:",
+      "label_translated": "کیا آپ کو ہے، یا کبھی ہوا ہے:",
+      "legible": true,
+      "meaning": "ذیل میں دی گئی بیماریوں میں سے جن کا آپ کو سامنا ہے یا کبھی ہوا ہے، ان کے سامنے والے باکس کو ٹک کریں۔",
+      "example": "Diabetes X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Diabetes",
+      "label_translated": "ذیابیطس",
+      "legible": true,
+      "meaning": "اگر آپ کو ذیابیطس ہے یا کبھی ہوئی ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "High blood pressure",
+      "label_translated": "ہائی بلڈ پریشر",
+      "legible": true,
+      "meaning": "اگر آپ کو ہائی بلڈ پریشر ہے یا کبھی رہا ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Heart disease",
+      "label_translated": "دل کی بیماری",
+      "legible": true,
+      "meaning": "اگر آپ کو دل کی کوئی بیماری ہے یا کبھی رہی ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Asthma/COPD",
+      "label_translated": "دمہ/سی او پی ڈی",
+      "legible": true,
+      "meaning": "اگر آپ کو دمہ یا سی او پی ڈی ہے یا کبھی رہی ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Kidney disease",
+      "label_translated": "گردے کی بیماری",
+      "legible": true,
+      "meaning": "اگر آپ کو گردے کی کوئی بیماری ہے یا کبھی رہی ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Cancer",
+      "label_translated": "کینسر",
+      "legible": true,
+      "meaning": "اگر آپ کو کینسر ہے یا کبھی ہوا ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Seizures",
+      "label_translated": "دورے",
+      "legible": true,
+      "meaning": "اگر آپ کو دورے پڑتے ہیں یا کبھی پڑے ہیں تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "None of these",
+      "label_translated": "ان میں سے کوئی نہیں",
+      "legible": true,
+      "meaning": "اگر آپ کو اوپر بتائی گئی کوئی بھی بیماری نہیں ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Tobacco use",
+      "label_translated": "تمباکو کا استعمال",
+      "legible": true,
+      "meaning": "تمباکو کے استعمال کی موجودہ صورتحال کا انتخاب کریں (کبھی نہیں، سابقہ، موجودہ)۔",
+      "example": "Former",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Never",
+      "label_translated": "کبھی نہیں",
+      "legible": true,
+      "meaning": "اگر آپ نے کبھی تمباکو استعمال نہیں کیا تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Former",
+      "label_translated": "سابقہ",
+      "legible": true,
+      "meaning": "اگر آپ نے پہلے تمباکو استعمال کیا تھا لیکن اب نہیں کرتے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Current",
+      "label_translated": "موجودہ",
+      "legible": true,
+      "meaning": "اگر آپ اب بھی تمباکو استعمال کرتے ہیں تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "الکحل (پیگ/ہفتہ)",
+      "legible": true,
+      "meaning": "فی ہفتہ آپ کتنے الکحل کے مشروبات استعمال کرتے ہیں، وہ تعداد لکھیں۔",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Pregnant or possibly pregnant?",
+      "label_translated": "حاملہ ہیں یا ممکنہ طور پر حاملہ ہیں؟",
+      "legible": true,
+      "meaning": "اگر آپ حاملہ ہیں یا حاملہ ہونے کا امکان ہے تو 'Yes' کا انتخاب کریں، ورنہ 'No' یا 'N/A' کا انتخاب کریں۔",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Yes",
+      "label_translated": "جی ہاں",
+      "legible": true,
+      "meaning": "اگر آپ حاملہ ہیں یا حاملہ ہونے کا امکان ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "No",
+      "label_translated": "نہیں",
+      "legible": true,
+      "meaning": "اگر آپ حاملہ نہیں ہیں اور حاملہ ہونے کا امکان نہیں ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "N/A",
+      "label_translated": "لاگو نہیں",
+      "legible": true,
+      "meaning": "اگر یہ سوال آپ پر لاگو نہیں ہوتا تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Do you have an advance directive or living will?",
+      "label_translated": "کیا آپ کے پاس ایڈوانس ڈائریکٹو یا لونگ ول ہے؟",
+      "legible": true,
+      "meaning": "کیا آپ نے پہلے سے کوئی طبی ہدایات یا وصیت لکھی ہے؟ اگر ہاں، تو اس کی کاپی فراہم کرنے کا انتخاب کریں۔",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Yes (please provide a copy)",
+      "label_translated": "جی ہاں (براہ کرم کاپی فراہم کریں)",
+      "legible": true,
+      "meaning": "اگر آپ کے پاس ایڈوانس ڈائریکٹو یا لونگ ول ہے تو اس باکس کو ٹک کریں اور اس کی کاپی فراہم کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "No",
+      "label_translated": "نہیں",
+      "legible": true,
+      "meaning": "اگر آپ کے پاس ایڈوانس ڈائریکٹو یا لونگ ول نہیں ہے تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. طبی تاریخ",
+      "label_original": "Would like information",
+      "label_translated": "معلومات حاصل کرنا چاہیں گے",
+      "legible": true,
+      "meaning": "اگر آپ ایڈوانس ڈائریکٹو یا لونگ ول کے بارے میں معلومات حاصل کرنا چاہتے ہیں تو اس باکس کو ٹک کریں۔",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. رضامندی اور اعترافات",
+      "label_original": "Initials",
+      "label_translated": "ابتدائیہ",
+      "legible": true,
+      "meaning": "یہاں اپنے ابتدائیہ (نام کا پہلا حرف) لکھیں۔ یہ ظاہر کرتا ہے کہ آپ نے اوپر دی گئی رضامندی اور ذمہ داریوں کو پڑھ لیا ہے اور سمجھ لیا ہے۔",
+      "example": "AA",
+      "rejection_risk": true,
+      "rejection_reason": "دستخط یا ابتدائیہ نہ کرنے کی صورت میں فارم مکمل نہیں سمجھا جائے گا۔"
+    },
+    {
+      "section": "5. رضامندی اور اعترافات",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "مریض یا قانونی نمائندے کا دستخط",
+      "legible": true,
+      "meaning": "یہاں اپنا پورا دستخط کریں یا اگر آپ قانونی نمائندے ہیں تو اپنا دستخط کریں۔ یہ ظاہر کرتا ہے کہ آپ فارم میں دی گئی معلومات سے متفق ہیں۔",
+      "example": "دستخط",
+      "rejection_risk": true,
+      "rejection_reason": "دستخط نہ کرنے کی صورت میں فارم نامکمل سمجھا جائے گا۔"
+    },
+    {
+      "section": "5. رضامندی اور اعترافات",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "چھپا ہوا نام اور رشتہ، اگر مریض نہ ہو",
+      "legible": true,
+      "meaning": "اگر آپ مریض کے قانونی نمائندے کے طور پر دستخط کر رہے ہیں تو اپنا پورا نام اور مریض سے اپنا رشتہ لکھیں۔",
+      "example": "علی رضا، والد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. رضامندی اور اعترافات",
+      "label_original": "Date",
+      "label_translated": "تاریخ",
+      "legible": true,
+      "meaning": "جس تاریخ کو آپ دستخط کر رہے ہیں وہ تاریخ لکھیں۔",
+      "example": "03/20/2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ یا تاریخ نہ لکھنے کی صورت میں فارم میں تاخیر ہو سکتی ہے۔"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "M.I.",
+      "meaning": "یہ 'Middle Initial' کا مخفف ہے، یعنی درمیانی نام کا پہلا حرف۔"
+    },
+    {
+      "term": "SSN",
+      "meaning": "یہ 'Social Security Number' کا مخفف ہے، جو کہ ایک امریکی شناختی نمبر ہے۔"
+    },
+    {
+      "term": "DOB",
+      "meaning": "یہ 'Date of Birth' کا مخفف ہے، یعنی تاریخ پیدائش۔"
+    },
+    {
+      "term": "NKDA",
+      "meaning": "یہ 'No Known Drug Allergies' کا مخفف ہے، یعنی کسی دوا سے کوئی معلوم الرجی نہ ہونا۔"
+    },
+    {
+      "term": "COPD",
+      "meaning": "یہ 'Chronic Obstructive Pulmonary Disease' کا مخفف ہے، جو پھیپھڑوں کی ایک دائمی بیماری ہے۔"
+    },
+    {
+      "term": "Advance directive",
+      "meaning": "یہ ایک تحریری دستاویز ہے جس میں بتایا جاتا ہے کہ اگر آپ خود فیصلے کرنے کے قابل نہ رہیں تو آپ کی طبی دیکھ بھال کے بارے میں آپ کی کیا خواہشات ہیں۔"
+    },
+    {
+      "term": "Living will",
+      "meaning": "یہ ایک قسم کی ایڈوانس ڈائریکٹو ہے جو خاص طور پر اس صورتحال سے متعلق ہوتی ہے جب آپ کی زندگی کو بچانے کے لیے طبی علاج کی ضرورت ہو۔"
+    },
+    {
+      "term": "ASSIGNMENT OF BENEFITS",
+      "meaning": "اس کا مطلب ہے کہ آپ اپنے انشورنس کے فوائد براہ راست ہسپتال کو بھیجنے کی اجازت دیتے ہیں۔"
+    }
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "is_form": true,
+  "form_title": "نموذج تسجيل مريض جديد وسجل صحي",
+  "summary": "هذا النموذج هو لجمع معلومات المرضى الجدد عند تسجيلهم في المستشفى أو العيادات الخارجية. يقوم المريض أو ممثله القانوني بملء المعلومات الشخصية، معلومات الاتصال في حالات الطوارئ، تفاصيل التأمين، التاريخ الطبي، والموافقة على العلاج. بعد تقديم النموذج، تتم مراجعته من قبل موظفي المستشفى لتسجيل المريض وبدء ملفه الطبي.",
+  "image_note": "",
+  "documents_needed": [
+    "بطاقة الهوية أو إثبات الشخصية",
+    "بطاقة التأمين الصحي"
+  ],
+  "fields": [
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Legal last name",
+      "label_translated": "اسم العائلة القانوني",
+      "legible": true,
+      "meaning": "اكتب اسم عائلتك القانوني كما هو في وثائقك الرسمية.",
+      "example": "الاسم الأخير",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق اسم العائلة تمامًا مع ما هو موجود في وثائق الهوية الرسمية لتجنب التأخير."
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Legal first name",
+      "label_translated": "الاسم الأول القانوني",
+      "legible": true,
+      "meaning": "اكتب اسمك الأول القانوني كما هو في وثائقك الرسمية.",
+      "example": "الاسم الأول",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق الاسم الأول تمامًا مع ما هو موجود في وثائق الهوية الرسمية لتجنب التأخير."
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "M.I.",
+      "label_translated": "الحرف الأول من الاسم الأوسط",
+      "legible": true,
+      "meaning": "اكتب الحرف الأول من اسمك الأوسط إذا كان لديك واحد.",
+      "example": "أ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Preferred name (if different)",
+      "label_translated": "الاسم المفضل (إذا كان مختلفًا)",
+      "legible": true,
+      "meaning": "اكتب الاسم الذي تفضل أن يناديك به الآخرون إذا كان مختلفًا عن اسمك القانوني.",
+      "example": "اسم الدلع أو الاسم الشائع",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "تاريخ الميلاد (شهر/يوم/سنة)",
+      "legible": true,
+      "meaning": "اكتب تاريخ ميلادك بالترتيب: الشهر، ثم اليوم، ثم السنة. تأكد من استخدام الصيغة الصحيحة.",
+      "example": "12/25/1990",
+      "rejection_risk": true,
+      "rejection_reason": "يجب كتابة التاريخ بالصيغة المطلوبة (شهر/يوم/سنة) لتجنب الأخطاء في التسجيل."
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "الجنس عند الولادة",
+      "legible": true,
+      "meaning": "حدد جنسك عند الولادة بوضع علامة صح في المربع المناسب (ذكر أو أنثى).",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "عدم تحديد الجنس قد يؤدي إلى تأخير في معالجة طلبك."
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Home address (street, apt, city, state, ZIP)",
+      "label_translated": "عنوان المنزل (الشارع، الشقة، المدينة، الولاية، الرمز البريدي)",
+      "legible": true,
+      "meaning": "اكتب عنوان سكنك الحالي بالتفصيل، بما في ذلك رقم الشارع، رقم الشقة إن وجد، المدينة، الولاية، والرمز البريدي.",
+      "example": "123 شارع الأمل، شقة 4B، مدينة السعادة، ولاية الأمان، 12345",
+      "rejection_risk": true,
+      "rejection_reason": "عنوان غير كامل أو غير واضح قد يؤدي إلى صعوبة في التواصل أو إرسال المستندات."
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Primary phone",
+      "label_translated": "رقم الهاتف الأساسي",
+      "legible": true,
+      "meaning": "اكتب رقم هاتفك الأساسي الذي يمكن الاتصال بك عليه.",
+      "example": "555-123-4567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "E-mail",
+      "label_translated": "البريد الإلكتروني",
+      "legible": true,
+      "meaning": "اكتب عنوان بريدك الإلكتروني.",
+      "example": "example@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Preferred language",
+      "label_translated": "اللغة المفضلة",
+      "legible": true,
+      "meaning": "اكتب اللغة التي تفضل التواصل بها.",
+      "example": "العربية",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Interpreter required?",
+      "label_translated": "هل تحتاج إلى مترجم؟",
+      "legible": true,
+      "meaning": "حدد ما إذا كنت بحاجة إلى مترجم للتواصل بلغة أخرى غير اللغة المفضلة لديك.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Marital status",
+      "label_translated": "الحالة الاجتماعية",
+      "legible": true,
+      "meaning": "اختر حالتك الاجتماعية من الخيارات المتاحة (غير مذكورة هنا ولكن عادة ما تكون متزوج، أعزب، مطلق، أرمل).",
+      "example": "متزوج",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "Employer / occupation",
+      "label_translated": "جهة العمل / المهنة",
+      "legible": true,
+      "meaning": "اكتب اسم جهة عملك ومهنتك الحالية.",
+      "example": "مهندس في شركة XYZ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. معلومات المريض",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "رقم الضمان الاجتماعي (آخر 4 أرقام فقط)",
+      "legible": true,
+      "meaning": "اكتب آخر أربعة أرقام من رقم الضمان الاجتماعي الخاص بك إذا كان لديك واحد.",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. جهة الاتصال في حالات الطوارئ / الشخص التالي في العائلة",
+      "label_original": "Name",
+      "label_translated": "الاسم",
+      "legible": true,
+      "meaning": "اكتب اسم شخص يمكن الاتصال به في حالة الطوارئ.",
+      "example": "اسم جهة الاتصال",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. جهة الاتصال في حالات الطوارئ / الشخص التالي في العائلة",
+      "label_original": "Relationship to patient",
+      "label_translated": "صلة القرابة بالمريض",
+      "legible": true,
+      "meaning": "اكتب صلة قرابة هذا الشخص بك (مثل زوج، ابن، صديق).",
+      "example": "زوج",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. جهة الاتصال في حالات الطوارئ / الشخص التالي في العائلة",
+      "label_original": "Phone",
+      "label_translated": "رقم الهاتف",
+      "legible": true,
+      "meaning": "اكتب رقم هاتف جهة الاتصال في حالات الطوارئ.",
+      "example": "555-987-6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "شركة التأمين الأساسية",
+      "legible": true,
+      "meaning": "اكتب اسم شركة التأمين الصحي الأساسية الخاصة بك.",
+      "example": "شركة التأمين الوطنية",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "رقم العضو / المشترك",
+      "legible": true,
+      "meaning": "اكتب رقم عضويتك أو رقم المشترك الخاص بك في خطة التأمين.",
+      "example": "123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Group no.",
+      "label_translated": "رقم المجموعة",
+      "legible": true,
+      "meaning": "اكتب رقم المجموعة الخاص بتأمينك إذا كان لديك واحد (عادة ما يكون في وثائق التأمين الجماعي).",
+      "example": "G12345",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "اسم صاحب الوثيقة (إذا لم يكن المريض)",
+      "legible": true,
+      "meaning": "إذا كان التأمين باسم شخص آخر غيرك (مثل أحد الوالدين أو الزوج)، فاكتب اسمه هنا.",
+      "example": "اسم صاحب الوثيقة",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Policyholder DOB",
+      "label_translated": "تاريخ ميلاد صاحب الوثيقة",
+      "legible": true,
+      "meaning": "اكتب تاريخ ميلاد صاحب وثيقة التأمين إذا كان شخصًا آخر غيرك.",
+      "example": "12/25/1960",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Relationship to patient",
+      "label_translated": "صلة القرابة بالمريض",
+      "legible": true,
+      "meaning": "اكتب صلة قرابة صاحب الوثيقة بك إذا كان شخصًا آخر غيرك.",
+      "example": "زوج",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. التأمين والمسؤولية المالية",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "الدفع الذاتي / غير مؤمن. أتفهم أن مستشارًا ماليًا سيتصل بي بخصوص خيارات الدفع وأهلية الرعاية الخيرية.",
+      "legible": true,
+      "meaning": "إذا كنت تدفع تكاليف العلاج بنفسك أو ليس لديك تأمين، ضع علامة صح هنا. هذا يعني أنك توافق على مناقشة خيارات الدفع والمساعدة المالية المتاحة مع المستشار المالي.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "طبيب الرعاية الأولية (الاسم والعيادة)",
+      "legible": true,
+      "meaning": "اكتب اسم طبيب الرعاية الأولية الخاص بك واسم وعنوان عيادته.",
+      "example": "د. أحمد علي، عيادة الشفاء، شارع الأمل 10",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "الأدوية الحالية، بما في ذلك الأدوية التي لا تستلزم وصفة طبية والمكملات الغذائية (الاسم، الجرعة، عدد المرات)",
+      "legible": true,
+      "meaning": "اذكر جميع الأدوية التي تتناولها حاليًا، بما في ذلك الأدوية التي لا تحتاج لوصفة طبية والفيتامينات أو المكملات. اكتب اسم الدواء، الجرعة، وكم مرة تتناوله.",
+      "example": "باراسيتامول، 500 ملغ، عند الحاجة",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "الحساسية تجاه الأدوية، الطعام أو اللاتكس، ورد الفعل التحسسي",
+      "legible": true,
+      "meaning": "اذكر أي حساسية لديك تجاه أدوية معينة، أطعمة، أو مادة اللاتكس، واشرح كيف يؤثر ذلك عليك (مثل طفح جلدي، صعوبة في التنفس).",
+      "example": "البنسلين - طفح جلدي",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "NKDA",
+      "label_translated": "لا توجد حساسية معروفة للأدوية",
+      "legible": true,
+      "meaning": "إذا لم تكن لديك أي حساسية معروفة تجاه الأدوية، ضع علامة صح هنا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "العمليات الجراحية / الإدخالات في المستشفى السابقة (السنة)",
+      "legible": true,
+      "meaning": "اذكر أي عمليات جراحية أو مرات تم إدخالك فيها إلى المستشفى سابقًا، مع ذكر السنة التي حدثت فيها.",
+      "example": "استئصال الزائدة الدودية - 2010",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Do you have, or have you ever had:",
+      "label_translated": "هل لديك، أو هل سبق أن أصبت بـ:",
+      "legible": true,
+      "meaning": "ضع علامة صح بجانب أي من الحالات الصحية التالية التي لديك أو سبق أن أصبت بها.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Diabetes",
+      "label_translated": "السكري",
+      "legible": true,
+      "meaning": "حدد إذا كنت مصابًا بمرض السكري.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "High blood pressure",
+      "label_translated": "ارتفاع ضغط الدم",
+      "legible": true,
+      "meaning": "حدد إذا كنت تعاني من ارتفاع ضغط الدم.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Heart disease",
+      "label_translated": "أمراض القلب",
+      "legible": true,
+      "meaning": "حدد إذا كنت تعاني من أمراض القلب.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Asthma/COPD",
+      "label_translated": "الربو / مرض الانسداد الرئوي المزمن",
+      "legible": true,
+      "meaning": "حدد إذا كنت تعاني من الربو أو مرض الانسداد الرئوي المزمن.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Kidney disease",
+      "label_translated": "أمراض الكلى",
+      "legible": true,
+      "meaning": "حدد إذا كنت تعاني من أمراض الكلى.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Cancer",
+      "label_translated": "السرطان",
+      "legible": true,
+      "meaning": "حدد إذا كنت قد أُصبت بالسرطان.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Seizures",
+      "label_translated": "نوبات الصرع",
+      "legible": true,
+      "meaning": "حدد إذا كنت تعاني من نوبات الصرع.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "None of these",
+      "label_translated": "لا شيء مما سبق",
+      "legible": true,
+      "meaning": "إذا لم تكن تعاني من أي من الحالات المذكورة أعلاه، ضع علامة صح هنا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Tobacco use",
+      "label_translated": "استخدام التبغ",
+      "legible": true,
+      "meaning": "حدد مدى استخدامك للتبغ (لم تستخدم أبدًا، كنت مدخنًا سابقًا، مدخن حالي).",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Never",
+      "label_translated": "لم أستخدم أبدًا",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا لم تستخدم التبغ مطلقًا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Former",
+      "label_translated": "مدخن سابق",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا كنت قد استخدمت التبغ في الماضي ولكنك توقفت عنه.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Current",
+      "label_translated": "مدخن حالي",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا كنت لا تزال تستخدم التبغ.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "الكحول (عدد المشروبات في الأسبوع)",
+      "legible": true,
+      "meaning": "اذكر عدد المشروبات الكحولية التي تتناولها في الأسبوع.",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Pregnant or possibly pregnant?",
+      "label_translated": "حامل أو يحتمل أن تكوني حامل؟",
+      "legible": true,
+      "meaning": "إذا كنتِ أنثى، حددي ما إذا كنتِ حاملًا أو قد تكونين حاملًا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Yes",
+      "label_translated": "نعم",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا كنتِ حاملًا أو يحتمل أن تكوني حاملًا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "No",
+      "label_translated": "لا",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا لم تكوني حاملًا أو يحتمل أن تكوني حاملًا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "N/A",
+      "label_translated": "غير منطبق",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا كان السؤال غير منطبق عليك (مثل إذا كنت رجلًا).",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Do you have an advance directive or living will?",
+      "label_translated": "هل لديك توجيه مسبق أو وصية حية؟",
+      "legible": true,
+      "meaning": "حدد ما إذا كان لديك أي وثائق قانونية تحدد رغباتك الطبية في حال عدم قدرتك على اتخاذ القرارات بنفسك.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Yes (please provide a copy)",
+      "label_translated": "نعم (يرجى تقديم نسخة)",
+      "legible": true,
+      "meaning": "إذا كانت لديك وثيقة توجيه مسبق أو وصية حية، اختر هذا الخيار وقدم نسخة منها.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "No",
+      "label_translated": "لا",
+      "legible": true,
+      "meaning": "اختر هذا الخيار إذا لم يكن لديك توجيه مسبق أو وصية حية.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. التاريخ الطبي",
+      "label_original": "Would like information",
+      "label_translated": "أود الحصول على معلومات",
+      "legible": true,
+      "meaning": "إذا كنت ترغب في معرفة المزيد عن التوجيهات المسبقة أو الوصايا الحية، ضع علامة صح هنا.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. الموافقة والإقرارات",
+      "label_original": "Initials",
+      "label_translated": "الأحرف الأولى",
+      "legible": true,
+      "meaning": "اكتب الأحرف الأولى من اسمك هنا لتأكيد قراءتك وفهمك لبنود الموافقة على العلاج وتفويض المنافع.",
+      "example": "أ.ب.",
+      "rejection_risk": true,
+      "rejection_reason": "عدم وضع الأحرف الأولى قد يعني عدم الموافقة على الشروط، مما يؤدي إلى تأخير أو رفض الخدمة."
+    },
+    {
+      "section": "5. الموافقة والإقرارات",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "توقيع المريض أو الممثل القانوني",
+      "legible": true,
+      "meaning": "وقع هنا لتأكيد أنك قرأت وفهمت جميع المعلومات الواردة في هذا النموذج وأنك توافق على الشروط المذكورة.",
+      "example": "توقيع المريض",
+      "rejection_risk": true,
+      "rejection_reason": "التوقيع ضروري لإتمام الموافقة على العلاج وتفويض المنافع. عدم التوقيع قد يؤدي إلى رفض الخدمة."
+    },
+    {
+      "section": "5. الموافقة والإقرارات",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "الاسم المطبوع وصلة القرابة، إذا لم يكن المريض",
+      "legible": true,
+      "meaning": "اكتب اسمك مطبوعًا وصلة قرابتك إذا كنت تمثل المريض قانونيًا.",
+      "example": "اسم الممثل القانوني، ابن",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. الموافقة والإقرارات",
+      "label_original": "Date",
+      "label_translated": "التاريخ",
+      "legible": true,
+      "meaning": "اكتب التاريخ الذي قمت فيه بالتوقيع على هذا النموذج.",
+      "example": "12/25/2023",
+      "rejection_risk": true,
+      "rejection_reason": "عدم كتابة التاريخ قد يجعل الموافقة غير صالحة أو يؤدي إلى تأخير في معالجة الطلب."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "M.I.",
+      "meaning": "اختصار لـ Middle Initial، ويعني الحرف الأول من الاسم الأوسط للشخص."
+    },
+    {
+      "term": "SSN",
+      "meaning": "اختصار لـ Social Security Number، وهو رقم الضمان الاجتماعي في الولايات المتحدة الأمريكية."
+    },
+    {
+      "term": "Policyholder",
+      "meaning": "الشخص الذي يحمل وثيقة التأمين ويدفع أقساطها."
+    },
+    {
+      "term": "DOB",
+      "meaning": "اختصار لـ Date of Birth، ويعني تاريخ الميلاد."
+    },
+    {
+      "term": "COPD",
+      "meaning": "اختصار لـ Chronic Obstructive Pulmonary Disease، وهو مرض رئوي مزمن يؤثر على التنفس."
+    },
+    {
+      "term": "Advance directive",
+      "meaning": "وثيقة قانونية تحدد رغبات المريض الطبية في حال عدم قدرته على اتخاذ القرارات بنفسه، مثل الوصية الحية."
+    },
+    {
+      "term": "Living will",
+      "meaning": "نوع من التوجيهات المسبقة يحدد العلاجات الطبية التي يرغب المريض في تلقيها أو رفضها في حالات معينة."
+    },
+    {
+      "term": "ASSIGNMENT OF BENEFITS",
+      "meaning": "تفويض المنافع: هو اتفاق يسمح لمقدمي الرعاية الصحية بتلقي مدفوعات التأمين مباشرة من شركة التأمين."
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "is_form": true,
+  "form_title": "طلب تأشيرة إقامة قصيرة",
+  "summary": "هذا النموذج هو طلب للحصول على تأشيرة إقامة قصيرة. عادةً ما يملأه الأفراد الذين يرغبون في زيارة جمهورية ميريديا لفترة قصيرة. بعد تقديم الطلب، تتم مراجعته من قبل مسؤولي الهجرة أو القنصلية، وقد يتم تحديد موعد للمقابلة أو إصدار قرار بشأن التأشيرة.",
+  "image_note": "",
+  "documents_needed": [
+    "صورة شخصية حديثة",
+    "جواز سفر",
+    "وثائق داعمة"
+  ],
+  "fields": [
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. اسم العائلة (أسماء العائلة) *",
+      "legible": true,
+      "meaning": "اكتب اسم عائلتك كما هو مكتوب في جواز سفرك. يجب كتابة الأحرف الكبيرة.",
+      "example": "أحمد",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق الاسم تمامًا مع الاسم الموجود في جواز السفر."
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. اسم العائلة عند الولادة (أسماء العائلة السابقة) *",
+      "legible": true,
+      "meaning": "اكتب اسم عائلتك السابق إذا كان مختلفًا عن اسم عائلتك الحالي. يجب كتابة الأحرف الكبيرة.",
+      "example": "محمد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. الاسم الأول (الأسماء الأولى) *",
+      "legible": true,
+      "meaning": "اكتب اسمك الأول (أسماءك الأولى) كما هو مكتوب في جواز سفرك. يجب كتابة الأحرف الكبيرة.",
+      "example": "علي",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق الاسم تمامًا مع الاسم الموجود في جواز السفر."
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. تاريخ الميلاد (يوم-شهر-سنة) *",
+      "legible": true,
+      "meaning": "اكتب تاريخ ميلادك بالترتيب يوم-شهر-سنة.",
+      "example": "01-01-2000",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة)."
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. مكان الميلاد *",
+      "legible": true,
+      "meaning": "اكتب المدينة والبلد الذي ولدت فيه.",
+      "example": "القاهرة، مصر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. بلد الميلاد *",
+      "legible": true,
+      "meaning": "اكتب اسم البلد الذي ولدت فيه.",
+      "example": "مصر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. الجنسية الحالية *",
+      "legible": true,
+      "meaning": "اكتب جنسيتك الحالية.",
+      "example": "مصري",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. الجنسية عند الولادة، إذا كانت مختلفة",
+      "legible": true,
+      "meaning": "اكتب جنسيتك عند الولادة إذا كانت مختلفة عن جنسيتك الحالية.",
+      "example": "لا يوجد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "9. Sex *",
+      "label_translated": "9. الجنس *",
+      "legible": true,
+      "meaning": "حدد جنسك (ذكر أو أنثى).",
+      "example": "ذكر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. الحالة المدنية *",
+      "legible": true,
+      "meaning": "حدد حالتك المدنية (أعزب، متزوج، منفصل، مطلق، أرمل/أرملة).",
+      "example": "متزوج",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء أ - التفاصيل الشخصية",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. سلطة الوالدين (في حالة القاصرين) / الوصي القانوني: اسم العائلة، الاسم الأول، العنوان، الهاتف، البريد الإلكتروني والجنسية",
+      "legible": true,
+      "meaning": "إذا كان مقدم الطلب قاصرًا، يجب تقديم تفاصيل الوالدين أو الوصي القانوني، بما في ذلك الاسم والعنوان ورقم الهاتف والبريد الإلكتروني والجنسية.",
+      "example": "الاسم: خالد علي، العنوان: شارع الحرية، القاهرة، الهاتف: 01001234567، البريد الإلكتروني: khaled.ali@email.com، الجنسية: مصري",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. نوع وثيقة السفر *",
+      "legible": true,
+      "meaning": "حدد نوع وثيقة السفر التي ستستخدمها (جواز سفر عادي، جواز سفر دبلوماسي، خدمة، أو أخرى مع تحديد النوع).",
+      "example": "جواز سفر عادي",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. رقم وثيقة السفر *",
+      "legible": true,
+      "meaning": "اكتب رقم جواز سفرك أو وثيقة السفر الأخرى.",
+      "example": "A12345678",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون رقم وثيقة السفر صحيحًا وكاملاً."
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. تاريخ الإصدار *",
+      "legible": true,
+      "meaning": "اكتب تاريخ إصدار وثيقة السفر الخاصة بك بالترتيب يوم-شهر-سنة.",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة)."
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. صالح حتى *",
+      "legible": true,
+      "meaning": "اكتب تاريخ انتهاء صلاحية وثيقة السفر الخاصة بك بالترتيب يوم-شهر-سنة.",
+      "example": "01-01-2030",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة) وأن تكون الوثيقة صالحة لمدة الرحلة."
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. صادر عن (بلد) *",
+      "legible": true,
+      "meaning": "اكتب اسم البلد الذي أصدر وثيقة السفر الخاصة بك.",
+      "example": "مصر",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. عنوان سكن مقدم الطلب وعنوان بريده الإلكتروني *",
+      "legible": true,
+      "meaning": "اكتب عنوان سكنك الكامل ورقم هاتفك وعنوان بريدك الإلكتروني.",
+      "example": "العنوان: 123 شارع النيل، القاهرة، مصر. البريد الإلكتروني: your.email@example.com",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون العنوان كاملاً وصحيحًا لتلقي المراسلات."
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. رقم (أرقام) الهاتف *",
+      "legible": true,
+      "meaning": "اكتب رقم هاتفك أو أرقام الهواتف التي يمكن الاتصال بك عليها.",
+      "example": "+201001234567",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون رقم الهاتف صحيحًا ويمكن الوصول إليه."
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. الإقامة في بلد آخر غير بلد الجنسية الحالية",
+      "legible": true,
+      "meaning": "حدد ما إذا كنت تقيم حاليًا في بلد غير بلد جنسيتك الحالية. إذا كانت الإجابة نعم، قدم تفاصيل تصريح الإقامة أو ما يعادله.",
+      "example": "لا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. المهنة الحالية *",
+      "legible": true,
+      "meaning": "اكتب مهنتك الحالية.",
+      "example": "مهندس",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ب - وثيقة السفر",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. صاحب العمل وعنوانه ورقم هاتفه. للطلاب، اسم وعنوان المؤسسة التعليمية *",
+      "legible": true,
+      "meaning": "إذا كنت موظفًا، قدم تفاصيل صاحب العمل. إذا كنت طالبًا، قدم تفاصيل المؤسسة التعليمية.",
+      "example": "اسم صاحب العمل: شركة XYZ، العنوان: 456 شارع الأعمال، دبي، الإمارات العربية المتحدة، الهاتف: +97141234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. الغرض (الأغراض) الرئيسية من الرحلة *",
+      "legible": true,
+      "meaning": "حدد الغرض الرئيسي من رحلتك إلى جمهورية ميريديا (سياحة، عمل، زيارة عائلية، زيارة رسمية، أسباب طبية، دراسة، أخرى مع تحديد).",
+      "example": "سياحة",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. عدد مرات الدخول المطلوبة *",
+      "legible": true,
+      "meaning": "حدد عدد مرات الدخول التي تحتاجها إلى جمهورية ميريديا (دخول واحد، دخولين، دخول متعدد).",
+      "example": "دخول متعدد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. تاريخ الوصول المقصود *",
+      "legible": true,
+      "meaning": "اكتب التاريخ الذي تنوي الوصول فيه إلى جمهورية ميريديا بالترتيب يوم-شهر-سنة.",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة)."
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. تاريخ المغادرة المقصود *",
+      "legible": true,
+      "meaning": "اكتب التاريخ الذي تنوي المغادرة فيه من جمهورية ميريديا بالترتيب يوم-شهر-سنة.",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة) وأن يكون تاريخ المغادرة بعد تاريخ الوصول."
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. التأشيرات الصادرة عن جمهورية ميريديا خلال السنوات الثلاث الماضية",
+      "legible": true,
+      "meaning": "حدد ما إذا كنت قد حصلت على تأشيرات من جمهورية ميريديا خلال السنوات الثلاث الماضية. إذا كانت الإجابة نعم، قدم تواريخ صلاحية التأشيرات.",
+      "example": "لا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. بصمات الأصابع تم جمعها سابقًا لغرض التقدم بطلب للحصول على تأشيرة",
+      "legible": true,
+      "meaning": "حدد ما إذا تم جمع بصمات أصابعك سابقًا لغرض طلب تأشيرة. إذا كانت الإجابة نعم، قدم التاريخ إذا كان معروفًا.",
+      "example": "لا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. اسم العائلة والاسم الأول للشخص (الأشخاص) الداعي (الداعين) في ميريديا. إذا لم يكن ذلك منطبقًا، اسم الفندق (الفنادق) أو مكان الإقامة المؤقت (الإقامات) *",
+      "legible": true,
+      "meaning": "إذا كنت ستزور شخصًا ما، قدم اسمه وعنوانه. إذا كنت ستقيم في فندق، قدم اسم الفندق وعنوانه.",
+      "example": "اسم الفندق: فندق النيل، العنوان: 789 شارع الكورنيش، ميريديا سيتي",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. عنوان البريد الإلكتروني للشخص (الأشخاص) الداعي (الداعين) / الفندق (الفنادق) *",
+      "legible": true,
+      "meaning": "قدم عنوان البريد الإلكتروني للشخص الذي يدعوك أو للفندق الذي ستقيم فيه.",
+      "example": "info@hotel-nile.meridia",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء ج - الرحلة",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. تكلفة السفر والمعيشة أثناء إقامة مقدم الطلب مغطاة *",
+      "legible": true,
+      "meaning": "حدد كيف سيتم تغطية تكاليف سفرك وإقامتك. يمكنك اختيار مقدم الطلب نفسه، أو كفيل (شخص، شركة، منظمة)، مع تحديد وسيلة الدعم (نقد، شيكات مسافر، بطاقة ائتمان، إقامة مدفوعة مسبقًا، نقل مدفوع مسبقًا).",
+      "example": "من قبل مقدم الطلب نفسه",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "الجزء د - إقرار",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. المكان والتاريخ *",
+      "legible": true,
+      "meaning": "اكتب المدينة التي تملأ فيها هذا النموذج والتاريخ الحالي بالترتيب يوم-شهر-سنة.",
+      "example": "القاهرة، 01-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون تنسيق التاريخ صحيحًا (يوم-شهر-سنة) وأن يكون المكان صحيحًا."
+    },
+    {
+      "section": "الجزء د - إقرار",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. التوقيع * (توقيع الوالد / الوصي القانوني، إذا كان منطبقًا)",
+      "legible": true,
+      "meaning": "وقع هنا. إذا كان مقدم الطلب قاصرًا، يجب أن يوقع الوالد أو الوصي القانوني.",
+      "example": "توقيع مقدم الطلب",
+      "rejection_risk": true,
+      "rejection_reason": "التوقيع ضروري لإتمام الطلب."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "SHORT-STAY VISA",
+      "meaning": "تأشيرة الإقامة القصيرة: تصريح يسمح لحامله بالبقاء في بلد ما لفترة زمنية محدودة، عادةً للسياحة أو الأعمال التجارية أو زيارة الأقارب."
+    },
+    {
+      "term": "IMMIGRATION AND CONSULAR AFFAIRS",
+      "meaning": "شؤون الهجرة والقنصلية: القسم الحكومي المسؤول عن تنظيم دخول وخروج الأجانب من البلاد وإدارة شؤون المواطنين في الخارج."
+    },
+    {
+      "term": "BLOCK CAPITALS",
+      "meaning": "الأحرف الكبيرة: كتابة جميع الحروف باللغة الإنجليزية بشكل كبير (مثل A, B, C) بدلاً من الأحرف الصغيرة (مثل a, b, c)."
+    },
+    {
+      "term": "MINORS",
+      "meaning": "القاصرون: الأشخاص الذين لم يبلغوا السن القانوني بعد، وعادة ما يكونون تحت سن 18 عامًا."
+    },
+    {
+      "term": "LEGAL GUARDIAN",
+      "meaning": "الوصي القانوني: الشخص الذي يعينه القانون لرعاية قاصر أو شخص غير قادر على رعاية نفسه."
+    },
+    {
+      "term": "CIVIL STATUS",
+      "meaning": "الحالة المدنية: الحالة الاجتماعية للشخص، مثل أعزب، متزوج، مطلق، أو أرمل."
+    },
+    {
+      "term": "TRAVEL DOCUMENT",
+      "meaning": "وثيقة السفر: وثيقة رسمية تسمح لحاملها بالسفر دوليًا، مثل جواز السفر."
+    },
+    {
+      "term": "APPLICANT",
+      "meaning": "مقدم الطلب: الشخص الذي يقدم طلبًا للحصول على شيء ما، في هذه الحالة، تأشيرة."
+    }
+  ]
+}
