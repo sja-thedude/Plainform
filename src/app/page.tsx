@@ -82,9 +82,7 @@ export default function Home() {
         state: "error",
         message: offline
           ? "Couldn't reach Plainform. Check your internet connection and try again."
-          : e instanceof Error
-            ? e.message
-            : "Something went wrong. Please try again.",
+          : plainError(e, "Something went wrong. Please try again."),
       });
     }
   }, []);
@@ -110,7 +108,7 @@ export default function Home() {
       run(src, langCode);
     } catch (e) {
       setSource(null);
-      setStatus({ state: "error", message: e instanceof Error ? e.message : "Could not open that file." });
+      setStatus({ state: "error", message: plainError(e, "Could not open that file.") });
       requestAnimationFrame(() => resultRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }));
     }
   }
@@ -484,6 +482,13 @@ async function readExplanationStream(
     }
   }
   throw new Error("The connection dropped before the explanation finished. Please try again.");
+}
+
+// Browser errors (a file moved or removed after it was picked, for example)
+// carry technical messages, so they get a plain one instead.
+function plainError(e: unknown, fallback: string): string {
+  if (e instanceof DOMException) return "That file couldn't be read. Please choose it again.";
+  return e instanceof Error ? e.message : fallback;
 }
 
 // Everything is turned into a JPEG in the browser before upload. Images are
