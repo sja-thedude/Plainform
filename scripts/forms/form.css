@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #fbfaf6; }
+body { width: 1240px; padding: 56px 64px; font-family: "Times New Roman", Times, serif; color: #111; font-size: 19px; }
+.top { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 3px double #111; padding-bottom: 12px; }
+.top h1 { font-size: 30px; margin: 0; letter-spacing: .5px; }
+.top .sub { font-size: 17px; margin-top: 4px; }
+.ref { font-family: Arial, sans-serif; font-size: 13px; text-align: right; }
+.photo { width: 150px; height: 190px; border: 1.5px solid #111; font-family: Arial, sans-serif; font-size: 12px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 8px; }
+.note { font-size: 15px; font-style: italic; margin: 10px 0 4px; }
+h2 { font-family: Arial, sans-serif; font-size: 16px; background: #222; color: #fff; padding: 5px 10px; margin: 18px 0 0; text-transform: uppercase; letter-spacing: .6px; }
+table { width: 100%; border-collapse: collapse; }
+td { border: 1.3px solid #111; padding: 6px 9px 24px; vertical-align: top; font-size: 16px; }
+td .n { font-family: Arial, sans-serif; font-weight: bold; margin-right: 4px; }
+td.office { background: repeating-linear-gradient(45deg,#eee,#eee 6px,#ddd 6px,#ddd 12px); }
+.box { display: inline-block; width: 15px; height: 15px; border: 1.3px solid #111; vertical-align: -2px; margin: 0 4px 0 12px; }
+.clause { font-size: 15.5px; line-height: 1.45; text-align: justify; }
+.initials { display: inline-block; border: 1.3px solid #111; width: 120px; height: 34px; vertical-align: middle; margin-left: 8px; }
+.foot { margin-top: 18px; font-family: Arial, sans-serif; font-size: 12px; display: flex; justify-content: space-between; color: #444; }
+.sample { position: fixed; top: 18px; left: 50%; transform: translateX(-50%); font-family: Arial, sans-serif; font-size: 12px; letter-spacing: 2px; color: #a00; border: 1px solid #a00; padding: 2px 10px; }
