@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { OpenRouterError } from "@/lib/openrouter";
 import { AskRefusal, AskRequestSchema, streamAnswer } from "@/lib/ask";
 import { getLanguage } from "@/lib/languages";
 
@@ -38,8 +38,8 @@ export async function POST(req: Request) {
 }
 
 function errorMessage(e: unknown): string {
-  if (e instanceof Anthropic.RateLimitError) return "Too many questions right now. Please try again in a minute.";
-  if (e instanceof Anthropic.APIError) {
+  if (e instanceof OpenRouterError && e.status === 429) return "Too many questions right now. Please try again in a minute.";
+  if (e instanceof OpenRouterError) {
     console.error(`Model API error ${e.status}`);
     return "Answers are unavailable right now. Please try again.";
   }

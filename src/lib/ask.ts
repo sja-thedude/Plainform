@@ -1,6 +1,6 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import type { Language } from "./languages";
+import { streamChat, type ChatMessage } from "./openrouter";
 import { ExplanationSchema } from "./schema";
 
 export const AskRequestSchema = z.object({
@@ -15,8 +15,6 @@ export const AskRequestSchema = z.object({
 export type AskRequest = z.infer<typeof AskRequestSchema>;
 
 export class AskRefusal extends Error {}
-
-let client: Anthropic | undefined;
 
 function systemPrompt(lang: Language): string {
   return `You help someone understand an official form they are looking at. You already explained the form; the explanation is given below as JSON. Now answer their follow-up question.
@@ -36,8 +34,8 @@ export async function streamAnswer(
   onText: (delta: string, restart: boolean) => void,
   signal?: AbortSignal,
 ): Promise<void> {
-  client ??= new Anthropic();
-  const messages: Anthropic.Beta.BetaMessageParam[] = [
+  const messages: ChatMessage[] = [
+    { role: "system", content: systemPrompt(lang) },
     {
       role: "user",
       content: `The form, as already explained:\n${JSON.stringify(req.form)}\n\nMy question: ${req.history[0]?.q ?? req.question}`,
@@ -49,22 +47,8 @@ export async function streamAnswer(
     messages.push({ role: "user", content: req.history[i + 1]?.q ?? req.question });
   });
 
-  const stream = client.beta.messages.stream(
-    {
-      model: "claude-opus-5-5",
-      max_tokens: 4000,
-      betas: ["server-side-fallback-2026-07-01"],
-      fallbacks: "default",
-      thinking: { type: "adaptive" },
-      output_config: { effort: "low" },
-      system: systemPrompt(lang),
-      messages,
-    },
-    { signal },
-  );
-  stream.on("text", (delta, snapshot) => onText(delta, snapshot.length === delta.length));
-  const message = await stream.finalMessage();
-  if (message.stop_reason === "refusal") {
+  const { finishReason } = await streamChat({ max_tokens: 1200, temperature: 0.3, messages }, onText, signal);
+  if (finishReason === "content_filter") {
     throw new AskRefusal("That question couldn't be answered. Try asking it a different way.");
   }
 }

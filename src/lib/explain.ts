@@ -1,10 +1,8 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { EXPLANATION_JSON_SCHEMA, ExplanationSchema, type Explanation } from "./schema";
 import type { Language } from "./languages";
+import { streamChat } from "./openrouter";
 
 export const IMAGE_TYPES = ["image/jpeg", "image/png", "image/webp", "image/gif"] as const;
-type ImageType = (typeof IMAGE_TYPES)[number];
-
 export class ExplainError extends Error {
   constructor(
     message: string,
@@ -13,8 +11,6 @@ export class ExplainError extends Error {
     super(message);
   }
 }
-
-let client: Anthropic | undefined;
 
 function systemPrompt(lang: Language): string {
   return `You help people understand official forms (visa and government applications, hospital intake, tenancy agreements, school enrolment, bank account opening) that are written in bureaucratic language or in a language they do not read well.
@@ -52,9 +48,8 @@ export async function explainForm(bytes: Uint8Array, mediaType: string, lang: La
 }
 
 // Streams the raw JSON text as the model writes it, then returns the
-// validated result. `restart` is true when a new text block begins, which
-// happens if a fallback model takes over mid-answer: the client must then
-// discard what it has so far.
+// validated result. `restart` is true when the fallback model takes over
+// mid-answer: the client must then discard what it has so far.
 export async function streamExplanation(
   bytes: Uint8Array,
   mediaType: string,
@@ -66,54 +61,52 @@ export async function streamExplanation(
   if (!(IMAGE_TYPES as readonly string[]).includes(mediaType)) {
     throw new ExplainError("Please upload a JPG, PNG or PDF.", 415);
   }
-  const fileBlock: Anthropic.Beta.BetaContentBlockParam = {
-    type: "image",
-    source: {
-      type: "base64",
-      media_type: mediaType as ImageType,
-      data: Buffer.from(bytes).toString("base64"),
-    },
-  };
+  const image = `data:${mediaType};base64,${Buffer.from(bytes).toString("base64")}`;
 
-  client ??= new Anthropic();
-  const stream = client.beta.messages.stream(
+  const { text, finishReason } = await streamChat(
     {
-      model: "claude-opus-5-5",
-      max_tokens: 32000,
-      betas: ["server-side-fallback-2026-07-01"],
-      fallbacks: "default",
-      thinking: { type: "adaptive" },
-      output_config: {
-        effort: "medium",
-        format: { type: "json_schema", schema: EXPLANATION_JSON_SCHEMA },
+      max_tokens: 16000,
+      temperature: 0.2,
+      response_format: {
+        type: "json_schema",
+        json_schema: { name: "form_explanation", strict: true, schema: EXPLANATION_JSON_SCHEMA },
       },
-      system: systemPrompt(lang),
       messages: [
+        { role: "system", content: systemPrompt(lang) },
         {
           role: "user",
-          content: [fileBlock, { type: "text", text: `Explain this form in ${lang.english}.` }],
+          content: [
+            { type: "image_url", image_url: { url: image } },
+            { type: "text", text: `Explain this form in ${lang.english}. Reply with the JSON object only.` },
+          ],
         },
       ],
     },
-    { signal },
+    onText,
+    signal,
   );
-  stream.on("text", (delta, snapshot) => onText(delta, snapshot.length === delta.length));
-  const message = await stream.finalMessage();
 
-  if (message.stop_reason === "refusal") {
+  if (finishReason === "content_filter") {
     throw new ExplainError("This page could not be explained. Try a clearer photo of a form.", 422);
   }
-  if (message.stop_reason === "max_tokens") {
+  if (finishReason === "length") {
     throw new ExplainError("This page has too many fields to explain at once.", 422);
   }
 
-  const text = message.content
-    .filter((b) => b.type === "text")
-    .map((b) => b.text)
-    .join("");
-  const parsed = ExplanationSchema.safeParse(JSON.parse(text));
+  let json: unknown;
+  try {
+    json = JSON.parse(stripFence(text));
+  } catch {
+    throw new ExplainError("The explanation came back incomplete. Please try again.", 502);
+  }
+  const parsed = ExplanationSchema.safeParse(json);
   if (!parsed.success) {
     throw new ExplainError("The explanation came back incomplete. Please try again.", 502);
   }
   return parsed.data;
+}
+
+// Some models wrap JSON in a markdown code fence despite the schema.
+export function stripFence(text: string): string {
+  return text.trim().replace(/^```(?:json)?\s*/, "").replace(/\s*```$/, "");
 }

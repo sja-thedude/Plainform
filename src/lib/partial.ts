@@ -6,7 +6,8 @@ import type { Explanation, Field } from "./schema";
 export function parsePartial(text: string): Explanation | null {
   let raw: Partial<Record<keyof Explanation, unknown>>;
   try {
-    raw = parse(text, Allow.ALL);
+    // Tolerate a model that opens with a markdown code fence.
+    raw = parse(text.replace(/^\s*```(?:json)?\s*/, "").replace(/\s*```\s*$/, ""), Allow.ALL);
   } catch {
     return null;
   }

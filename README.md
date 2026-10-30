@@ -37,13 +37,13 @@ Plainform explains what a field asks for. It does not tell anyone what to write,
 
 ## Run it locally
 
-Requirements: Node.js 22 or later and an Anthropic API key.
+Requirements: Node.js 22 or later and an OpenRouter API key.
 
 ```bash
 git clone https://github.com/sja-thedude/Plainform.git
 cd Plainform
 npm install
-cp .env.example .env.local   # then put your key in .env.local
+cp .env.example .env.local   # then put your OpenRouter key in .env.local
 npm run dev
 ```
 
@@ -53,7 +53,11 @@ Open http://localhost:3000.
 
 | Name | Purpose |
 | --- | --- |
-| `ANTHROPIC_API_KEY` | Key for the Claude API, used to read the form image. |
+| `OPENROUTER_API_KEY` | OpenRouter key, used to read the form image and answer follow-up questions. |
+| `OPENROUTER_MODEL` | Vision model to use. Optional, defaults to `google/gemini-2.5-flash-lite`. |
+| `OPENROUTER_FALLBACK_MODEL` | Second model, used if the first fails or gets stuck. Optional, defaults to `google/gemma-4-26b-a4b-it`. |
+
+Any OpenRouter model that accepts images and supports structured output can be swapped in without a code change.
 
 ## Deploy
 
@@ -61,7 +65,9 @@ Plainform runs on Cloudflare Workers through the OpenNext adapter.
 
 ```bash
 npx wrangler login
-npx wrangler secret put ANTHROPIC_API_KEY
+npx wrangler secret put OPENROUTER_API_KEY
+npx wrangler secret put OPENROUTER_MODEL            # optional
+npx wrangler secret put OPENROUTER_FALLBACK_MODEL   # optional
 npm run deploy
 ```
 
@@ -71,7 +77,7 @@ npm run deploy
 
 - Next.js 15 (App Router) and TypeScript
 - Tailwind CSS 4, no component library
-- Claude API (`claude-opus-5-5`) with vision and structured JSON output to read the form
+- OpenRouter (OpenAI-compatible chat completions, streamed over SSE) with a vision model and a strict JSON schema to read the form; Gemini 2.5 Flash Lite by default, Gemma 4 as the fallback
 - pdf.js in the browser to turn the first page of a PDF into an image
 - Noto fonts for Arabic (Naskh), Urdu (Nastaliq), Devanagari and Bengali
 - Cloudflare Workers via `@opennextjs/cloudflare`, deployed with Wrangler
@@ -79,8 +85,8 @@ npm run deploy
 ## How it works
 
 1. The browser resizes the photo and re-encodes it as JPEG. HEIC photos from iPhones are converted on browsers that can decode them. PDFs are opened in the browser with pdf.js and only their first page is drawn and sent, as an image.
-2. `POST /api/explain` sends the page to Claude with instructions to list every field in reading order, explain it in the chosen language, flag known rejection risks, mark anything it cannot read as unreadable, and never give advice.
-3. The response is a fixed JSON schema. It streams to the browser as newline-delimited events and is parsed as it arrives, so cards appear while Claude is still writing. The finished result is validated on the server before the final event. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
+2. `POST /api/explain` sends the page to the model through OpenRouter, as a base64 image, with instructions to list every field in reading order, explain it in the chosen language, flag known rejection risks, mark anything it cannot read as unreadable, and never give advice.
+3. The response is a fixed JSON schema. It streams to the browser as newline-delimited events and is parsed as it arrives, so cards appear while the model is still writing. If the first model fails or gets stuck part way, the fallback model takes over and the browser starts again cleanly. The finished result is validated on the server before the final event. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
 4. The three sample forms have pre-computed results in `public/samples/results/`, so the demo loads instantly.
 
 ## Project layout
@@ -89,7 +95,8 @@ npm run deploy
 src/app/page.tsx              the single page: language picker, upload, camera, samples
 src/app/api/explain/route.ts  upload endpoint, streams the explanation, in memory only
 src/app/api/ask/route.ts      follow-up questions, stateless
-src/lib/explain.ts            prompt and Claude call
+src/lib/explain.ts            prompt and form reading call
+src/lib/openrouter.ts         OpenRouter streaming client with fallback
 src/lib/languages.ts          supported languages and translated interface text
 src/components/Result.tsx     summary, documents, field cards, key terms, read aloud
 src/components/AskPanel.tsx   follow-up question chat
