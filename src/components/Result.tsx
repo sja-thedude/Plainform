@@ -3,6 +3,9 @@
 import { useState } from "react";
 import type { Explanation, Field } from "@/lib/schema";
 import type { Language } from "@/lib/languages";
+import { useSpeech } from "@/lib/useSpeech";
+
+type Speech = ReturnType<typeof useSpeech>;
 
 // The display serif only covers Latin script.
 const LATIN = new Set(["en", "fr", "es", "tl"]);
@@ -10,6 +13,7 @@ const LATIN = new Set(["en", "fr", "es", "tl"]);
 export function Result({ data, lang, streaming = false }: { data: Explanation; lang: Language; streaming?: boolean }) {
   const t = lang.ui;
   const [onlyRisky, setOnlyRisky] = useState(false);
+  const speech = useSpeech(lang.code);
   const risky = data.fields.filter((f) => f.rejection_risk).length;
   const unclear = data.fields.filter((f) => !f.legible).length;
   const shown = onlyRisky ? data.fields.filter((f) => f.rejection_risk) : data.fields;
@@ -21,7 +25,16 @@ export function Result({ data, lang, streaming = false }: { data: Explanation; l
       <section className="rise overflow-hidden rounded-2xl border border-line bg-surface shadow-card">
         <div className="h-1.5 bg-accent" />
         <div className="p-5 sm:p-6">
-          <p className="text-sm font-semibold text-accent">{data.is_form ? t.summary : t.notAForm}</p>
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-sm font-semibold text-accent">{data.is_form ? t.summary : t.notAForm}</p>
+            <SpeakButton
+              id="summary"
+              text={`${data.form_title}. ${data.summary}`}
+              speech={speech}
+              lang={lang}
+              withLabel
+            />
+          </div>
           <h2 className={`mt-1 text-2xl font-bold leading-snug text-ink ${LATIN.has(lang.code) ? "font-display" : ""}`}>
             {data.form_title}
           </h2>
@@ -117,7 +130,7 @@ export function Result({ data, lang, streaming = false }: { data: Explanation; l
               )}
               <ol className="space-y-3">
                 {fields.map((f) => (
-                  <FieldCard key={index} field={f} lang={lang} order={index++} />
+                  <FieldCard key={index} field={f} lang={lang} order={index++} speech={speech} />
                 ))}
               </ol>
             </div>
@@ -167,8 +180,17 @@ export function Result({ data, lang, streaming = false }: { data: Explanation; l
   );
 }
 
-function FieldCard({ field, lang, order }: { field: Field; lang: Language; order: number }) {
+function FieldCard({ field, lang, order, speech }: { field: Field; lang: Language; order: number; speech: Speech }) {
   const t = lang.ui;
+  const id = `field-${order}`;
+  const spoken = [
+    field.label_translated || field.label_original,
+    field.meaning,
+    field.example && `${t.example}: ${field.example}`,
+    field.rejection_risk && `${t.risk}. ${field.rejection_reason}`,
+  ]
+    .filter(Boolean)
+    .join(". ");
   const showTranslated = field.label_translated && field.label_translated !== field.label_original;
   const accentEdge = field.rejection_risk
     ? "border-s-4 border-s-danger-line"
@@ -179,13 +201,18 @@ function FieldCard({ field, lang, order }: { field: Field; lang: Language; order
   return (
     <li
       style={{ animationDelay: `${Math.min(order, 12) * 45}ms` }}
-      className={`field-card rise rounded-2xl border border-line bg-surface p-4 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5 print:hover:translate-y-0 ${accentEdge}`}
+      className={`field-card rise rounded-2xl border bg-surface p-4 shadow-card transition hover:-translate-y-0.5 hover:shadow-lg sm:p-5 print:hover:translate-y-0 ${accentEdge} ${
+        speech.speakingId === id ? "border-accent ring-2 ring-accent/40" : "border-line"
+      }`}
     >
       {/* The printed label keeps its own direction: an English label inside
           an Arabic explanation must still read left to right. */}
-      <p dir="auto" className="font-mono text-[13px] leading-snug text-ink-3">
-        {field.label_original}
-      </p>
+      <div className="flex items-start justify-between gap-3">
+        <p dir="auto" className="min-w-0 font-mono text-[13px] leading-snug text-ink-3">
+          {field.label_original}
+        </p>
+        <SpeakButton id={id} text={spoken} speech={speech} lang={lang} />
+      </div>
       {showTranslated && <p className="mt-1 text-lg font-semibold leading-snug text-ink">{field.label_translated}</p>}
 
       {!field.legible && (
@@ -215,6 +242,53 @@ function FieldCard({ field, lang, order }: { field: Field; lang: Language; order
         )}
       </dl>
     </li>
+  );
+}
+
+function SpeakButton({
+  id,
+  text,
+  speech,
+  lang,
+  withLabel = false,
+}: {
+  id: string;
+  text: string;
+  speech: Speech;
+  lang: Language;
+  withLabel?: boolean;
+}) {
+  if (!speech.supported) return null;
+  const active = speech.speakingId === id;
+  const label = active ? lang.ui.stop : lang.ui.listen;
+  return (
+    <button
+      type="button"
+      onClick={() => (active ? speech.stop() : speech.speak(id, text))}
+      aria-label={label}
+      aria-pressed={active}
+      className={`flex min-h-11 shrink-0 items-center gap-1.5 rounded-full border px-3 text-sm font-medium transition active:scale-95 print:hidden ${
+        withLabel ? "" : "min-w-11 justify-center px-0"
+      } ${active ? "border-accent bg-accent text-on-accent" : "border-line bg-surface text-accent hover:border-accent"}`}
+    >
+      {active ? (
+        <span className="flex h-4 items-end gap-0.5" aria-hidden>
+          {[0, 1, 2].map((i) => (
+            <span
+              key={i}
+              className="w-1 animate-pulse rounded-full bg-current"
+              style={{ height: `${[60, 100, 75][i]}%`, animationDelay: `${i * 120}ms` }}
+            />
+          ))}
+        </span>
+      ) : (
+        <svg viewBox="0 0 24 24" className="size-4.5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+          <path d="M11 5 6 9H3v6h3l5 4z" />
+          <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" />
+        </svg>
+      )}
+      {withLabel && <span>{label}</span>}
+    </button>
   );
 }
 
