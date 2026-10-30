@@ -1,0 +1,363 @@
+{
+  "is_form": true,
+  "form_title": "Solicitud de Visa de Estancia Corta",
+  "summary": "Este formulario es una solicitud de visa de corta duración. Generalmente lo completa el solicitante de la visa. Una vez presentado, el consulado o la embajada revisará la solicitud y tomará una decisión sobre la concesión de la visa.",
+  "image_note": "",
+  "documents_needed": [
+    "Fotografía reciente (35 x 45 mm, fondo blanco, tomada en los últimos 6 meses)",
+    "Pasaporte",
+    "Documentos de apoyo"
+  ],
+  "fields": [
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. Apellido(s) (nombre de familia) *",
+      "legible": true,
+      "meaning": "Escriba su apellido o apellidos tal como aparecen en su pasaporte. Debe estar en mayúsculas.",
+      "example": "GARCIA",
+      "rejection_risk": true,
+      "rejection_reason": "El nombre en la solicitud debe coincidir exactamente con el nombre en el pasaporte."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. Apellido(s) de nacimiento (apellido(s) anterior(es)) *",
+      "legible": true,
+      "meaning": "Escriba su apellido de soltera o cualquier apellido anterior que haya tenido. Debe estar en mayúsculas.",
+      "example": "LOPEZ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. Nombre(s) (nombre(s) de pila) *",
+      "legible": true,
+      "meaning": "Escriba su nombre o nombres de pila tal como aparecen en su pasaporte. Debe estar en mayúsculas.",
+      "example": "MARIA",
+      "rejection_risk": true,
+      "rejection_reason": "El nombre en la solicitud debe coincidir exactamente con el nombre en el pasaporte."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. Fecha de nacimiento (día-mes-año) *",
+      "legible": true,
+      "meaning": "Escriba su fecha de nacimiento en el formato día-mes-año. Por ejemplo, 01-01-2000.",
+      "example": "01-01-2000",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o el rechazo de la solicitud."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. Lugar de nacimiento *",
+      "legible": true,
+      "meaning": "Escriba la ciudad y el país donde nació.",
+      "example": "Madrid, España",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. País de nacimiento *",
+      "legible": true,
+      "meaning": "Escriba el país donde nació.",
+      "example": "España",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. Nacionalidad actual *",
+      "legible": true,
+      "meaning": "Escriba su nacionalidad actual. Debe coincidir con su pasaporte.",
+      "example": "Española",
+      "rejection_risk": true,
+      "rejection_reason": "La nacionalidad debe coincidir con la información del pasaporte."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. Nacionalidad al nacer, si es diferente",
+      "legible": true,
+      "meaning": "Si su nacionalidad al nacer era diferente a la actual, escríbala aquí.",
+      "example": "Mexicana",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "9. Sex *",
+      "label_translated": "9. Sexo *",
+      "legible": true,
+      "meaning": "Marque la casilla que corresponda a su sexo: Hombre o Mujer.",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "Debe seleccionar una opción para el sexo."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. Estado civil *",
+      "legible": true,
+      "meaning": "Marque la casilla que corresponda a su estado civil: Soltero/a, Casado/a, Separado/a, Divorciado/a o Viudo/a.",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "Debe seleccionar una opción para el estado civil."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. Autoridad parental (en caso de menores) / tutor legal: apellido, nombre, dirección, teléfono, correo electrónico y nacionalidad",
+      "legible": true,
+      "meaning": "Si el solicitante es menor de edad, proporcione la información completa de su padre, madre o tutor legal.",
+      "example": "Apellido: PEREZ, Nombre: Juan, Dirección: Calle Falsa 123, Teléfono: 555-1234, Email: juan.perez@email.com, Nacionalidad: Española",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. Tipo de documento de viaje *",
+      "legible": true,
+      "meaning": "Marque el tipo de documento de viaje que utilizará: Pasaporte ordinario, Diplomático, Servicio u Otro (especifique).",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "Debe seleccionar un tipo de documento de viaje."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. Número de documento de viaje *",
+      "legible": true,
+      "meaning": "Escriba el número de su pasaporte u otro documento de viaje.",
+      "example": "A12345678",
+      "rejection_risk": true,
+      "rejection_reason": "El número del documento de viaje debe ser correcto y coincidir con el documento presentado."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. Fecha de emisión *",
+      "legible": true,
+      "meaning": "Escriba la fecha en que se emitió su documento de viaje, en formato día-mes-año.",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o el rechazo de la solicitud."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. Válido hasta *",
+      "legible": true,
+      "meaning": "Escriba la fecha de vencimiento de su documento de viaje, en formato día-mes-año.",
+      "example": "01-01-2030",
+      "rejection_risk": true,
+      "rejection_reason": "El documento de viaje debe ser válido durante su estancia prevista."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. Emitido por (país) *",
+      "legible": true,
+      "meaning": "Escriba el país que emitió su documento de viaje.",
+      "example": "España",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. Dirección de residencia del solicitante y dirección de correo electrónico *",
+      "legible": true,
+      "meaning": "Escriba su dirección de residencia completa y su dirección de correo electrónico.",
+      "example": "Dirección: Calle Mayor 1, 28001 Madrid. Email: mi.email@dominio.com",
+      "rejection_risk": true,
+      "rejection_reason": "Una dirección o correo electrónico incorrectos pueden impedir la comunicación sobre su solicitud."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. Número(s) de teléfono *",
+      "legible": true,
+      "meaning": "Escriba su número de teléfono, incluyendo el código de país si es necesario.",
+      "example": "+34 600 123 456",
+      "rejection_risk": true,
+      "rejection_reason": "Un número de teléfono incorrecto puede impedir que le contacten."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. Residencia en un país distinto al de la nacionalidad actual",
+      "legible": true,
+      "meaning": "Marque 'Sí' o 'No'. Si marca 'Sí', indique el país de residencia y la fecha de validez del permiso de residencia.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. Ocupación actual *",
+      "legible": true,
+      "meaning": "Escriba su ocupación o profesión actual.",
+      "example": "Ingeniero de software",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. Empleador y dirección y número de teléfono del empleador. Para estudiantes, nombre y dirección del centro educativo *",
+      "legible": true,
+      "meaning": "Escriba el nombre, dirección y teléfono de su empleador. Si es estudiante, proporcione el nombre y la dirección de su centro de estudios.",
+      "example": "Nombre: Empresa XYZ, Dirección: Avenida Principal 45, Ciudad, Teléfono: 91 987 6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. Propósito(s) principal(es) del viaje *",
+      "legible": true,
+      "meaning": "Marque la casilla que mejor describa el motivo principal de su viaje: Turismo, Negocios, Visita a familiares o amigos, Cultural, Visita oficial, Razones médicas o Estudio. Si es 'Otro', especifique.",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "Debe seleccionar al menos un propósito para el viaje."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. Número de entradas solicitadas *",
+      "legible": true,
+      "meaning": "Marque si desea una entrada única, dos entradas o múltiples entradas.",
+      "example": "X",
+      "rejection_risk": true,
+      "rejection_reason": "Debe seleccionar el número de entradas deseadas."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. Fecha prevista de llegada *",
+      "legible": true,
+      "meaning": "Escriba la fecha en que planea llegar al país, en formato día-mes-año.",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o el rechazo de la solicitud."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. Fecha prevista de partida *",
+      "legible": true,
+      "meaning": "Escriba la fecha en que planea salir del país, en formato día-mes-año.",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o el rechazo de la solicitud."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. Visados expedidos por la República de Meridia en los últimos tres años",
+      "legible": true,
+      "meaning": "Marque 'Sí' o 'No'. Si marca 'Sí', indique las fechas de validez de los visados.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. Huellas dactilares recogidas previamente para solicitar un visado",
+      "legible": true,
+      "meaning": "Marque 'Sí' o 'No'. Si marca 'Sí', indique la fecha en que se recogieron sus huellas dactilares.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. Apellido y nombre de la(s) persona(s) que invitan en Meridia. Si no aplica, nombre del(los) hotel(es) o alojamiento(s) temporal(es) *",
+      "legible": true,
+      "meaning": "Escriba el nombre de la persona o entidad que le invita en Meridia, o el nombre del hotel o alojamiento temporal si no hay un invitado.",
+      "example": "Hotel Plaza, Gran Vía 5, Madrid",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. Dirección y correo electrónico de la(s) persona(s) que invitan / hotel(es) *",
+      "legible": true,
+      "meaning": "Escriba la dirección y el correo electrónico de la persona o entidad que le invita, o del hotel o alojamiento temporal.",
+      "example": "Dirección: Gran Vía 5, Madrid. Email: info@hotelplaza.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. El coste del viaje y la estancia del solicitante está cubierto *",
+      "legible": true,
+      "meaning": "Marque la casilla que indica quién cubrirá los gastos de su viaje y estancia: usted mismo/a, un patrocinador (persona, empresa u organización). Si es un patrocinador, proporcione detalles y medios de apoyo (efectivo, cheques de viajero, tarjeta de crédito, alojamiento prepagado, transporte prepagado).",
+      "example": "X by the applicant himself/herself",
+      "rejection_risk": true,
+      "rejection_reason": "Debe indicar claramente cómo se cubrirán los gastos del viaje y la estancia."
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. Lugar y fecha *",
+      "legible": true,
+      "meaning": "Escriba la ciudad donde firma la solicitud y la fecha actual en formato día-mes-año.",
+      "example": "Madrid, 01-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "La fecha y el lugar de firma son obligatorios."
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. Firma * (firma de la autoridad parental / tutor legal, si aplica)",
+      "legible": true,
+      "meaning": "Firme aquí. Si el solicitante es menor de edad, debe firmar la autoridad parental o el tutor legal.",
+      "example": "Firma manuscrita del solicitante",
+      "rejection_risk": true,
+      "rejection_reason": "La firma es obligatoria para que la solicitud sea válida."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "IMM-21",
+      "meaning": "Este es el número de identificación del formulario de solicitud de visa."
+    },
+    {
+      "term": "BLOCK CAPITALS",
+      "meaning": "Se refiere a escribir en letras mayúsculas, como se usa en los titulares de periódicos o carteles."
+    },
+    {
+      "term": "Art. 4(2)",
+      "meaning": "Una referencia a una ley o regulación específica que exime a ciertos familiares de completar algunos campos."
+    },
+    {
+      "term": "Parental authority",
+      "meaning": "El derecho y la responsabilidad de un padre o madre sobre su hijo menor de edad."
+    },
+    {
+      "term": "Legal guardian",
+      "meaning": "Una persona designada por ley para cuidar de alguien que no puede cuidarse a sí mismo, como un menor de edad."
+    },
+    {
+      "term": "Travel document",
+      "meaning": "Un documento oficial que permite viajar internacionalmente, como un pasaporte."
+    },
+    {
+      "term": "Consulate",
+      "meaning": "Una oficina que representa a un país en una ciudad extranjera, encargada de asuntos como la emisión de visas."
+    }
+  ]
+}

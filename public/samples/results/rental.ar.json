@@ -1,0 +1,245 @@
+{
+  "is_form": true,
+  "form_title": "اتفاقية تأجير سكن",
+  "summary": "هذه الوثيقة هي اتفاقية إيجار سكن. يملأها المالك والمستأجر لتحديد شروط وأحكام استئجار عقار سكني. بعد التوقيع، تصبح الوثيقة ملزمة قانونًا للطرفين، وتحدد حقوق ومسؤوليات كل منهما فيما يتعلق بالعقار المؤجر.",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 · الأطراف",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "الاسم الكامل للمالك (أو الوكيل الإداري نيابة عن المالك)",
+      "legible": true,
+      "meaning": "اكتب الاسم الكامل للمالك أو وكيله الإداري هنا.",
+      "example": "أحمد علي",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق الاسم تمامًا مع المستندات الرسمية لتجنب التأخير أو الرفض."
+    },
+    {
+      "section": "1 · الأطراف",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "عنوان المالك لاستلام الإشعارات",
+      "legible": true,
+      "meaning": "اكتب العنوان الذي يمكن للمستأجر استخدامه لإرسال الإشعارات الرسمية للمالك.",
+      "example": "123 شارع النيل، القاهرة",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون العنوان صحيحًا وكاملاً حتى يمكن إرسال الإشعارات بشكل فعال."
+    },
+    {
+      "section": "1 · الأطراف",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "الاسم القانوني الكامل للمستأجر 1",
+      "legible": true,
+      "meaning": "اكتب الاسم القانوني الكامل للمستأجر الأول.",
+      "example": "فاطمة محمد",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يتطابق الاسم تمامًا مع المستندات الرسمية لتجنب التأخير أو الرفض."
+    },
+    {
+      "section": "1 · الأطراف",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "الاسم القانوني الكامل للمستأجر 2 (إن وجد)",
+      "legible": true,
+      "meaning": "اكتب الاسم القانوني الكامل للمستأجر الثاني إذا كان هناك مستأجر آخر.",
+      "example": "خالد حسن",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · الأطراف",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "أسماء جميع الأشخاص الآخرين المسموح لهم بشغل العقار (المشغولون المصرح لهم)",
+      "legible": true,
+      "meaning": "اذكر أسماء أي شخص آخر سيقيم في العقار بخلاف المستأجرين المسجلين.",
+      "example": "ليلى خالد (ابنة)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 · العقار والمدة",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "عنوان العقار، بما في ذلك رقم الوحدة وأي مساحة لوقوف السيارات أو مخزن مخصص",
+      "legible": true,
+      "meaning": "اكتب العنوان الكامل للعقار المؤجر، بما في ذلك أي تفاصيل إضافية مثل رقم الشقة أو موقف السيارة.",
+      "example": "شقة 5، مبنى 10، شارع الحرية، دبي",
+      "rejection_risk": true,
+      "rejection_reason": "يجب أن يكون العنوان دقيقًا وكاملاً لتحديد العقار المؤجر بوضوح."
+    },
+    {
+      "section": "2 · العقار والمدة",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "تاريخ بدء مدة الإيجار",
+      "legible": true,
+      "meaning": "اكتب تاريخ بدء سريان عقد الإيجار.",
+      "example": "01/08/2024",
+      "rejection_risk": true,
+      "rejection_reason": "يجب كتابة التاريخ بتنسيق صحيح (يوم/شهر/سنة) لتجنب الالتباس."
+    },
+    {
+      "section": "2 · العقار والمدة",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "تاريخ انتهاء مدة الإيجار",
+      "legible": true,
+      "meaning": "اكتب تاريخ انتهاء عقد الإيجار.",
+      "example": "31/07/2025",
+      "rejection_risk": true,
+      "rejection_reason": "يجب كتابة التاريخ بتنسيق صحيح (يوم/شهر/سنة) لتجنب الالتباس."
+    },
+    {
+      "section": "2 · العقار والمدة",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "عند انتهاء المدة المحددة، ما لم يقدم أي طرف إشعارًا كتابيًا قبل ______ يومًا على الأقل، يستمر الإيجار كإيجار دوري شهريًا بنفس الشروط مع إجراء التعديلات اللازمة.",
+      "legible": true,
+      "meaning": "حدد عدد الأيام المطلوبة لتقديم إشعار كتابي قبل انتهاء العقد لتجديده تلقائيًا كعقد شهري بنفس الشروط.",
+      "example": "60",
+      "rejection_risk": true,
+      "rejection_reason": "عدم تحديد عدد الأيام أو كتابتها بشكل غير واضح قد يؤدي إلى نزاعات حول شروط التجديد."
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "الإيجار المستحق: ______ دولار شهريًا",
+      "legible": true,
+      "meaning": "اكتب مبلغ الإيجار الشهري المتفق عليه.",
+      "example": "1500",
+      "rejection_risk": true,
+      "rejection_reason": "يجب تحديد مبلغ الإيجار بوضوح لتجنب أي سوء فهم."
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "الدفع مقدمًا في اليوم ______ من كل شهر",
+      "legible": true,
+      "meaning": "حدد اليوم من الشهر الذي يجب دفع الإيجار فيه مقدمًا.",
+      "example": "1",
+      "rejection_risk": true,
+      "rejection_reason": "يجب تحديد يوم الدفع بوضوح لتجنب التأخير في السداد."
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "طريقة الدفع",
+      "legible": true,
+      "meaning": "حدد طريقة الدفع المفضلة للإيجار.",
+      "example": "Bank transfer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "رسوم التأخير في السداد: ______ دولار بعد ______ أيام تأخير",
+      "legible": true,
+      "meaning": "حدد مبلغ رسوم التأخير في دفع الإيجار وعدد الأيام التي يعتبر بعدها الدفع متأخرًا.",
+      "example": "50 دولار بعد 5 أيام تأخير",
+      "rejection_risk": true,
+      "rejection_reason": "يجب تحديد مبلغ رسوم التأخير وعدد أيام السماح بوضوح لتجنب النزاعات."
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "وديعة التأمين: ______ دولار",
+      "legible": true,
+      "meaning": "اكتب مبلغ وديعة التأمين التي يدفعها المستأجر.",
+      "example": "1500",
+      "rejection_risk": true,
+      "rejection_reason": "يجب تحديد مبلغ وديعة التأمين بوضوح."
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "الوديعة سيتم الاحتفاظ بها بواسطة / مرجع خطة الحماية",
+      "legible": true,
+      "meaning": "اذكر الجهة التي ستحتفظ بوديعة التأمين أو رقم مرجع خطة حماية الودائع إذا كان ذلك مطبقًا.",
+      "example": "خطة حماية الودائع الوطنية، المرجع: XYZ123",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · الإيجار والوديعة",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "المرافق والرسوم المستحقة على المستأجر",
+      "legible": true,
+      "meaning": "حدد أي فواتير خدمات أو رسوم أخرى يتحملها المستأجر.",
+      "example": "Electricity, Gas, Water, Internet, Council tax / municipal rates, Service charge",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 · مسؤولية مشتركة ومتضامنة",
+      "label_original": "4.1 Where the Tenant comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "عندما يتكون المستأجر من أكثر من شخص، فإن التزامات المستأجر بموجب هذه الاتفاقية تكون مشتركة ومتضامنة، ويجوز للمالك استرداد كامل أي متأخرات إيجار أو أي مبلغ آخر مستحق من أي منهم أو أكثر. توقيع أولي لكل مستأجر:",
+      "legible": true,
+      "meaning": "إذا كان هناك أكثر من مستأجر، فهذا يعني أن كل مستأجر مسؤول عن كامل الإيجار وأي مبالغ أخرى مستحقة، ويمكن للمالك المطالبة بها من أي مستأجر. يجب على كل مستأجر وضع توقيعه الأولي هنا للموافقة على هذا الشرط.",
+      "example": "توقيع أولي للمستأجر",
+      "rejection_risk": true,
+      "rejection_reason": "عدم وضع التوقيع الأولي من قبل كل مستأجر يعني عدم الموافقة على هذا الشرط الهام، مما قد يؤدي إلى رفض أو تأخير."
+    },
+    {
+      "section": "5 · الضامن",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "بالنظر إلى منح المالك لهذا الإيجار، يضمن الضامن المذكور أدناه بشكل لا رجعة فيه السداد الصحيح للإيجار وأداء تعهدات المستأجر ويوافق على تعويض المالك ضد جميع الخسائر، بغض النظر عن أي تغيير في هذه الاتفاقية أو تمديد للوقت الممنوح للمستأجر.",
+      "legible": true,
+      "meaning": "هذا البند يعني أن الضامن يتعهد بدفع الإيجار نيابة عن المستأجر وأداء جميع التزاماته إذا فشل المستأجر في ذلك. كما يوافق الضامن على تعويض المالك عن أي خسائر قد تنجم عن عدم وفاء المستأجر بالتزاماته.",
+      "example": "لا ينطبق على المستأجر، بل هو إقرار بالمسؤولية.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 · الضامن",
+      "label_original": "5.2 Guarantor's full name, address and telephone · Guarantor's initials:",
+      "label_translated": "الاسم الكامل للضامن وعنوانه وهاتفه · توقيع أولي للضامن:",
+      "legible": true,
+      "meaning": "اكتب الاسم الكامل للضامن وعنوانه ورقم هاتفه، ثم ضع توقيعك الأولي للموافقة على شروط الضمان.",
+      "example": "الاسم: سعيد عبدالله، العنوان: 45 شارع الأمل، جدة، الهاتف: 0501234567، التوقيع الأولي: س.ع.",
+      "rejection_risk": true,
+      "rejection_reason": "يجب تقديم معلومات الضامن كاملة وصحيحة، وتوقيعه الأولي ضروري للموافقة على شروط الضمان."
+    },
+    {
+      "section": "6 · بند الإنهاء المبكر",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: ☐ Yes ☐ No",
+      "label_translated": "يجوز لأي من الطرفين إنهاء هذه الاتفاقية عند أو بعد انقضاء ______ شهرًا من مدة الإيجار عن طريق إعطاء إشعار كتابي مسبق لمدة شهرين على الأقل، شريطة ألا يكون المستأجر متأخرًا في دفع الإيجار. ينطبق: ☐ نعم ☐ لا",
+      "legible": true,
+      "meaning": "حدد الحد الأدنى لعدد الأشهر التي يجب أن تمر من مدة الإيجار قبل أن يتمكن أي طرف من إنهاء العقد بإشعار مسبق لمدة شهرين، بشرط عدم وجود متأخرات إيجار. ثم حدد ما إذا كان هذا البند ينطبق (نعم) أم لا (لا).",
+      "example": "6 أشهر، وينطبق: نعم",
+      "rejection_risk": true,
+      "rejection_reason": "عدم تحديد عدد الأشهر أو عدم تحديد ما إذا كان البند ينطبق قد يؤدي إلى نزاعات حول شروط الإنهاء المبكر."
+    },
+    {
+      "section": "",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "التوقيعات الأولية لجميع الأطراف في كل صفحة: المالك ______ المستأجر(ون) ______ / ______",
+      "legible": true,
+      "meaning": "يجب على المالك وجميع المستأجرين وضع توقيعهم الأولي في هذا المكان في كل صفحة من صفحات الاتفاقية للتأكيد على قراءتهم وموافقتهم على محتوياتها.",
+      "example": "التوقيع الأولي للمالك: أ.ع.، التوقيع الأولي للمستأجر 1: ف.م.، التوقيع الأولي للمستأجر 2: خ.ح.",
+      "rejection_risk": true,
+      "rejection_reason": "عدم وضع التوقيعات الأولية لجميع الأطراف في كل صفحة قد يؤدي إلى اعتبار الاتفاقية غير مكتملة أو غير صالحة."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "مصطلح لاتيني يعني \"مع إجراء التغييرات اللازمة\". يُستخدم للإشارة إلى أن الشروط أو الأحكام سيتم تطبيقها مع تعديلات طفيفة لتناسب السياق الجديد."
+    },
+    {
+      "term": "joint and several",
+      "meaning": "يعني أن كل شخص مسؤول بشكل فردي عن كامل الالتزام (مشترك)، ويمكن للمطالبة أن تستهدف أي شخص منهم أو جميعهم (متضامن)."
+    },
+    {
+      "term": "indemnify",
+      "meaning": "يعني تعويض طرف آخر عن أي خسائر أو أضرار قد تلحق به. في هذا السياق، يوافق الضامن على تعويض المالك عن أي خسائر ناتجة عن عدم وفاء المستأجر بالتزاماته."
+    },
+    {
+      "term": "covenants",
+      "meaning": "هي وعود أو التزامات رسمية في عقد، خاصة تلك المتعلقة بالعقارات. في هذا السياق، تشير إلى التزامات المستأجر تجاه المالك."
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "نوع من الإيجار يتجدد تلقائيًا لفترات قصيرة (عادة شهرية) ما لم يتم إعطاء إشعار بإنهاء العقد."
+    },
+    {
+      "term": "arrears",
+      "meaning": "مبالغ مستحقة لم تدفع في الوقت المحدد، مثل الإيجار المتأخر."
+    }
+  ]
+}

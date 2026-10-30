@@ -1,0 +1,436 @@
+{
+  "is_form": true,
+  "form_title": "New Patient Registration & Health History",
+  "summary": "This form is used to register new patients at Riverside General Hospital and collect their health history. It is typically filled out by the patient or their legal representative before or during admission. After submission, the information is used by hospital staff for treatment and billing purposes, and may be reviewed by administrative staff.",
+  "image_note": "",
+  "documents_needed": [
+    "Photo ID",
+    "Insurance card"
+  ],
+  "fields": [
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Legal last name",
+      "label_translated": "Legal last name",
+      "legible": true,
+      "meaning": "Enter your last name exactly as it appears on your legal documents.",
+      "example": "Smith",
+      "rejection_risk": true,
+      "rejection_reason": "The name entered must match the name on your identification documents."
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Legal first name",
+      "label_translated": "Legal first name",
+      "legible": true,
+      "meaning": "Enter your first name exactly as it appears on your legal documents.",
+      "example": "John",
+      "rejection_risk": true,
+      "rejection_reason": "The name entered must match the name on your identification documents."
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "M.I.",
+      "label_translated": "M.I.",
+      "legible": true,
+      "meaning": "Enter your middle initial.",
+      "example": "A",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Preferred name (if different)",
+      "label_translated": "Preferred name (if different)",
+      "legible": true,
+      "meaning": "Enter the name you prefer to be called, if it's different from your legal first name.",
+      "example": "Johnny",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "Date of birth (MM/DD/YYYY)",
+      "legible": true,
+      "meaning": "Enter your date of birth in month, day, year format.",
+      "example": "01/15/1990",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be MM/DD/YYYY."
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "Sex assigned at birth",
+      "legible": true,
+      "meaning": "Tick the box that corresponds to the sex assigned to you at birth.",
+      "example": "M",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Home address (street, apt, city, state, ZIP)",
+      "label_translated": "Home address (street, apt, city, state, ZIP)",
+      "legible": true,
+      "meaning": "Enter your full home address, including street, apartment number (if any), city, state, and ZIP code.",
+      "example": "123 Main St, Apt 4B, Anytown, CA 90210",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Primary phone",
+      "label_translated": "Primary phone",
+      "legible": true,
+      "meaning": "Enter your primary phone number.",
+      "example": "555-123-4567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "E-mail",
+      "label_translated": "E-mail",
+      "legible": true,
+      "meaning": "Enter your email address.",
+      "example": "john.smith@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Preferred language",
+      "label_translated": "Preferred language",
+      "legible": true,
+      "meaning": "Enter the language you prefer to communicate in.",
+      "example": "English",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Interpreter required?",
+      "label_translated": "Interpreter required?",
+      "legible": true,
+      "meaning": "Tick 'Yes' if you need an interpreter to communicate, otherwise tick 'No'.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Marital status",
+      "label_translated": "Marital status",
+      "legible": true,
+      "meaning": "Select your current marital status.",
+      "example": "Single",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "Employer / occupation",
+      "label_translated": "Employer / occupation",
+      "legible": true,
+      "meaning": "Enter your current employer and your job title or occupation.",
+      "example": "Acme Corp / Software Engineer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PATIENT INFORMATION",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "SSN (last 4 digits only)",
+      "legible": true,
+      "meaning": "Enter the last four digits of your Social Security Number.",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Name",
+      "label_translated": "Name",
+      "legible": true,
+      "meaning": "Enter the full name of your emergency contact person.",
+      "example": "Jane Doe",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Relationship to patient",
+      "label_translated": "Relationship to patient",
+      "legible": true,
+      "meaning": "Describe your relationship to the emergency contact person (e.g., spouse, parent, friend).",
+      "example": "Spouse",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Phone",
+      "label_translated": "Phone",
+      "legible": true,
+      "meaning": "Enter the phone number of your emergency contact person.",
+      "example": "555-987-6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "Primary insurance carrier",
+      "legible": true,
+      "meaning": "Enter the name of your primary health insurance provider.",
+      "example": "Blue Cross Blue Shield",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "Member / Subscriber ID",
+      "legible": true,
+      "meaning": "Enter your insurance policy's member or subscriber identification number.",
+      "example": "ABC123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Group no.",
+      "label_translated": "Group no.",
+      "legible": true,
+      "meaning": "Enter the group number for your insurance policy, if applicable.",
+      "example": "G12345",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "Policyholder name (if not patient)",
+      "legible": true,
+      "meaning": "Enter the name of the person who holds the insurance policy, if it is not you.",
+      "example": "Jane Doe",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder DOB",
+      "label_translated": "Policyholder DOB",
+      "legible": true,
+      "meaning": "Enter the date of birth of the insurance policyholder, if it is not you. Use MM/DD/YYYY format.",
+      "example": "05/20/1965",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be MM/DD/YYYY."
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Relationship to patient",
+      "label_translated": "Relationship to patient",
+      "legible": true,
+      "meaning": "Describe the policyholder's relationship to you, if it is not you.",
+      "example": "Mother",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "legible": true,
+      "meaning": "Tick this box if you do not have insurance and will be paying for services yourself. You agree that a financial counselor will discuss payment options and eligibility for charity care with you.",
+      "example": "Ticked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "Primary care physician (name & clinic)",
+      "legible": true,
+      "meaning": "Enter the name and clinic of your regular doctor.",
+      "example": "Dr. Emily Carter, Anytown Medical Clinic",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "legible": true,
+      "meaning": "List all medications you are currently taking, including prescriptions, over-the-counter drugs, and supplements. Include the name, dosage, and how often you take them.",
+      "example": "Lisinopril 10mg daily, Vitamin C 500mg twice daily",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "Allergies to medications, food or latex, and the reaction",
+      "legible": true,
+      "meaning": "List any allergies you have to medications, foods, or latex, and describe the reaction you experience.",
+      "example": "Penicillin - rash",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "NKDA",
+      "label_translated": "NKDA",
+      "legible": true,
+      "meaning": "Tick this box if you have No Known Drug Allergies.",
+      "example": "Ticked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "Previous surgeries / hospitalizations (year)",
+      "legible": true,
+      "meaning": "List any past surgeries or hospitalizations and the year they occurred.",
+      "example": "Appendectomy 2010, Hospitalization for pneumonia 2018",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Do you have, or have you ever had:",
+      "label_translated": "Do you have, or have you ever had:",
+      "legible": true,
+      "meaning": "Tick the boxes for any of the following medical conditions you have or have had in the past.",
+      "example": "Diabetes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "None of these",
+      "label_translated": "None of these",
+      "legible": true,
+      "meaning": "Tick this box if you have none of the listed medical conditions.",
+      "example": "Ticked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Tobacco use",
+      "label_translated": "Tobacco use",
+      "legible": true,
+      "meaning": "Indicate your current or past use of tobacco products.",
+      "example": "Never",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "Alcohol (drinks/week)",
+      "legible": true,
+      "meaning": "Indicate the average number of alcoholic drinks you consume per week.",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Pregnant or possibly pregnant?",
+      "label_translated": "Pregnant or possibly pregnant?",
+      "legible": true,
+      "meaning": "Tick 'Yes' if you are pregnant or could be, 'No' if you are not, and 'N/A' if it does not apply to you.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "MEDICAL HISTORY",
+      "label_original": "Do you have an advance directive or living will?",
+      "label_translated": "Do you have an advance directive or living will?",
+      "legible": true,
+      "meaning": "Tick 'Yes' if you have a legal document that states your wishes for medical treatment if you cannot communicate them yourself, and indicate if you can provide a copy. Tick 'No' if you do not have one, or 'Would like information' if you want to learn more.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Initials",
+      "label_translated": "Initials",
+      "legible": true,
+      "meaning": "Enter your initials to acknowledge that you consent to routine medical treatment and assign insurance benefits to the hospital. This also confirms you received the Notice of Privacy Practices.",
+      "example": "JS",
+      "rejection_risk": true,
+      "rejection_reason": "A signature or initials are required to process the registration and consent."
+    },
+    {
+      "section": "CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "Signature of patient or legal representative",
+      "legible": true,
+      "meaning": "Sign here to confirm your consent and understanding of the statements above. If you are signing for someone else, you must be their legal representative.",
+      "example": "John Smith",
+      "rejection_risk": true,
+      "rejection_reason": "A signature is required to validate the consent and registration."
+    },
+    {
+      "section": "CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "Printed name & relationship, if not patient",
+      "legible": true,
+      "meaning": "Print your full name. If you are signing as a legal representative for the patient, also state your relationship to the patient.",
+      "example": "John Smith, Son",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Date",
+      "label_translated": "Date",
+      "legible": true,
+      "meaning": "Enter the date you are signing the form. Use MM/DD/YYYY format.",
+      "example": "10/26/2023",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be MM/DD/YYYY."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "M.I.",
+      "meaning": "Abbreviation for Middle Initial."
+    },
+    {
+      "term": "SSN",
+      "meaning": "Social Security Number, a unique nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents for employment and tax purposes."
+    },
+    {
+      "term": "NKDA",
+      "meaning": "Abbreviation for No Known Drug Allergies."
+    },
+    {
+      "term": "advance directive",
+      "meaning": "A legal document that outlines a person's wishes for medical treatment if they become unable to communicate their decisions. It can include a living will or a durable power of attorney for healthcare."
+    },
+    {
+      "term": "living will",
+      "meaning": "A type of advance directive that specifies the medical treatments a person does or does not want to receive if they are terminally ill or permanently unconscious."
+    },
+    {
+      "term": "CONSENT TO TREATMENT",
+      "meaning": "Agreement by a patient to undergo a medical procedure or treatment, acknowledging the potential risks and benefits."
+    },
+    {
+      "term": "ASSIGNMENT OF BENEFITS",
+      "meaning": "A clause that allows the healthcare provider to receive payments directly from the insurance company for services rendered."
+    },
+    {
+      "term": "Notice of Privacy Practices",
+      "meaning": "A legal document required by HIPAA that explains how a healthcare provider will use and disclose a patient's protected health information."
+    }
+  ]
+}

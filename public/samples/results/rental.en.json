@@ -1,0 +1,255 @@
+{
+  "is_form": true,
+  "form_title": "RESIDENTIAL TENANCY AGREEMENT",
+  "summary": "This is a fixed-term tenancy agreement for a residential dwelling. It is made between the Landlord and the Tenant(s) and outlines the terms of the rental. The form details the parties involved, the property, rent and deposit, joint and several liability, guarantor information, and break clauses. After completion and signing, this agreement will be legally binding for both parties.",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 \n THE PARTIES",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "Landlord's full name (or managing agent on behalf of the Landlord)",
+      "legible": true,
+      "meaning": "Enter the full legal name of the landlord or their managing agent. This is the person or company who owns the property and is renting it out.",
+      "example": "John Smith or ABC Property Management",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n THE PARTIES",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "Landlord's address for service of notices",
+      "legible": true,
+      "meaning": "Enter the address where the landlord or their agent will receive official notices related to this tenancy. This is often a postal address.",
+      "example": "123 Main Street, Anytown, AT 12345",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n THE PARTIES",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "Tenant 1 full legal name",
+      "legible": true,
+      "meaning": "Enter the full legal name of the first tenant who will be living in the property. This should match their identification.",
+      "example": "Jane Doe",
+      "rejection_risk": true,
+      "rejection_reason": "The name entered must exactly match the name on the tenant's identification documents."
+    },
+    {
+      "section": "1 \n THE PARTIES",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "Tenant 2 full legal name (if any)",
+      "legible": true,
+      "meaning": "Enter the full legal name of the second tenant, if applicable. If there are more than two tenants, you may need to add them elsewhere or on an addendum.",
+      "example": "Peter Jones",
+      "rejection_risk": true,
+      "rejection_reason": "The name entered must exactly match the name on the tenant's identification documents."
+    },
+    {
+      "section": "1 \n THE PARTIES",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "legible": true,
+      "meaning": "List the full names of any other individuals who will live in the property but are not named as tenants on this agreement. These are people who have permission to live there.",
+      "example": "Michael Smith (child of Tenant 1)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n THE PREMISES AND TERM",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "Address of the Premises, including unit number and any parking space or storage allocated",
+      "legible": true,
+      "meaning": "Provide the full address of the rental property, including any apartment or unit number, and details of any parking or storage that is included.",
+      "example": "Apartment 3B, 456 Oak Avenue, Sometown, ST 67890, Parking Space #12",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n THE PREMISES AND TERM",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "Commencement date of the Term",
+      "legible": true,
+      "meaning": "Enter the date when the tenancy agreement officially begins. This is when the tenant can start occupying the property.",
+      "example": "01/01/2024",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be clear and consistent, usually DD/MM/YYYY or MM/DD/YYYY, as specified by the office issuing the form."
+    },
+    {
+      "section": "2 \n THE PREMISES AND TERM",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "Expiry date of the Term",
+      "legible": true,
+      "meaning": "Enter the date when the fixed term of the tenancy agreement officially ends.",
+      "example": "31/12/2024",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be clear and consistent, usually DD/MM/YYYY or MM/DD/YYYY, as specified by the office issuing the form."
+    },
+    {
+      "section": "2 \n THE PREMISES AND TERM",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "legible": true,
+      "meaning": "Fill in the number of days' written notice required by either the landlord or tenant to end the tenancy after the fixed term expires. If no notice is given, the tenancy automatically becomes a month-to-month periodic tenancy under the same conditions.",
+      "example": "60",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "Rent payable: $______ per calendar month",
+      "legible": true,
+      "meaning": "Enter the amount of rent that is due each calendar month. This is the total amount the tenant agrees to pay for the use of the property.",
+      "example": "1500.00",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "Payable in advance on day ______ of each month",
+      "legible": true,
+      "meaning": "Specify the day of the month by which the rent payment is due. Rent is typically paid in advance.",
+      "example": "1",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.3 Method of payment \n Bank transfer \n Cheque \n Other",
+      "label_translated": "Method of payment \n Bank transfer \n Cheque \n Other",
+      "legible": true,
+      "meaning": "Tick the box that indicates the preferred or agreed-upon method for paying the rent. If 'Other' is selected, specify the method.",
+      "example": "Tick 'Bank transfer'",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "Late payment fee: $______ after ______ days arrears",
+      "legible": true,
+      "meaning": "Enter the amount of the late fee and the number of days after the rent due date that the fee will be applied if rent is not paid on time.",
+      "example": "50.00 after 5 days arrears",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "Security deposit: $______",
+      "legible": true,
+      "meaning": "Enter the amount of the security deposit the tenant is paying. This is usually held by the landlord to cover damages or unpaid rent.",
+      "example": "1500.00",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "Deposit to be held by / protection scheme reference",
+      "legible": true,
+      "meaning": "Indicate where the security deposit will be held. If it is protected by a government-approved scheme, provide the scheme's reference number.",
+      "example": "Tenancy Deposit Scheme (TDS) - Ref: 12345678",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENT AND DEPOSIT",
+      "label_original": "3.7 Utilities and charges payable by the Tenant \n Electricity \n Gas \n Water \n Internet \n Council tax / municipal rates \n Service charge",
+      "label_translated": "Utilities and charges payable by the Tenant \n Electricity \n Gas \n Water \n Internet \n Council tax / municipal rates \n Service charge",
+      "legible": true,
+      "meaning": "Tick all the boxes that apply to utilities and other charges that the tenant is responsible for paying in addition to rent.",
+      "example": "Tick 'Electricity', 'Water', 'Internet'",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 \n JOINT AND SEVERAL LIABILITY",
+      "label_original": "4.1 Where the Tenant comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "Where the Tenant comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "legible": true,
+      "meaning": "This clause means that if there is more than one tenant, each tenant is fully responsible for all rent and other payments, even if only one tenant fails to pay. The landlord can claim the full amount from any single tenant. Each tenant must initial this section to show they understand and agree.",
+      "example": "Tenant 1 initials: [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "A missing initial from any tenant can lead to disputes or delays in processing the agreement."
+    },
+    {
+      "section": "4 \n JOINT AND SEVERAL LIABILITY",
+      "label_original": "Each Tenant initial:",
+      "label_translated": "Each Tenant initial:",
+      "legible": true,
+      "meaning": "Each tenant must write their initials in the box provided to confirm they have read and understood the 'Joint and Several Liability' clause.",
+      "example": "Initials: [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "A missing initial from any tenant can lead to disputes or delays in processing the agreement."
+    },
+    {
+      "section": "5 \n GUARANTOR",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "legible": true,
+      "meaning": "This is a statement that if a guarantor is named, they are legally promising to pay the rent and cover any costs if the tenant fails to do so. They are also agreeing to cover any losses the landlord might incur. This is a serious commitment.",
+      "example": "N/A",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 \n GUARANTOR",
+      "label_original": "5.2 Guarantor's full name, address and telephone \n Guarantor's initials:",
+      "label_translated": "Guarantor's full name, address and telephone \n Guarantor's initials:",
+      "legible": true,
+      "meaning": "Enter the full name, address, and phone number of the person who agrees to be the guarantor for the tenant. The guarantor must also provide their initials in the box to confirm they understand their obligations.",
+      "example": "Guarantor's full name, address and telephone: [Full Name, Address, Phone Number] \n Guarantor's initials: [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "Missing guarantor information or initials can invalidate the guarantee clause."
+    },
+    {
+      "section": "6 \n BREAK CLAUSE",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: \n Yes \n No",
+      "label_translated": "Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: \n Yes \n No",
+      "legible": true,
+      "meaning": "This section allows either the landlord or the tenant to end the tenancy agreement early, after a specified number of months, by giving at least two months' written notice. This is only possible if the tenant has paid all rent due. You need to indicate if this clause applies by ticking 'Yes' or 'No'.",
+      "example": "Expiry of 6 months of the Term. Applies: [Tick Yes]",
+      "rejection_risk": true,
+      "rejection_reason": "Not clearly indicating whether the break clause applies can lead to disputes about early termination rights."
+    },
+    {
+      "section": "6 \n BREAK CLAUSE",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "legible": true,
+      "meaning": "All parties (Landlord and Tenant(s)) must initial this line on every page of the agreement to confirm they have reviewed and agree to the contents of that page. The Tenant(s) initials line may have spaces for multiple tenants.",
+      "example": "Landlord: [Initials] Tenant(s): [Tenant 1 Initials] / [Tenant 2 Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "Missing initials on any page can cause the agreement to be considered incomplete or invalid."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "This is a Latin phrase meaning 'with things changed that should be changed'. It indicates that the terms of the tenancy will continue, but with necessary adjustments for the new situation (e.g., from fixed-term to periodic)."
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "A tenancy that continues from one rental period to the next (usually month-to-month) without a fixed end date, as opposed to a fixed-term tenancy."
+    },
+    {
+      "term": "joint and several liability",
+      "meaning": "A legal term meaning that each person in a group is responsible for the entire obligation, not just their share. If one person fails to pay, the others are responsible for the full amount."
+    },
+    {
+      "term": "indemnify",
+      "meaning": "To promise to pay someone for any loss or damage they might suffer. In this context, the guarantor promises to cover the landlord's losses if the tenant defaults."
+    },
+    {
+      "term": "covenants",
+      "meaning": "Formal promises or agreements made in a legal document. In a tenancy agreement, these are the obligations and promises of both the landlord and the tenant."
+    },
+    {
+      "term": "arrears",
+      "meaning": "Money that is owed and overdue. In this context, it refers to rent payments that have not been made by the due date."
+    }
+  ]
+}

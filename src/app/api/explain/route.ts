@@ -1,4 +1,4 @@
-import Anthropic from "@anthropic-ai/sdk";
+import { OpenRouterError } from "@/lib/openrouter";
 import { ExplainError, streamExplanation } from "@/lib/explain";
 import { getLanguage } from "@/lib/languages";
 
@@ -58,10 +58,10 @@ export async function POST(req: Request) {
 
 function errorMessage(e: unknown): string {
   if (e instanceof ExplainError) return e.message;
-  if (e instanceof Anthropic.RateLimitError) {
+  if (e instanceof OpenRouterError && e.status === 429) {
     return "Too many people are using Plainform right now. Please try again in a minute.";
   }
-  if (e instanceof Anthropic.APIError) {
+  if (e instanceof OpenRouterError) {
     console.error(`Model API error ${e.status}`);
     return "The form reader is unavailable right now. Please try again.";
   }

@@ -1,0 +1,375 @@
+{
+  "is_form": true,
+  "form_title": "APLIKASYON PARA SA SHORT-STAY VISA",
+  "summary": "Ito ay isang aplikasyon para sa short-stay visa, na nangangahulugang visa para sa panandaliang pagbisita. Kadalasan itong pinupunan ng mga dayuhang nais bumisita sa Republic of Meridia para sa iba't ibang layunin tulad ng turismo, negosyo, o pagbisita sa pamilya. Pagkatapos isumite, ang aplikasyon ay susuriin ng isang opisyal ng imigrasyon at maaaring humantong sa pagbibigay ng visa o pagtanggi.",
+  "image_note": "",
+  "documents_needed": [
+    "Pasaporte",
+    "Katibayan ng tirahan",
+    "Katibayan ng trabaho",
+    "Katibayan ng pinansyal na kakayahan",
+    "Iba pang mga dokumento na maaaring kailanganin depende sa layunin ng pagbisita"
+  ],
+  "fields": [
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. Apelyido (mga apelyido) *",
+      "legible": true,
+      "meaning": "Isulat ang iyong apelyido o mga apelyido, kung mayroon, ayon sa nakasulat sa iyong pasaporte. Dapat nakasulat sa malalaking letra.",
+      "example": "DELA CRUZ",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang pangalan ay hindi tumutugma sa nakasulat sa pasaporte."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. Apelyido noong ipinanganak (dating mga apelyido) *",
+      "legible": true,
+      "meaning": "Isulat ang iyong apelyido noong ikaw ay ipinanganak, kung ito ay iba sa iyong kasalukuyang apelyido. Dapat nakasulat sa malalaking letra.",
+      "example": "SANTOS",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. Pangalan (mga pangalan) *",
+      "legible": true,
+      "meaning": "Isulat ang iyong unang pangalan at iba pang mga pangalan, kung mayroon, ayon sa nakasulat sa iyong pasaporte. Dapat nakasulat sa malalaking letra.",
+      "example": "JUAN MARCO",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang pangalan ay hindi tumutugma sa nakasulat sa pasaporte."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. Petsa ng kapanganakan (araw-buwan-taon) *",
+      "legible": true,
+      "meaning": "Isulat ang iyong petsa ng kapanganakan gamit ang format na araw-buwan-taon. Halimbawa, kung ipinanganak ka noong Enero 1, 1990, isulat ang 01-01-1990.",
+      "example": "01-01-1990",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang petsa ng kapanganakan ay mali ang format o hindi tugma sa ibang dokumento."
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. Lugar ng kapanganakan *",
+      "legible": true,
+      "meaning": "Isulat ang lungsod at bansa kung saan ka ipinanganak. Dapat nakasulat sa malalaking letra.",
+      "example": "MANILA, PILIPINAS",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. Bansa ng kapanganakan *",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng bansa kung saan ka ipinanganak. Dapat nakasulat sa malalaking letra.",
+      "example": "PILIPINAS",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. Kasalukuyang nasyonalidad *",
+      "legible": true,
+      "meaning": "Isulat ang iyong kasalukuyang nasyonalidad o pagkamamamayan. Dapat nakasulat sa malalaking letra.",
+      "example": "PILIPINO",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. Nasyonalidad noong ipinanganak, kung iba",
+      "legible": true,
+      "meaning": "Isulat ang iyong nasyonalidad noong ikaw ay ipinanganak, kung ito ay iba sa iyong kasalukuyang nasyonalidad. Dapat nakasulat sa malalaking letra.",
+      "example": "WALANG IBANG NASYONALIDAD",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "9. Sex * \n Male \n Female",
+      "label_translated": "9. Kasarian * \n Lalaki \n Babae",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon na tumutukoy sa iyong kasarian.",
+      "example": "Lagyan ng tsek ang 'Lalaki' o 'Babae'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "10. Civil status * \n Single \n Married \n Separated \n Divorced \n Widow(er)",
+      "label_translated": "10. Katayuang sibil * \n Single \n Kasal \n Hiwalay \n Diborsiyado \n Balo",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon na tumutukoy sa iyong kasalukuyang katayuang sibil.",
+      "example": "Lagyan ng tsek ang 'Kasal'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A \n PERSONAL DETAILS",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. Awtoridad ng magulang (kung menor de edad) / legal na tagapag-alaga: apelyido, pangalan, address, telepono, e-mail at nasyonalidad",
+      "legible": true,
+      "meaning": "Kung ang aplikante ay menor de edad, isulat dito ang kumpletong detalye ng magulang o legal na tagapag-alaga, kasama ang kanilang apelyido, pangalan, address, numero ng telepono, e-mail address, at nasyonalidad. Dapat nakasulat sa malalaking letra.",
+      "example": "DELA CRUZ, Juan, 123 Sampaguita St., Quezon City, Philippines, +639171234567, juan.delacruz@email.com, PILIPINO",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "12. Type of travel document * \n Ordinary passport \n Diplomatic \n Service \n Other (specify)",
+      "label_translated": "12. Uri ng travel document * \n Ordinaryong pasaporte \n Diplomatiko \n Serbisyo \n Iba pa (tukuyin)",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon na tumutukoy sa uri ng dokumento na iyong gagamitin sa paglalakbay.",
+      "example": "Lagyan ng tsek ang 'Ordinaryong pasaporte'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. Numero ng travel document *",
+      "legible": true,
+      "meaning": "Isulat ang numero ng iyong pasaporte o iba pang travel document. Dapat nakasulat sa malalaking letra.",
+      "example": "P12345678",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. Petsa ng pag-issue *",
+      "legible": true,
+      "meaning": "Isulat ang petsa kung kailan inisyu ang iyong pasaporte o travel document, gamit ang format na araw-buwan-taon.",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang petsa ng pag-issue ay mali ang format o hindi tugma sa ibang dokumento."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. Hanggang kailan balido *",
+      "legible": true,
+      "meaning": "Isulat ang petsa kung kailan mag-e-expire ang iyong pasaporte o travel document, gamit ang format na araw-buwan-taon.",
+      "example": "01-01-2030",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang petsa ng pag-expire ay mali ang format o kung ang pasaporte ay malapit nang mag-expire."
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. Inisyu ng (bansa) *",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng bansa na nag-isyu ng iyong pasaporte o travel document. Dapat nakasulat sa malalaking letra.",
+      "example": "PILIPINAS",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. Address sa bahay at e-mail address ng aplikante *",
+      "legible": true,
+      "meaning": "Isulat ang iyong kumpletong address sa iyong tahanan at ang iyong e-mail address. Dapat nakasulat sa malalaking letra.",
+      "example": "123 Sampaguita St., Quezon City, Philippines, juan.delacruz@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. Numero ng telepono *",
+      "legible": true,
+      "meaning": "Isulat ang iyong numero ng telepono, kasama ang country code kung kinakailangan.",
+      "example": "+639171234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "19. Residence in a country other than the country of current nationality \n No \n Yes. Residence permit or equivalent No. \n Valid until",
+      "label_translated": "19. Tirahan sa ibang bansa maliban sa kasalukuyang nasyonalidad \n Hindi \n Oo. Residence permit o katumbas Blg. \n Balido hanggang",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang 'Hindi' kung ikaw ay naninirahan sa bansang mayroon kang nasyonalidad. Kung naninirahan ka sa ibang bansa, lagyan ng tsek ang 'Oo' at isulat ang numero ng iyong residence permit at kung hanggang kailan ito balido.",
+      "example": "Lagyan ng tsek ang 'Oo'. Residence permit o katumbas Blg. XYZ123. Balido hanggang 12-12-2025.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. Kasalukuyang trabaho *",
+      "legible": true,
+      "meaning": "Isulat ang iyong kasalukuyang propesyon o trabaho. Dapat nakasulat sa malalaking letra.",
+      "example": "ENGINEER",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B \n TRAVEL DOCUMENT",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. Employer at address at numero ng telepono ng employer. Para sa mga estudyante, pangalan at address ng institusyong pang-edukasyon *",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng iyong employer, ang kanilang kumpletong address, at numero ng telepono. Kung ikaw ay estudyante, isulat ang pangalan at address ng iyong paaralan.",
+      "example": "ABC Company, 456 Business Ave., Makati City, Philippines, +6321234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "22. Main purpose(s) of the journey * \n Tourism \n Business \n Visiting family or friends \n Cultural \n Official visit \n Medical reasons \n Study \n Other (specify)",
+      "label_translated": "22. Pangunahing layunin (mga layunin) ng paglalakbay * \n Turismo \n Negosyo \n Pagbisita sa pamilya o kaibigan \n Kultura \n Opisyal na pagbisita \n Medikal na dahilan \n Pag-aaral \n Iba pa (tukuyin)",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon na pinakaangkop sa pangunahing layunin ng iyong paglalakbay. Kung 'Iba pa', mangyaring tukuyin.",
+      "example": "Lagyan ng tsek ang 'Turismo'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "23. Number of entries requested * \n Single \n Two \n Multiple",
+      "label_translated": "23. Bilang ng mga pagpasok na hinihiling * \n Isang beses \n Dalawang beses \n Maraming beses",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon na tumutukoy kung ilang beses mo planong pumasok sa bansa.",
+      "example": "Lagyan ng tsek ang 'Isang beses'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. Inaasahang petsa ng pagdating *",
+      "legible": true,
+      "meaning": "Isulat ang inaasahang petsa ng iyong pagdating sa bansa, gamit ang format na araw-buwan-taon.",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang petsa ng pagdating ay mali ang format o hindi makatuwiran."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. Inaasahang petsa ng pag-alis *",
+      "legible": true,
+      "meaning": "Isulat ang inaasahang petsa ng iyong pag-alis mula sa bansa, gamit ang format na araw-buwan-taon.",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang petsa ng pag-alis ay mali ang format o hindi makatuwiran."
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years \n No \n Yes. Date(s) of validity from \n to",
+      "label_translated": "26. Mga visa na inisyu ng Republic of Meridia sa nakalipas na tatlong taon \n Hindi \n Oo. Petsa (mga petsa) ng balido mula \n hanggang",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang 'Hindi' kung hindi ka pa nabigyan ng visa ng Republic of Meridia sa nakalipas na tatlong taon. Kung oo, lagyan ng tsek ang 'Oo' at isulat ang mga petsa kung kailan balido ang mga visa na iyon.",
+      "example": "Lagyan ng tsek ang 'Oo'. Petsa (mga petsa) ng balido mula 01-01-2022 hanggang 31-12-2022.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa \n No \n Yes. Date, if known",
+      "label_translated": "27. Mga fingerprint na nakolekta dati para sa aplikasyon ng visa \n Hindi \n Oo. Petsa, kung alam",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang 'Hindi' kung hindi pa nakolekta ang iyong mga fingerprint para sa aplikasyon ng visa. Kung oo, lagyan ng tsek ang 'Oo' at isulat ang petsa kung kailan ito nangyari, kung natatandaan mo.",
+      "example": "Lagyan ng tsek ang 'Hindi'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. Apelyido at unang pangalan ng inaanyayahang tao (mga tao) sa Meridia. Kung hindi naaangkop, pangalan ng hotel (mga hotel) o pansamantalang tutuluyan (mga tutuluyan) *",
+      "legible": true,
+      "meaning": "Isulat ang apelyido at pangalan ng taong mag-iimbita sa iyo sa Meridia. Kung wala kang inaanyayahang tao, isulat ang pangalan ng hotel o pansamantalang tutuluyan mo.",
+      "example": "RAMIREZ, Maria, Hotel XYZ, 123 Main Street, Meridia City",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. Address at e-mail ng inaanyayahang tao (mga tao) / hotel (mga hotel) *",
+      "legible": true,
+      "meaning": "Isulat ang kumpletong address at e-mail address ng taong mag-iimbita sa iyo o ng hotel na tutuluyan mo.",
+      "example": "123 Welcome Road, Meridia City, Meridia, maria.ramirez@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C \n JOURNEY",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered * \n by the applicant himself/herself \n by a sponsor (host, company, organisation), please specify \n Means of support: \n Cash \n Traveller's cheques \n Credit card \n Prepaid accommodation \n Prepaid transport",
+      "label_translated": "30. Gastos sa paglalakbay at pamumuhay habang nananatili ang aplikante ay sakop ng * \n ng aplikante mismo \n ng sponsor (host, kumpanya, organisasyon), mangyaring tukuyin \n Paraan ng suporta: \n Cash \n Traveller's cheques \n Credit card \n Bayad na tirahan \n Bayad na transportasyon",
+      "legible": true,
+      "meaning": "Lagyan ng tsek kung sino ang sasagot sa iyong mga gastos sa paglalakbay at pamumuhay. Kung may sponsor, tukuyin kung sino sila at kung paano ang suporta (cash, credit card, atbp.).",
+      "example": "Lagyan ng tsek ang 'ng aplikante mismo'.",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "I am aware that the visa fee is not refunded if the visa is refused. I declare that to the best of my knowledge all particulars supplied by me are correct and complete. I am aware that any false statements will lead to my application being rejected or to the annulment of a visa already granted and may also render me liable to prosecution under the law of the Republic of Meridia. I undertake to leave the territory before the expiry of the visa, if granted.",
+      "label_translated": "Alam ko na ang bayad sa visa ay hindi ibabalik kung ang visa ay tinanggihan. Idinedeklara ko na sa aking pagkakaalam ang lahat ng impormasyong ibinigay ko ay tama at kumpleto. Alam ko na ang anumang maling pahayag ay magiging sanhi ng pagtanggi sa aking aplikasyon o pagpapawalang-bisa ng visa na naibigay na at maaari rin akong managot sa ilalim ng batas ng Republic of Meridia. Nangangako akong aalis ng teritoryo bago mag-expire ang visa, kung ito ay maibigay.",
+      "legible": true,
+      "meaning": "Ito ay isang pahayag na nagsasaad na nauunawaan mo ang mga tuntunin at kundisyon ng aplikasyon ng visa, kabilang ang posibilidad na hindi maibalik ang bayad at ang mga kahihinatnan ng maling impormasyon. Kailangan mong sumang-ayon dito bago magpatuloy.",
+      "example": "N/A",
+      "rejection_risk": true,
+      "rejection_reason": "Ang hindi pag-unawa o hindi pagsang-ayon sa mga deklarasyon ay maaaring humantong sa pagtanggi ng aplikasyon."
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. Lugar at petsa *",
+      "legible": true,
+      "meaning": "Isulat ang lugar kung saan mo pinupunan ang form at ang petsa ngayon, gamit ang format na araw-buwan-taon.",
+      "example": "MANILA, 01-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o matanggihan ang aplikasyon kung ang lugar at petsa ay hindi kumpleto o mali ang format."
+    },
+    {
+      "section": "PART D \n DECLARATION",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. Lagda * (lagda ng awtoridad ng magulang / legal na tagapag-alaga, kung naaangkop)",
+      "legible": true,
+      "meaning": "Lagdaan ang bahaging ito upang patunayan na ang impormasyong iyong ibinigay ay totoo. Kung ang aplikante ay menor de edad, ang magulang o legal na tagapag-alaga ang dapat lumagda.",
+      "example": "Lagda ng aplikante.",
+      "rejection_risk": true,
+      "rejection_reason": "Ang hindi paglagda ay magiging sanhi ng pagtanggi ng aplikasyon."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "VISA",
+      "meaning": "Isang opisyal na pahintulot mula sa isang bansa na payagan ang isang dayuhan na pumasok, manatili, o umalis sa kanilang teritoryo sa loob ng isang tiyak na panahon."
+    },
+    {
+      "term": "NATIONALITY",
+      "meaning": "Ang pagiging mamamayan ng isang partikular na bansa. Ito ay nagbibigay ng mga karapatan at obligasyon sa isang tao."
+    },
+    {
+      "term": "RESIDENCE PERMIT",
+      "meaning": "Isang opisyal na dokumento na nagpapahintulot sa isang dayuhan na manirahan sa isang bansa sa loob ng isang tiyak na panahon."
+    },
+    {
+      "term": "SPONSOR",
+      "meaning": "Isang tao, kumpanya, o organisasyon na nangangako na sasagutin ang mga gastos o pananagutan ng ibang tao, tulad ng sa aplikasyon ng visa."
+    },
+    {
+      "term": "DECLARATION",
+      "meaning": "Isang pormal na pahayag na ang impormasyon ay totoo at kumpleto, na ginawa sa ilalim ng kaalaman na may mga legal na kahihinatnan kung ito ay hindi totoo."
+    },
+    {
+      "term": "ANNULMENT",
+      "meaning": "Ang pagpapawalang-bisa o pagdeklara na walang bisa ang isang bagay, tulad ng isang visa na naibigay na, dahil sa maling impormasyon o iba pang kadahilanan."
+    },
+    {
+      "term": "PROSECUTION",
+      "meaning": "Ang proseso ng paghahabla o pag-uusig sa isang tao sa korte dahil sa isang krimen o paglabag sa batas."
+    }
+  ]
+}

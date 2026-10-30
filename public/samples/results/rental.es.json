@@ -1,0 +1,241 @@
+{
+  "is_form": true,
+  "form_title": "Contrato de Arrendamiento Residencial",
+  "summary": "Este documento es un contrato de arrendamiento de una vivienda. Lo completan el propietario (o su agente) y el inquilino(s). Después de firmarlo, el propietario entregará las llaves y el inquilino comenzará a pagar el alquiler. El contrato establece los términos del alquiler, el depósito, los servicios públicos y las responsabilidades de cada parte.",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 \n LAS PARTES",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "Nombre completo del propietario (o agente gestor en nombre del propietario)",
+      "legible": true,
+      "meaning": "Escriba el nombre completo del propietario o de la persona o empresa que gestiona la propiedad en su nombre.",
+      "example": "Juan Pérez",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LAS PARTES",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "Dirección del propietario para notificaciones",
+      "legible": true,
+      "meaning": "Escriba la dirección postal donde el inquilino puede enviar notificaciones oficiales.",
+      "example": "Calle Falsa 123, Ciudad, Código Postal",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LAS PARTES",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "Nombre legal completo del Inquilino 1",
+      "legible": true,
+      "meaning": "Escriba el nombre legal completo del primer inquilino.",
+      "example": "María García",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LAS PARTES",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "Nombre legal completo del Inquilino 2 (si lo hay)",
+      "legible": true,
+      "meaning": "Escriba el nombre legal completo del segundo inquilino, si aplica.",
+      "example": "Carlos López",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n LAS PARTES",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "Nombres de todas las demás personas autorizadas a ocupar el Inmueble (ocupantes permitidos)",
+      "legible": true,
+      "meaning": "Escriba los nombres de cualquier otra persona que vivirá en la propiedad, como hijos o compañeros de piso.",
+      "example": "Ana García",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n LAS PREMISAS Y EL TÉRMINO",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "Dirección del Inmueble, incluyendo número de unidad y cualquier espacio de aparcamiento o trastero asignado",
+      "legible": true,
+      "meaning": "Escriba la dirección completa de la propiedad que se va a alquilar, incluyendo detalles como el número de piso o apartamento, y si hay plaza de garaje o trastero.",
+      "example": "Calle Mayor 45, Piso 3, Puerta B, con garaje nº 10",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n LAS PREMISAS Y EL TÉRMINO",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "Fecha de inicio del Plazo",
+      "legible": true,
+      "meaning": "Escriba la fecha en que comienza el contrato de alquiler.",
+      "example": "01/08/2024",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o que el contrato no sea válido."
+    },
+    {
+      "section": "2 \n LAS PREMISAS Y EL TÉRMINO",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "Fecha de vencimiento del Plazo",
+      "legible": true,
+      "meaning": "Escriba la fecha en que finaliza el contrato de alquiler.",
+      "example": "31/07/2025",
+      "rejection_risk": true,
+      "rejection_reason": "El formato de fecha incorrecto puede causar retrasos o que el contrato no sea válido."
+    },
+    {
+      "section": "2 \n LAS PREMISAS Y EL TÉRMINO",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "Al expirar el Plazo fijo, a menos que alguna de las Partes haya notificado por escrito con no menos de ______ días de antelación, el arrendamiento continuará como un arrendamiento periódico mes a mes en los mismos términos, con los cambios necesarios.",
+      "legible": true,
+      "meaning": "Indique el número de días de preaviso por escrito que se deben dar para terminar el contrato. Si no se da aviso, el contrato se renueva automáticamente mes a mes.",
+      "example": "60",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "Renta pagadera: $______ por mes natural",
+      "legible": true,
+      "meaning": "Escriba la cantidad de dinero que se pagará como alquiler cada mes.",
+      "example": "1000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "Pagadero por adelantado el día ______ de cada mes",
+      "legible": true,
+      "meaning": "Indique el día del mes en que se debe pagar el alquiler por adelantado.",
+      "example": "1",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "Método de pago",
+      "legible": true,
+      "meaning": "Marque la casilla que indica cómo se pagará el alquiler (transferencia bancaria, cheque u otro método).",
+      "example": "Cheque",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "Cargo por pago tardío: $______ después de ______ días de retraso",
+      "legible": true,
+      "meaning": "Indique la cantidad del cargo por pagar el alquiler con retraso y cuántos días de retraso se permiten antes de aplicarlo.",
+      "example": "50 después de 7 días",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "Depósito de seguridad: $______",
+      "legible": true,
+      "meaning": "Escriba la cantidad de dinero que se paga como depósito de seguridad al inicio del contrato.",
+      "example": "1000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "Depósito a ser retenido por / referencia del esquema de protección",
+      "legible": true,
+      "meaning": "Escriba el nombre de la entidad que guardará el depósito de seguridad o el número de referencia del esquema de protección de depósitos, si aplica.",
+      "example": "Agencia de Protección de Depósitos XYZ, Ref: 123456",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA Y DEPÓSITO",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "Servicios públicos y cargos pagaderos por el Inquilino",
+      "legible": true,
+      "meaning": "Marque las casillas correspondientes a los servicios públicos y cargos que el inquilino se compromete a pagar.",
+      "example": "Electricidad, Gas, Agua",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 \n RESPONSABILIDAD SOLIDARIA",
+      "label_original": "4.1 Where the Tenant comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "Cuando el Inquilino sea más de una persona, las obligaciones del Inquilino bajo este Acuerdo serán conjuntas y solidarias, y el Propietario podrá recuperar la totalidad de los atrasos de alquiler o cualquier otra suma adeudada de uno o más de ellos. Inicial de cada Inquilino:",
+      "legible": true,
+      "meaning": "Si hay más de un inquilino, todos son responsables conjuntamente del pago del alquiler y de cualquier otra deuda. Cada inquilino debe poner sus iniciales aquí para indicar que entiende y acepta esto.",
+      "example": "AB",
+      "rejection_risk": true,
+      "rejection_reason": "La falta de iniciales del inquilino en esta cláusula puede invalidar la responsabilidad solidaria y causar disputas."
+    },
+    {
+      "section": "5 \n GARANTE",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "En consideración a que el Propietario concede este arrendamiento, el Garante nombrado a continuación garantiza irrevocablemente el pago puntual del alquiler y el cumplimiento de las obligaciones del Inquilino, y se compromete a indemnizar al Propietario por todas las pérdidas, sin perjuicio de cualquier variación de este Acuerdo o extensión de tiempo concedida al Inquilino.",
+      "legible": true,
+      "meaning": "Esta sección explica que el garante se compromete a pagar el alquiler y cumplir las obligaciones del inquilino si este no lo hace, y a cubrir al propietario ante cualquier pérdida.",
+      "example": "",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 \n GARANTE",
+      "label_original": "5.2 Guarantor's full name, address and telephone \n Guarantor's initials:",
+      "label_translated": "Nombre completo, dirección y teléfono del Garante \n Iniciales del Garante:",
+      "legible": true,
+      "meaning": "Escriba el nombre completo, la dirección y el número de teléfono del garante. Luego, ponga las iniciales del garante en el espacio provisto.",
+      "example": "Iniciales: CD",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "6 \n CLÁUSULA DE RESCISIÓN",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: \n Yes \n No",
+      "label_translated": "Cualquiera de las Partes podrá rescindir este Acuerdo al expirar el plazo de ______ meses del mismo, o después, dando un preaviso por escrito de no menos de dos meses, siempre que el Inquilino no tenga atrasos en el pago del alquiler. Aplica: \n Sí \n No",
+      "legible": true,
+      "meaning": "Indique el número de meses después de los cuales cualquiera de las partes puede rescindir el contrato, dando un preaviso de dos meses, siempre que el inquilino esté al día con el alquiler. Marque 'Sí' si esta cláusula se aplica, o 'No' si no se aplica.",
+      "example": "12 meses. Aplica: Sí",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "Iniciales de todas las partes en cada página: Propietario ______ Inquilino(s) ______ / ______",
+      "legible": true,
+      "meaning": "Todas las partes (propietario e inquilino(s)) deben poner sus iniciales en cada página del contrato para confirmar que han leído y aceptado el contenido.",
+      "example": "Propietario: AB Inquilino(s): CD / EF",
+      "rejection_risk": true,
+      "rejection_reason": "La falta de iniciales en cada página puede hacer que el contrato sea inválido o que ciertas cláusulas no se consideren aceptadas."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "Significa 'con los cambios necesarios'. Se usa para indicar que un conjunto de términos o condiciones se aplicará a una nueva situación, pero se harán los ajustes necesarios para que sea apropiado."
+    },
+    {
+      "term": "joint and several",
+      "meaning": "Responsabilidad conjunta y solidaria. Significa que cada persona es responsable de la totalidad de la deuda o la obligación, y el acreedor puede reclamar la totalidad a cualquiera de los deudores, o a todos ellos."
+    },
+    {
+      "term": "indemnify",
+      "meaning": "Indemnizar. Significa proteger a alguien contra pérdidas o daños financieros, pagando por ellos si ocurren."
+    },
+    {
+      "term": "covenants",
+      "meaning": "Pactos o promesas. En un contrato, son las obligaciones o acuerdos formales que las partes se comprometen a cumplir."
+    },
+    {
+      "term": "arrears",
+      "meaning": "Atrasos. Se refiere a pagos que están atrasados, especialmente el alquiler o deudas que no se han pagado en la fecha debida."
+    }
+  ]
+}

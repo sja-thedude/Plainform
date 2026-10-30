@@ -1,0 +1,245 @@
+{
+  "is_form": true,
+  "form_title": "आवासीय किरायेदारी समझौता",
+  "summary": "यह दस्तावेज़ मकान मालिक और किरायेदार के बीच एक घर या अपार्टमेंट को किराए पर देने की शर्तों को तय करता है। मकान मालिक या किरायेदार इस फॉर्म को भरते हैं। इसे भरने के बाद, यह एक कानूनी अनुबंध बन जाता है।",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 · पक्ष",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "मकान मालिक का पूरा नाम (या मकान मालिक की ओर से प्रबंध एजेंट)",
+      "legible": true,
+      "meaning": "यहां मकान मालिक या उनके एजेंट का पूरा नाम लिखें।",
+      "example": "राम कुमार शर्मा",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · पक्ष",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "नोटिस तामील के लिए मकान मालिक का पता",
+      "legible": true,
+      "meaning": "यहां वह पता लिखें जहां मकान मालिक को कानूनी नोटिस भेजे जा सकते हैं।",
+      "example": "123, मुख्य मार्ग, नई दिल्ली",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · पक्ष",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "किरायेदार 1 का पूरा कानूनी नाम",
+      "legible": true,
+      "meaning": "यहां पहले किरायेदार का पूरा कानूनी नाम लिखें।",
+      "example": "सुरेश कुमार",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · पक्ष",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "किरायेदार 2 का पूरा कानूनी नाम (यदि कोई हो)",
+      "legible": true,
+      "meaning": "यदि कोई दूसरा किरायेदार है, तो उसका पूरा कानूनी नाम यहां लिखें।",
+      "example": "मीना कुमारी",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · पक्ष",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "परिसर में रहने की अनुमति प्राप्त अन्य सभी व्यक्तियों के नाम (अनुमत अधिभोगी)",
+      "legible": true,
+      "meaning": "यहां उन सभी अन्य लोगों के नाम लिखें जिन्हें परिसर में रहने की अनुमति है, जैसे परिवार के सदस्य।",
+      "example": "राहुल शर्मा (बेटा)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 · परिसर और अवधि",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "परिसर का पता, जिसमें यूनिट नंबर और आवंटित कोई पार्किंग स्थान या भंडारण शामिल है",
+      "legible": true,
+      "meaning": "यहां उस संपत्ति का पूरा पता लिखें जिसे किराए पर लिया जा रहा है, जिसमें यूनिट नंबर, पार्किंग या भंडारण की जगह भी शामिल है।",
+      "example": "फ्लैट 101, ब्लॉक बी, सनशाइन अपार्टमेंट्स, सेक्टर 15, नोएडा",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 · परिसर और अवधि",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "अवधि की शुरुआत की तारीख",
+      "legible": true,
+      "meaning": "यहां वह तारीख लिखें जब किरायेदारी शुरू होगी।",
+      "example": "01/08/2024",
+      "rejection_risk": true,
+      "rejection_reason": "गलत तारीख प्रारूप से देरी हो सकती है।"
+    },
+    {
+      "section": "2 · परिसर और अवधि",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "अवधि की समाप्ति की तारीख",
+      "legible": true,
+      "meaning": "यहां वह तारीख लिखें जब किरायेदारी समाप्त होगी।",
+      "example": "31/07/2025",
+      "rejection_risk": true,
+      "rejection_reason": "गलत तारीख प्रारूप से देरी हो सकती है।"
+    },
+    {
+      "section": "2 · परिसर और अवधि",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "निश्चित अवधि की समाप्ति पर, जब तक कि किसी भी पक्ष ने कम से कम ______ दिनों का लिखित नोटिस नहीं दिया हो, किरायेदारी समान शर्तों पर महीने-दर-महीने आवधिक किरायेदारी के रूप में जारी रहेगी, जिसमें आवश्यक परिवर्तन किए जाएंगे।",
+      "legible": true,
+      "meaning": "यह बताता है कि यदि निश्चित अवधि समाप्त होने पर कोई पक्ष नोटिस नहीं देता है, तो किरायेदारी महीने-दर-महीने जारी रहेगी। आपको यहां दिनों की संख्या भरनी होगी।",
+      "example": "60",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "देय किराया: $______ प्रति कैलेंडर माह",
+      "legible": true,
+      "meaning": "यहां हर महीने देय किराए की राशि लिखें।",
+      "example": "15000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "प्रत्येक माह की ______ तारीख को अग्रिम रूप से देय",
+      "legible": true,
+      "meaning": "यहां वह तारीख लिखें जिस दिन हर महीने किराया अग्रिम रूप से देना होगा।",
+      "example": "1",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "भुगतान का तरीका",
+      "legible": true,
+      "meaning": "किराया भुगतान के तरीके के लिए बॉक्स को टिक करें: बैंक ट्रांसफर, चेक, या अन्य।",
+      "example": "Bank transfer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "देर से भुगतान शुल्क: ______ दिनों की बकाया के बाद $______",
+      "legible": true,
+      "meaning": "यदि किराया देर से भुगतान किया जाता है, तो यहां देर से भुगतान शुल्क की राशि और कितने दिनों की देरी के बाद यह लागू होगा, वह लिखें।",
+      "example": "500 after 5 days arrears",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "सुरक्षा जमा: $______",
+      "legible": true,
+      "meaning": "यहां सुरक्षा जमा के रूप में दी जाने वाली राशि लिखें।",
+      "example": "30000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "जमा किसके द्वारा रखा जाएगा / संरक्षण योजना संदर्भ",
+      "legible": true,
+      "meaning": "यहां उस व्यक्ति या योजना का नाम लिखें जो सुरक्षा जमा रखेगा, या संरक्षण योजना का संदर्भ नंबर लिखें।",
+      "example": "XYZ टेनेंसी प्रोटेक्शन स्कीम",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · किराया और जमा",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "किरायेदार द्वारा देय उपयोगिताएँ और शुल्क",
+      "legible": true,
+      "meaning": "उन उपयोगिताओं या शुल्कों के लिए बॉक्स को टिक करें जिनका भुगतान किरायेदार करेगा, जैसे बिजली, गैस, पानी, इंटरनेट, या नगर निगम कर।",
+      "example": "Electricity, Water",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 · संयुक्त और एकाधिक दायित्व",
+      "label_original": "4.1 Where the Tenancy comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "जहां किरायेदारी में एक से अधिक व्यक्ति शामिल हैं, इस समझौते के तहत किरायेदार के दायित्व संयुक्त और एकाधिक हैं, और मकान मालिक उनमें से किसी एक या अधिक से देय किसी भी किराए के बकाया या अन्य राशि की पूरी वसूली कर सकता है। प्रत्येक किरायेदार का प्रारंभिक:",
+      "legible": true,
+      "meaning": "यह खंड बताता है कि यदि एक से अधिक किरायेदार हैं, तो वे सभी संयुक्त रूप से किराए और अन्य शुल्कों के लिए जिम्मेदार होंगे। मकान मालिक किसी भी एक किरायेदार से पूरी राशि वसूल कर सकता है। आपको यहां अपने प्रारंभिक (initial) लिखने होंगे।",
+      "example": "SK",
+      "rejection_risk": true,
+      "rejection_reason": "सभी किरायेदारों द्वारा प्रारंभिक न करने पर समझौता अमान्य हो सकता है।"
+    },
+    {
+      "section": "5 · गारंटर",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "इस किरायेदारी को प्रदान करने के बदले में, नीचे नामित गारंटर किरायेदार के किराए के उचित भुगतान और वादों के प्रदर्शन की अपरिवर्तनीय रूप से गारंटी देता है और मकान मालिक को सभी नुकसानों से बचाने के लिए सहमत है, भले ही इस समझौते में कोई बदलाव हो या किरायेदार को समय दिया गया हो।",
+      "legible": true,
+      "meaning": "यह खंड बताता है कि गारंटर किरायेदार के किराए का भुगतान करने और समझौते की शर्तों का पालन करने की गारंटी देता है। यदि किरायेदार ऐसा नहीं करता है, तो गारंटर जिम्मेदार होगा।",
+      "example": "",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 · गारंटर",
+      "label_original": "5.2 Guarantor's full name, address and telephone · Guarantor's initials:",
+      "label_translated": "गारंटर का पूरा नाम, पता और टेलीफोन · गारंटर के प्रारंभिक:",
+      "legible": true,
+      "meaning": "यहां गारंटर का पूरा नाम, पता, टेलीफोन नंबर और उनके प्रारंभिक लिखें।",
+      "example": "Ramesh Gupta, 456, MG Road, Delhi, 9876543210 · RG",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "6 · ब्रेक क्लॉज",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: ☐ Yes ☐ No",
+      "label_translated": "कोई भी पक्ष इस समझौते को अवधि के ______ महीने पूरे होने पर या उसके बाद, कम से कम दो महीने का पूर्व लिखित नोटिस देकर समाप्त कर सकता है, बशर्ते कि किरायेदार किराए के बकाया में न हो। लागू होता है: ☐ हाँ ☐ नहीं",
+      "legible": true,
+      "meaning": "यह खंड बताता है कि किरायेदारी की अवधि के कितने महीने बीत जाने के बाद कोई भी पक्ष दो महीने का नोटिस देकर समझौता समाप्त कर सकता है। यह तभी संभव है जब किरायेदार पर कोई किराया बकाया न हो। आपको यह बताना होगा कि यह खंड लागू होता है या नहीं।",
+      "example": "12 months of the Term · Yes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "6 · ब्रेक क्लॉज",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "प्रत्येक पृष्ठ पर सभी पक्षों के प्रारंभिक: मकान मालिक ______ किरायेदार(ओं) ______ / ______",
+      "legible": true,
+      "meaning": "यह सुनिश्चित करने के लिए कि समझौते के सभी पृष्ठों को पढ़ा गया है, आपको और अन्य सभी संबंधित पक्षों को प्रत्येक पृष्ठ पर अपने प्रारंभिक (initial) लिखने होंगे।",
+      "example": "Landlord: RK, Tenant(s): SK / MK",
+      "rejection_risk": true,
+      "rejection_reason": "सभी पृष्ठों पर सभी पक्षों के प्रारंभिक न होने पर समझौता अमान्य हो सकता है।"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "यह एक लैटिन वाक्यांश है जिसका अर्थ है 'आवश्यक परिवर्तन किए जाने के साथ'। इसका मतलब है कि समझौते की शर्तें लागू होंगी, लेकिन कुछ छोटे बदलावों के साथ जो स्थिति के अनुसार आवश्यक हो सकते हैं।"
+    },
+    {
+      "term": "joint and several",
+      "meaning": "इसका मतलब है कि एक से अधिक व्यक्ति संयुक्त रूप से और अलग-अलग जिम्मेदार हैं। इस मामले में, सभी किरायेदार मिलकर किराए के लिए जिम्मेदार हैं, और मकान मालिक किसी भी एक किरायेदार से पूरी राशि वसूल कर सकता है।"
+    },
+    {
+      "term": "indemnify",
+      "meaning": "इसका मतलब है कि एक पक्ष दूसरे पक्ष को किसी भी नुकसान या देनदारी से बचाएगा। यहां, गारंटर मकान मालिक को किरायेदार द्वारा किसी भी नुकसान से बचाने का वादा कर रहा है।"
+    },
+    {
+      "term": "covenants",
+      "meaning": "ये समझौते में किए गए औपचारिक वादे या प्रतिबद्धताएं हैं। इस मामले में, यह किरायेदार द्वारा समझौते की शर्तों का पालन करने के वादे को संदर्भित करता है।"
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "यह एक प्रकार की किरायेदारी है जो एक निश्चित अवधि के बजाय समय की नियमित अवधि (जैसे महीने-दर-महीने) के लिए स्वचालित रूप से नवीनीकृत होती है।"
+    },
+    {
+      "term": "arrears",
+      "meaning": "इसका मतलब है कि भुगतान देय तिथि के बाद भी नहीं किया गया है। इस संदर्भ में, यह बकाया किराए को संदर्भित करता है।"
+    }
+  ]
+}

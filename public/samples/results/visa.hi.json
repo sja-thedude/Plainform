@@ -1,0 +1,359 @@
+{
+  "is_form": true,
+  "form_title": "अल्पकालिक वीज़ा के लिए आवेदन",
+  "summary": "यह फॉर्म अल्पकालिक वीज़ा के लिए आवेदन करने के लिए है। यह उन लोगों द्वारा भरा जाता है जो किसी अन्य देश की यात्रा करना चाहते हैं। फॉर्म जमा करने के बाद, इसे एक अधिकारी द्वारा समीक्षा की जाएगी और वीज़ा के संबंध में निर्णय लिया जाएगा।",
+  "image_note": "",
+  "documents_needed": [
+    "पासपोर्ट",
+    "हाल की तस्वीर",
+    "वीज़ा के लिए आवश्यक अन्य सहायक दस्तावेज़"
+  ],
+  "fields": [
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. उपनाम (पारिवारिक नाम) *",
+      "legible": true,
+      "meaning": "यहां अपना पारिवारिक नाम लिखें, जैसा कि आपके पासपोर्ट में लिखा है।",
+      "example": "वर्मा",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपका नाम पासपोर्ट पर लिखे नाम से बिल्कुल मेल खाता हो।"
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. जन्म के समय उपनाम (पहले के पारिवारिक नाम) *",
+      "legible": true,
+      "meaning": "यदि आपका पारिवारिक नाम बदला है, तो अपना पिछला पारिवारिक नाम यहां लिखें।",
+      "example": "शर्मा",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. पहला नाम (दिए गए नाम) *",
+      "legible": true,
+      "meaning": "यहां अपना पहला नाम और कोई अन्य दिया गया नाम लिखें, जैसा कि आपके पासपोर्ट में लिखा है।",
+      "example": "राहुल कुमार",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपका नाम पासपोर्ट पर लिखे नाम से बिल्कुल मेल खाता हो।"
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. जन्म तिथि (दिन-महीना-वर्ष) *",
+      "legible": true,
+      "meaning": "अपनी जन्म तिथि दिन, महीने और वर्ष के क्रम में लिखें।",
+      "example": "15-08-1990",
+      "rejection_risk": true,
+      "rejection_reason": "गलत तारीख प्रारूप से आवेदन अस्वीकार हो सकता है।"
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. जन्म स्थान *",
+      "legible": true,
+      "meaning": "उस शहर या कस्बे का नाम लिखें जहां आपका जन्म हुआ था।",
+      "example": "दिल्ली",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. जन्म का देश *",
+      "legible": true,
+      "meaning": "उस देश का नाम लिखें जहां आपका जन्म हुआ था।",
+      "example": "भारत",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. वर्तमान राष्ट्रीयता *",
+      "legible": true,
+      "meaning": "आपकी वर्तमान राष्ट्रीयता क्या है।",
+      "example": "भारतीय",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. जन्म के समय राष्ट्रीयता, यदि अलग हो",
+      "legible": true,
+      "meaning": "यदि आपकी जन्म के समय राष्ट्रीयता आपकी वर्तमान राष्ट्रीयता से अलग थी, तो उसे यहां लिखें।",
+      "example": "भारतीय",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "9. Sex *",
+      "label_translated": "9. लिंग *",
+      "legible": true,
+      "meaning": "अपने लिंग के अनुसार 'पुरुष' या 'महिला' चुनें।",
+      "example": "पुरुष",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक विकल्प चुना है।"
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. वैवाहिक स्थिति *",
+      "legible": true,
+      "meaning": "अपनी वैवाहिक स्थिति के अनुसार 'एकल', 'विवाहित', 'तलाकशुदा', या 'विधवा/विधुर' चुनें।",
+      "example": "विवाहित",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक विकल्प चुना है।"
+    },
+    {
+      "section": "भाग ए - व्यक्तिगत विवरण",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. माता-पिता का अधिकार (नाबालिगों के मामले में) / कानूनी अभिभावक: उपनाम, पहला नाम, पता, टेलीफोन, ईमेल और राष्ट्रीयता",
+      "legible": true,
+      "meaning": "यदि आवेदक नाबालिग है, तो माता-पिता या कानूनी अभिभावक का पूरा विवरण दें।",
+      "example": "अभिभावक का उपनाम: गुप्ता, पहला नाम: अनिल, पता: 123, एमजी रोड, मुंबई, टेलीफोन: 9876543210, राष्ट्रीयता: भारतीय",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. यात्रा दस्तावेज़ का प्रकार *",
+      "legible": true,
+      "meaning": "अपने यात्रा दस्तावेज़ के प्रकार का चयन करें, जैसे 'साधारण पासपोर्ट', 'कूटनीतिक पासपोर्ट', 'सेवा पासपोर्ट', या 'अन्य (विशेष)'।",
+      "example": "साधारण पासपोर्ट",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक विकल्प चुना है।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. यात्रा दस्तावेज़ संख्या *",
+      "legible": true,
+      "meaning": "अपने पासपोर्ट या यात्रा दस्तावेज़ की संख्या लिखें।",
+      "example": "P1234567",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि यात्रा दस्तावेज़ संख्या सही ढंग से दर्ज की गई है।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. जारी करने की तिथि *",
+      "legible": true,
+      "meaning": "आपके यात्रा दस्तावेज़ के जारी होने की तारीख लिखें।",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि तारीख सही प्रारूप में है।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. वैधता समाप्त होने की तिथि *",
+      "legible": true,
+      "meaning": "आपके यात्रा दस्तावेज़ की वैधता समाप्त होने की तारीख लिखें।",
+      "example": "31-12-2030",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि तारीख सही प्रारूप में है।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. द्वारा जारी (देश) *",
+      "legible": true,
+      "meaning": "उस देश का नाम लिखें जिसने आपका यात्रा दस्तावेज़ जारी किया है।",
+      "example": "भारत",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. आवेदक का घरेलू पता और ईमेल पता *",
+      "legible": true,
+      "meaning": "अपना पूरा घरेलू पता और ईमेल पता लिखें।",
+      "example": "123, महात्मा गांधी रोड, मुंबई, महाराष्ट्र, भारत, 400001, example@email.com",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि पता और ईमेल पता सही और पूर्ण हैं।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. टेलीफोन नंबर *",
+      "legible": true,
+      "meaning": "अपना संपर्क योग्य टेलीफोन नंबर लिखें।",
+      "example": "+91-9876543210",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि टेलीफोन नंबर सही और संपर्क योग्य है।"
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. वर्तमान राष्ट्रीयता के अलावा किसी अन्य देश में निवास",
+      "legible": true,
+      "meaning": "यदि आप वर्तमान में किसी ऐसे देश में रह रहे हैं जो आपकी राष्ट्रीयता वाले देश से अलग है, तो 'हाँ' चुनें और निवास परमिट या समकक्ष संख्या और वैधता अवधि बताएं। अन्यथा 'नहीं' चुनें।",
+      "example": "नहीं",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. वर्तमान व्यवसाय *",
+      "legible": true,
+      "meaning": "आप वर्तमान में क्या काम करते हैं, उसका उल्लेख करें।",
+      "example": "सॉफ्टवेयर इंजीनियर",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग बी - यात्रा दस्तावेज़",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. नियोक्ता और नियोक्ता का पता और टेलीफोन नंबर। छात्रों के लिए, शैक्षणिक संस्थान का नाम और पता *",
+      "legible": true,
+      "meaning": "यदि आप कार्यरत हैं, तो अपने नियोक्ता का नाम, पता और टेलीफोन नंबर दें। यदि आप छात्र हैं, तो अपने शैक्षणिक संस्थान का नाम और पता दें।",
+      "example": "कंपनी का नाम: टेक सॉल्यूशंस, पता: 456, कॉर्पोरेट टावर, बैंगलोर, टेलीफोन: 080-12345678",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. यात्रा का मुख्य उद्देश्य *",
+      "legible": true,
+      "meaning": "अपनी यात्रा के मुख्य उद्देश्य का चयन करें, जैसे 'पर्यटन', 'व्यवसाय', 'परिवार या दोस्तों से मिलना', 'सांस्कृतिक', 'आधिकारिक यात्रा', 'चिकित्सा कारण', 'अध्ययन', या 'अन्य (विशेष)'।",
+      "example": "पर्यटन",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक या अधिक प्रासंगिक विकल्प चुने हैं।"
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. अनुरोधित प्रवेश की संख्या *",
+      "legible": true,
+      "meaning": "आप कितने प्रवेश की अनुमति चाहते हैं, यह चुनें: 'एकल', 'दो', या 'एकाधिक'।",
+      "example": "एकाधिक",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक विकल्प चुना है।"
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. आगमन की अनुमानित तिथि *",
+      "legible": true,
+      "meaning": "उस तारीख को लिखें जब आप गंतव्य देश में पहुंचने की उम्मीद करते हैं।",
+      "example": "10-09-2024",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि तारीख सही प्रारूप में है।"
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. प्रस्थान की अनुमानित तिथि *",
+      "legible": true,
+      "meaning": "उस तारीख को लिखें जब आप गंतव्य देश से प्रस्थान करने की उम्मीद करते हैं।",
+      "example": "20-09-2024",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि तारीख सही प्रारूप में है।"
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. पिछले तीन वर्षों में मेरिडिया गणराज्य द्वारा जारी वीज़ा",
+      "legible": true,
+      "meaning": "यदि आपको पिछले तीन वर्षों में मेरिडिया गणराज्य द्वारा वीज़ा जारी किया गया है, तो 'हाँ' चुनें और वीज़ा की वैधता की तारीखें बताएं। अन्यथा 'नहीं' चुनें।",
+      "example": "नहीं",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. वीज़ा के लिए आवेदन करने के उद्देश्य से पहले फिंगरप्रिंट लिए गए हैं",
+      "legible": true,
+      "meaning": "यदि आपके फिंगरप्रिंट पहले वीज़ा आवेदन के लिए लिए गए हैं, तो 'हाँ' चुनें और उस तारीख को बताएं जब वे लिए गए थे। अन्यथा 'नहीं' चुनें।",
+      "example": "नहीं",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. मेरिडिया में आमंत्रित व्यक्ति का उपनाम और पहला नाम। यदि लागू न हो, तो होटल या अस्थायी आवास का नाम *",
+      "legible": true,
+      "meaning": "यदि कोई आपको मेरिडिया में आमंत्रित कर रहा है, तो उनका पूरा नाम लिखें। यदि आप होटल में ठहर रहे हैं या किसी अन्य प्रकार के आवास में, तो उसका नाम और पता लिखें।",
+      "example": "आमंत्रित व्यक्ति का नाम: जॉन स्मिथ, या होटल का नाम: ग्रैंड होटल, पता: 1 पार्क एवेन्यू, मेरिडिया सिटी",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. आमंत्रित व्यक्ति / होटल का पता और ईमेल *",
+      "legible": true,
+      "meaning": "आमंत्रित व्यक्ति या होटल का पूरा पता और ईमेल पता लिखें।",
+      "example": "पता: 1 पार्क एवेन्यू, मेरिडिया सिटी, ईमेल: info@grandhotel.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "भाग सी - यात्रा",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. आवेदक के प्रवास के दौरान यात्रा और रहने का खर्च वहन किया जाता है *",
+      "legible": true,
+      "meaning": "चुनें कि आपकी यात्रा और रहने का खर्च कौन वहन करेगा: 'स्वयं आवेदक द्वारा', 'प्रायोजक (मेजबान, कंपनी, संगठन) द्वारा', या 'अन्य'। यदि 'अन्य' है, तो कृपया विस्तार से बताएं।",
+      "example": "स्वयं आवेदक द्वारा",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि आपने एक विकल्प चुना है।"
+    },
+    {
+      "section": "भाग डी - घोषणा",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. स्थान और तिथि *",
+      "legible": true,
+      "meaning": "उस स्थान का नाम लिखें जहां आप फॉर्म भर रहे हैं और आज की तारीख लिखें।",
+      "example": "मुंबई, 25-07-2024",
+      "rejection_risk": true,
+      "rejection_reason": "यह सुनिश्चित करें कि स्थान और तारीख सही प्रारूप में दर्ज किए गए हैं।"
+    },
+    {
+      "section": "भाग डी - घोषणा",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. हस्ताक्षर * (माता-पिता / कानूनी अभिभावक के हस्ताक्षर, यदि लागू हो)",
+      "legible": true,
+      "meaning": "यहां अपने हस्ताक्षर करें। यदि आप नाबालिग हैं, तो आपके माता-पिता या कानूनी अभिभावक को हस्ताक्षर करने होंगे।",
+      "example": "हस्ताक्षर का एक नमूना",
+      "rejection_risk": true,
+      "rejection_reason": "हस्ताक्षर के बिना आवेदन अस्वीकार किया जा सकता है।"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Short-Stay Visa",
+      "meaning": "यह एक प्रकार का वीज़ा है जो किसी व्यक्ति को एक निश्चित अवधि के लिए, आमतौर पर 90 दिनों तक, किसी देश में रहने की अनुमति देता है। यह पर्यटन, व्यवसाय या परिवार से मिलने जैसे उद्देश्यों के लिए होता है।"
+    },
+    {
+      "term": "Directorate of Immigration and Consular Affairs",
+      "meaning": "यह एक सरकारी विभाग है जो वीज़ा और आप्रवासन से संबंधित मामलों को संभालता है।"
+    },
+    {
+      "term": "Parental Authority",
+      "meaning": "यह माता-पिता या कानूनी अभिभावकों के अधिकार और जिम्मेदारी को संदर्भित करता है जो नाबालिग बच्चों की ओर से निर्णय ले सकते हैं।"
+    },
+    {
+      "term": "Legal Guardian",
+      "meaning": "एक व्यक्ति जिसे अदालत द्वारा किसी अन्य व्यक्ति (आमतौर पर एक नाबालिग या अक्षम व्यक्ति) की देखभाल और संपत्ति का प्रबंधन करने के लिए नियुक्त किया जाता है।"
+    },
+    {
+      "term": "Diplomatic Visa",
+      "meaning": "यह वीज़ा राजनयिकों या सरकारी अधिकारियों को आधिकारिक यात्राओं के लिए जारी किया जाता है।"
+    },
+    {
+      "term": "Service Visa",
+      "meaning": "यह वीज़ा सरकारी कर्मचारियों या अंतर्राष्ट्रीय संगठनों के कर्मचारियों को आधिकारिक मिशन पर यात्रा करने के लिए जारी किया जाता है।"
+    }
+  ]
+}
