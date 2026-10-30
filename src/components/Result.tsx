@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import type { Explanation, Field } from "@/lib/schema";
 import type { Language } from "@/lib/languages";
 
@@ -6,9 +9,11 @@ const LATIN = new Set(["en", "fr", "es", "tl"]);
 
 export function Result({ data, lang }: { data: Explanation; lang: Language }) {
   const t = lang.ui;
-  const sections = groupBySection(data.fields);
+  const [onlyRisky, setOnlyRisky] = useState(false);
   const risky = data.fields.filter((f) => f.rejection_risk).length;
   const unclear = data.fields.filter((f) => !f.legible).length;
+  const shown = onlyRisky ? data.fields.filter((f) => f.rejection_risk) : data.fields;
+  const sections = groupBySection(shown);
   let index = 0;
 
   return (
@@ -48,15 +53,62 @@ export function Result({ data, lang }: { data: Explanation; lang: Language }) {
         </section>
       )}
 
+      {data.documents_needed.length > 0 && (
+        <section className="rise rounded-2xl border border-line bg-surface p-5 shadow-card">
+          <h3 className="flex items-center gap-2 font-semibold text-ink">
+            <span className="grid size-8 place-items-center rounded-lg bg-accent-soft text-accent" aria-hidden>
+              <svg viewBox="0 0 24 24" className="size-4.5" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 4h6l1 2h3a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h3z" />
+                <path d="m9 13 2 2 4-4" />
+              </svg>
+            </span>
+            {t.documents}
+          </h3>
+          <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+            {data.documents_needed.map((d, i) => (
+              <li key={i} className="flex items-start gap-2 rounded-lg bg-surface-2 px-3 py-2 text-ink">
+                <span className="mt-0.5 text-accent" aria-hidden>
+                  ✓
+                </span>
+                <span>{d}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <p className="rise flex gap-2 rounded-xl border border-line bg-surface-2 p-3 text-sm leading-relaxed text-ink-2 print:border-0 print:bg-transparent print:p-0">
         <span aria-hidden>ⓘ</span>
         <span>{t.disclaimer}</span>
       </p>
 
-      {data.fields.length > 0 && (
+      {risky > 0 && (
+        <button
+          type="button"
+          aria-pressed={onlyRisky}
+          onClick={() => setOnlyRisky((v) => !v)}
+          className={`flex min-h-11 w-full items-center gap-3 rounded-xl border px-4 py-2 text-start text-sm font-medium transition print:hidden ${
+            onlyRisky ? "border-danger-line bg-danger-bg text-danger-ink" : "border-line bg-surface text-ink-2 hover:border-danger-line"
+          }`}
+        >
+          <span
+            aria-hidden
+            className={`relative h-6 w-10 shrink-0 rounded-full transition-colors ${onlyRisky ? "bg-danger-line" : "bg-line"}`}
+          >
+            <span
+              className={`absolute top-1 size-4 rounded-full bg-surface shadow transition-all ${
+                onlyRisky ? "start-5" : "start-1"
+              }`}
+            />
+          </span>
+          {onlyRisky ? t.showAll : t.onlyRisky}
+        </button>
+      )}
+
+      {shown.length > 0 && (
         <section className="space-y-7 pt-1">
           {sections.map(([name, fields], i) => (
-            <div key={i}>
+            <div key={`${onlyRisky}-${i}`}>
               {name && (
                 <h3 className="mb-3 flex items-center gap-3 text-sm font-semibold tracking-wide text-ink-3">
                   <span>{name}</span>
@@ -70,6 +122,30 @@ export function Result({ data, lang }: { data: Explanation; lang: Language }) {
               </ol>
             </div>
           ))}
+        </section>
+      )}
+
+      {data.key_terms.length > 0 && (
+        <section className="rise rounded-2xl border border-line bg-surface p-5 shadow-card">
+          <h3 className="flex items-center gap-2 font-semibold text-ink">
+            <span className="grid size-8 place-items-center rounded-lg bg-accent-soft text-accent" aria-hidden>
+              <svg viewBox="0 0 24 24" className="size-4.5" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z" />
+                <path d="M4 19V5M9 8h6M9 12h4" />
+              </svg>
+            </span>
+            {t.terms}
+          </h3>
+          <dl className="mt-3 divide-y divide-line">
+            {data.key_terms.map((k, i) => (
+              <div key={i} className="py-3 first:pt-1 last:pb-0">
+                <dt dir="auto" className="font-semibold text-ink">
+                  {k.term}
+                </dt>
+                <dd className="mt-0.5 leading-relaxed text-ink-2">{k.meaning}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
       )}
     </article>

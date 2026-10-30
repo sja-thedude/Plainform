@@ -27,6 +27,7 @@ Return:
 - form_title: the form's name, translated into ${lang.english}.
 - summary: one paragraph. What this form is for, who usually fills it in, and what typically happens after it is submitted (for example: reviewed by an officer, an appointment, a decision letter). Only describe what the form itself shows or what is standard for this type of form.
 - image_note: a short note in ${lang.english} if part of the page is cut off, blurred, covered by glare, or too small to read. Empty string if the image is fine.
+- documents_needed: documents the person will probably need to have with them or attach, as the form states or implies (for example passport, photo, insurance card, proof of address). Short items in ${lang.english}. Empty list if none are implied.
 - fields: every field a person has to fill in, tick, initial, or sign, in reading order. Include checkboxes, initials boxes, signature lines and date lines. Skip boxes marked "for office use only". For a clause the person must initial or agree to, treat the initials box as the field and explain what the clause commits them to.
 
 For each field:
@@ -38,6 +39,8 @@ For each field:
 - example: an example of a correctly formatted answer, using obviously fictional sample values. For yes/no questions and questions about personal history, health or money, show only how an answer is written, and add that the person should answer truthfully. For signature and initials fields, describe what goes there.
 - rejection_risk: true only when this kind of field is widely known to cause rejections, delays or disputes (for example a name that does not match the passport exactly, a wrong date format, a missing signature, unexplained gaps, an unticked consent box). Do not invent risks.
 - rejection_reason: one sentence on why, in ${lang.english}. Empty string when rejection_risk is false.
+
+- key_terms: up to 8 difficult legal, medical or bureaucratic words or phrases that actually appear on this page (for example "joint and several", "advance directive", "mutatis mutandis"). term is the word as printed; meaning is a one or two sentence plain explanation in ${lang.english}. Empty list if the page has none.
 
 Rules that override everything else:
 1. Explain what a field asks for. Never tell the person what they personally should answer, whether they qualify, whether to sign, or whether the terms are fair. This is not legal, medical or immigration advice.

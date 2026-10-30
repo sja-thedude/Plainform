@@ -16,7 +16,9 @@ export const ExplanationSchema = z.object({
   form_title: z.string(),
   summary: z.string(),
   image_note: z.string(),
+  documents_needed: z.array(z.string()),
   fields: z.array(FieldSchema),
+  key_terms: z.array(z.object({ term: z.string(), meaning: z.string() })),
 });
 
 export type Field = z.infer<typeof FieldSchema>;
@@ -27,12 +29,13 @@ export type Explanation = z.infer<typeof ExplanationSchema>;
 export const EXPLANATION_JSON_SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["is_form", "form_title", "summary", "image_note", "fields"],
+  required: ["is_form", "form_title", "summary", "image_note", "documents_needed", "fields", "key_terms"],
   properties: {
     is_form: { type: "boolean" },
     form_title: { type: "string" },
     summary: { type: "string" },
     image_note: { type: "string" },
+    documents_needed: { type: "array", items: { type: "string" } },
     fields: {
       type: "array",
       items: {
@@ -58,6 +61,15 @@ export const EXPLANATION_JSON_SCHEMA = {
           rejection_risk: { type: "boolean" },
           rejection_reason: { type: "string" },
         },
+      },
+    },
+    key_terms: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        required: ["term", "meaning"],
+        properties: { term: { type: "string" }, meaning: { type: "string" } },
       },
     },
   },
