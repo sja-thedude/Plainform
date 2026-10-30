@@ -2,6 +2,8 @@
 
 **Live demo: [plainform.sja-affu765.workers.dev](https://plainform.sja-affu765.workers.dev)**
 
+**Demo video: [youtu.be/fi-Lk7D8HXQ](https://youtu.be/fi-Lk7D8HXQ)**
+
 Any official form, explained in plain words, in your own language.
 
 Official forms are written in bureaucratic language, often in a language the person filling them in doesn't read well: visa applications, hospital intake, tenancy agreements, school enrolment, bank account opening. People guess, make mistakes, and get rejected or sign things they didn't understand.
@@ -22,6 +24,10 @@ Plainform is one page. No signup, no account, nothing to install. Photograph or 
 Explanations are available in English, Arabic, Urdu, Hindi, Bengali, Tagalog, French and Spanish. Arabic and Urdu render right to left, Urdu in proper Nastaliq script. Results are readable on a phone, print cleanly, and the whole page has light and dark modes that follow your system setting, with a toggle.
 
 Three sample blank forms (a visa application, a hospital intake form and a rental agreement) are built in, so you can see it working in one tap.
+
+## Demo video
+
+[![Watch the two-minute Plainform demo on YouTube](https://img.youtube.com/vi/fi-Lk7D8HXQ/hqdefault.jpg)](https://youtu.be/fi-Lk7D8HXQ)
 
 ## Screenshots
 
