@@ -21,9 +21,7 @@ const devanagari = Noto_Sans_Devanagari({
   preload: false,
 });
 
-const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "http://localhost:3000";
+const siteUrl = "https://plainform.sja-affu765.workers.dev";
 
 const description =
   "Photograph any official form and get every field explained in plain words, in your own language. Visa, hospital, rental and bank forms. Nothing is stored.";

@@ -1,5 +1,7 @@
 # Plainform
 
+**Live demo: [plainform.sja-affu765.workers.dev](https://plainform.sja-affu765.workers.dev)**
+
 Any official form, explained in plain words, in your own language.
 
 Official forms are written in bureaucratic language, often in a language the person filling them in doesn't read well: visa applications, hospital intake, tenancy agreements, school enrolment, bank account opening. People guess, make mistakes, and get rejected or sign things they didn't understand.
@@ -27,7 +29,7 @@ Forms contain passport numbers, medical history and home addresses, so Plainform
 
 - No database, no accounts, no file storage. The image is held in memory for the length of one request and then dropped.
 - The server does not log uploaded images or their contents, and the page has no analytics.
-- Images are resized in your browser before upload, so less data leaves your phone.
+- Images are resized in your browser before upload, and PDFs are turned into a picture of their first page there too, so less data leaves your phone.
 
 ## Not advice
 
@@ -35,7 +37,7 @@ Plainform explains what a field asks for. It does not tell anyone what to write,
 
 ## Run it locally
 
-Requirements: Node.js 20 or later and an Anthropic API key.
+Requirements: Node.js 22 or later and an Anthropic API key.
 
 ```bash
 git clone https://github.com/sja-thedude/Plainform.git
@@ -55,24 +57,28 @@ Open http://localhost:3000.
 
 ## Deploy
 
-The app is a standard Next.js project and deploys to Vercel as is:
+Plainform runs on Cloudflare Workers through the OpenNext adapter.
 
-1. Import the GitHub repo into Vercel.
-2. Add `ANTHROPIC_API_KEY` under Project Settings → Environment Variables.
-3. Deploy.
+```bash
+npx wrangler login
+npx wrangler secret put ANTHROPIC_API_KEY
+npm run deploy
+```
+
+`npm run preview` builds the Worker and runs it locally in the Workers runtime. Secrets are only ever set with `wrangler secret put`, never in a file in the repo.
 
 ## Stack
 
 - Next.js 15 (App Router) and TypeScript
 - Tailwind CSS 4, no component library
 - Claude API (`claude-opus-5-5`) with vision and structured JSON output to read the form
-- `pdf-lib` to take the first page of an uploaded PDF
+- pdf.js in the browser to turn the first page of a PDF into an image
 - Noto fonts for Arabic (Naskh), Urdu (Nastaliq), Devanagari and Bengali
-- Hosted on Vercel
+- Cloudflare Workers via `@opennextjs/cloudflare`, deployed with Wrangler
 
 ## How it works
 
-1. The browser resizes the photo and re-encodes it as JPEG. HEIC photos from iPhones are converted on browsers that can decode them. PDFs are sent as they are, and the server keeps only the first page.
+1. The browser resizes the photo and re-encodes it as JPEG. HEIC photos from iPhones are converted on browsers that can decode them. PDFs are opened in the browser with pdf.js and only their first page is drawn and sent, as an image.
 2. `POST /api/explain` sends the page to Claude with instructions to list every field in reading order, explain it in the chosen language, flag known rejection risks, mark anything it cannot read as unreadable, and never give advice.
 3. The response is a fixed JSON schema. It streams to the browser as newline-delimited events and is parsed as it arrives, so cards appear while Claude is still writing. The finished result is validated on the server before the final event. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
 4. The three sample forms have pre-computed results in `public/samples/results/`, so the demo loads instantly.

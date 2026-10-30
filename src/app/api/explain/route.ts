@@ -5,7 +5,7 @@ import { getLanguage } from "@/lib/languages";
 export const runtime = "nodejs";
 export const maxDuration = 300;
 
-// Vercel rejects request bodies over 4.5 MB.
+// The browser sends a resized JPEG, so 4 MB is plenty.
 const MAX_BYTES = 4 * 1024 * 1024;
 
 // Response is newline-delimited JSON events:

@@ -486,16 +486,19 @@ async function readExplanationStream(
   throw new Error("The connection dropped before the explanation finished. Please try again.");
 }
 
-// Images are resized and re-encoded as JPEG in the browser. This keeps
-// uploads small and turns HEIC photos into something the server accepts
-// (on browsers that can decode HEIC, such as Safari).
+// Everything is turned into a JPEG in the browser before upload. Images are
+// resized, HEIC photos are converted (on browsers that can decode them, such
+// as Safari), and PDFs have their first page drawn with pdf.js.
 async function prepareFile(file: File): Promise<{ file: Blob; name: string; preview: string | null }> {
   const isPdf = file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf");
-  if (isPdf) {
-    if (file.size > MAX_BYTES) throw new Error("That PDF is too large. Please use one under 4 MB, or a photo of the page.");
-    return { file: new Blob([file], { type: "application/pdf" }), name: file.name, preview: null };
-  }
+  const canvas = isPdf ? await drawPdfPage(file) : await drawImage(file);
+  const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/jpeg", 0.85));
+  if (!blob) throw new Error("That file couldn't be processed. Please try another.");
+  if (blob.size > MAX_BYTES) throw new Error("That page is too detailed to send. Please try a closer photo.");
+  return { file: blob, name: "form.jpg", preview: URL.createObjectURL(blob) };
+}
 
+async function drawImage(file: File): Promise<HTMLCanvasElement> {
   const url = URL.createObjectURL(file);
   const img = new Image();
   try {
@@ -505,24 +508,53 @@ async function prepareFile(file: File): Promise<{ file: Blob; name: string; prev
       img.src = url;
     });
   } catch {
-    URL.revokeObjectURL(url);
     const heic = /\.(heic|heif)$/i.test(file.name) || /hei[cf]/.test(file.type);
     throw new Error(
       heic
         ? "This browser can't open HEIC photos. Use \"Take a photo\" instead, or save the picture as JPG first."
         : "That file couldn't be opened as an image. Please use a JPG, PNG or PDF.",
     );
+  } finally {
+    URL.revokeObjectURL(url);
   }
-
   const scale = Math.min(1, MAX_SIDE / Math.max(img.naturalWidth, img.naturalHeight));
+  const canvas = whiteCanvas(img.naturalWidth * scale, img.naturalHeight * scale);
+  canvas.getContext("2d")!.drawImage(img, 0, 0, canvas.width, canvas.height);
+  return canvas;
+}
+
+async function drawPdfPage(file: File): Promise<HTMLCanvasElement> {
+  const pdfjs = await import("pdfjs-dist");
+  pdfjs.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.mjs", import.meta.url).toString();
+  const task = pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()) });
+  let doc;
+  try {
+    doc = await task.promise;
+  } catch (e) {
+    throw new Error(
+      (e as Error)?.name === "PasswordException"
+        ? "This PDF is password protected. Please take a photo of the page instead."
+        : "This PDF couldn't be opened. Please take a photo of the page instead.",
+    );
+  }
+  try {
+    const page = await doc.getPage(1);
+    const base = page.getViewport({ scale: 1 });
+    const viewport = page.getViewport({ scale: MAX_SIDE / Math.max(base.width, base.height) });
+    const canvas = whiteCanvas(viewport.width, viewport.height);
+    await page.render({ canvas, viewport }).promise;
+    return canvas;
+  } finally {
+    task.destroy();
+  }
+}
+
+function whiteCanvas(width: number, height: number): HTMLCanvasElement {
   const canvas = document.createElement("canvas");
-  canvas.width = Math.round(img.naturalWidth * scale);
-  canvas.height = Math.round(img.naturalHeight * scale);
+  canvas.width = Math.round(width);
+  canvas.height = Math.round(height);
   const ctx = canvas.getContext("2d")!;
   ctx.fillStyle = "#fff";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-  const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/jpeg", 0.85));
-  if (!blob) throw new Error("That image couldn't be processed. Please try another.");
-  return { file: blob, name: "form.jpg", preview: url };
+  return canvas;
 }
