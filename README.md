@@ -6,6 +6,7 @@ Official forms are written in bureaucratic language, often in a language the per
 
 Plainform is one page. No signup, no account, nothing to install. Photograph or upload a form, pick a language, and get:
 
+- **Live results**: the explanation streams in as the page is read, field by field, instead of after a long wait.
 - **A one-paragraph summary** of what the form is for and what happens after you submit it.
 - **Every field, one by one:** the label as printed, what it is actually asking for in plain words, and an example of a correctly formatted answer.
 - **A warning flag** on fields that commonly cause rejections, such as a name that doesn't match the passport, a wrong date format, or a missing signature.
@@ -71,7 +72,7 @@ The app is a standard Next.js project and deploys to Vercel as is:
 
 1. The browser resizes the photo and re-encodes it as JPEG. HEIC photos from iPhones are converted on browsers that can decode them. PDFs are sent as they are, and the server keeps only the first page.
 2. `POST /api/explain` sends the page to Claude with instructions to list every field in reading order, explain it in the chosen language, flag known rejection risks, mark anything it cannot read as unreadable, and never give advice.
-3. The response is a fixed JSON schema, validated on the server, and rendered as a summary card plus one card per field. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
+3. The response is a fixed JSON schema. It streams to the browser as newline-delimited events and is parsed as it arrives, so cards appear while Claude is still writing. The finished result is validated on the server before the final event. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
 4. The three sample forms have pre-computed results in `public/samples/results/`, so the demo loads instantly.
 
 ## Project layout

@@ -9,6 +9,7 @@ import { Result } from "@/components/Result";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { LANGUAGES, getLanguage, type LangCode } from "@/lib/languages";
 import { SAMPLES, cachedResultUrl, type Sample } from "@/lib/samples";
+import { parsePartial } from "@/lib/partial";
 import type { Explanation } from "@/lib/schema";
 
 type Source = { kind: "sample"; sample: Sample } | { kind: "file"; file: Blob; name: string; preview: string | null };
@@ -16,6 +17,7 @@ type Source = { kind: "sample"; sample: Sample } | { kind: "file"; file: Blob; n
 type Status =
   | { state: "idle" }
   | { state: "loading"; startedAt: number }
+  | { state: "streaming"; data: Explanation }
   | { state: "done"; data: Explanation }
   | { state: "error"; message: string };
 
@@ -65,9 +67,13 @@ export default function Home() {
       body.append("file", blob, name);
       body.append("lang", code);
       const res = await fetch("/api/explain", { method: "POST", body, signal: ctrl.signal });
-      const json = await res.json().catch(() => ({ error: "Something went wrong. Please try again." }));
-      if (!res.ok) throw new Error(json.error);
-      setStatus({ state: "done", data: json });
+      if (!res.ok || !res.body) {
+        const json = await res.json().catch(() => ({}));
+        throw new Error(json.error ?? "Something went wrong. Please try again.");
+      }
+      await readExplanationStream(res.body, (partial) => setStatus({ state: "streaming", data: partial }), (data) =>
+        setStatus({ state: "done", data }),
+      );
     } catch (e) {
       if (ctrl.signal.aborted) return;
       const offline = e instanceof TypeError;
@@ -292,7 +298,7 @@ export default function Home() {
               </div>
             )}
 
-            {status.state === "done" && (
+            {(status.state === "done" || status.state === "streaming") && (
               <>
                 <div className="mb-4 flex items-center justify-between gap-2 print:hidden">
                   {source?.kind === "file" && source.preview ? (
@@ -323,7 +329,7 @@ export default function Home() {
                     </button>
                   </div>
                 </div>
-                <Result data={status.data} lang={lang} />
+                <Result data={status.data} lang={lang} streaming={status.state === "streaming"} />
                 <p className="mt-8 hidden text-xs text-ink-3 print:block">
                   Explained by Plainform. Not legal, medical or immigration advice.
                 </p>
@@ -433,6 +439,47 @@ function EyeIcon() {
       <circle cx="12" cy="12" r="3" />
     </svg>
   );
+}
+
+// Reads the newline-delimited events from /api/explain, showing fields as
+// they are written. Re-parsing is throttled so long forms stay smooth.
+async function readExplanationStream(
+  body: ReadableStream<Uint8Array>,
+  onPartial: (data: Explanation) => void,
+  onDone: (data: Explanation) => void,
+) {
+  const reader = body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let json = "";
+  let lastRender = 0;
+  for (;;) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    buffer += decoder.decode(value, { stream: true });
+    const lines = buffer.split("\n");
+    buffer = lines.pop() ?? "";
+    for (const line of lines) {
+      if (!line) continue;
+      const event = JSON.parse(line);
+      if (event.type === "text") {
+        json = event.restart ? event.text : json + event.text;
+        if (Date.now() - lastRender > 120) {
+          const partial = parsePartial(json);
+          if (partial) {
+            onPartial(partial);
+            lastRender = Date.now();
+          }
+        }
+      } else if (event.type === "done") {
+        onDone(event.data);
+        return;
+      } else if (event.type === "error") {
+        throw new Error(event.message);
+      }
+    }
+  }
+  throw new Error("The connection dropped before the explanation finished. Please try again.");
 }
 
 // Images are resized and re-encoded as JPEG in the browser. This keeps
