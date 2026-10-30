@@ -1,0 +1,366 @@
+{
+  "is_form": true,
+  "form_title": "Demande de visa de court séjour",
+  "summary": "Ce formulaire sert à demander un visa pour un court séjour. Il doit être rempli par la personne qui demande le visa. Après soumission, le formulaire sera examiné par les autorités consulaires pour prendre une décision concernant la demande de visa.",
+  "image_note": "",
+  "documents_needed": [
+    "Passeport",
+    "Photographie récente (35 x 45 mm, fond blanc, prise dans les 6 derniers mois)"
+  ],
+  "fields": [
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. Nom(s) de famille *",
+      "legible": true,
+      "meaning": "Indiquez votre nom de famille tel qu'il apparaît sur votre passeport. Écrivez en majuscules.",
+      "example": "DUPONT",
+      "rejection_risk": true,
+      "rejection_reason": "Le nom doit correspondre exactement à celui du passeport."
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. Nom(s) de famille à la naissance (ancien nom de famille) *",
+      "legible": true,
+      "meaning": "Indiquez votre nom de famille à la naissance si différent de votre nom actuel. Écrivez en majuscules.",
+      "example": "MARTIN",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. Prénom(s) *",
+      "legible": true,
+      "meaning": "Indiquez votre ou vos prénoms tels qu'ils apparaissent sur votre passeport. Écrivez en majuscules.",
+      "example": "JEAN",
+      "rejection_risk": true,
+      "rejection_reason": "Le prénom doit correspondre exactement à celui du passeport."
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. Date de naissance (jour-mois-année) *",
+      "legible": true,
+      "meaning": "Indiquez votre date de naissance en respectant le format jour-mois-année.",
+      "example": "01-01-1990",
+      "rejection_risk": true,
+      "rejection_reason": "Le format de date doit être respecté (JJ-MM-AAAA)."
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. Lieu de naissance *",
+      "legible": true,
+      "meaning": "Indiquez la ville et le pays où vous êtes né.",
+      "example": "PARIS, FRANCE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. Pays de naissance *",
+      "legible": true,
+      "meaning": "Indiquez le pays où vous êtes né.",
+      "example": "FRANCE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. Nationalité actuelle *",
+      "legible": true,
+      "meaning": "Indiquez votre nationalité actuelle.",
+      "example": "FRANÇAISE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. Nationalité à la naissance, si différente",
+      "legible": true,
+      "meaning": "Indiquez votre nationalité à la naissance si elle est différente de votre nationalité actuelle.",
+      "example": "NON APPLICABLE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "9. Sex *",
+      "label_translated": "9. Sexe *",
+      "legible": true,
+      "meaning": "Cochez la case correspondant à votre sexe.",
+      "example": "Cochez 'Male' ou 'Female'",
+      "rejection_risk": true,
+      "rejection_reason": "Une case doit être cochée pour indiquer le sexe."
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. Situation familiale *",
+      "legible": true,
+      "meaning": "Cochez la case correspondant à votre situation familiale actuelle.",
+      "example": "Cochez 'Single', 'Married', 'Separated', 'Divorced' ou 'Widow(er)'",
+      "rejection_risk": true,
+      "rejection_reason": "Une case doit être cochée pour indiquer la situation familiale."
+    },
+    {
+      "section": "PARTIE A - RENSEIGNEMENTS PERSONNELS",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. Autorité parentale (en cas de mineurs) / tuteur légal : nom, prénom, adresse, téléphone, e-mail et nationalité",
+      "legible": true,
+      "meaning": "Si le demandeur est mineur, fournissez les informations sur l'autorité parentale ou le tuteur légal.",
+      "example": "Nom: DURAND, Prénom: MARIE, Adresse: 10 Rue de la Paix, 75001 PARIS, FRANCE, Téléphone: +33123456789, E-mail: marie.durand@email.com, Nationalité: FRANÇAISE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. Type de document de voyage *",
+      "legible": true,
+      "meaning": "Cochez le type de document de voyage que vous utilisez (passeport ordinaire, diplomatique, de service, ou autre à spécifier).",
+      "example": "Cochez 'Ordinary passport'",
+      "rejection_risk": true,
+      "rejection_reason": "Le type de document de voyage doit être sélectionné."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. Numéro du document de voyage *",
+      "legible": true,
+      "meaning": "Indiquez le numéro de votre document de voyage (par exemple, votre passeport).",
+      "example": "AB1234567",
+      "rejection_risk": true,
+      "rejection_reason": "Le numéro du document de voyage est obligatoire."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. Date de délivrance *",
+      "legible": true,
+      "meaning": "Indiquez la date à laquelle votre document de voyage a été délivré, en format jour-mois-année.",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "Le format de date doit être respecté (JJ-MM-AAAA)."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. Valide jusqu'au *",
+      "legible": true,
+      "meaning": "Indiquez la date d'expiration de votre document de voyage, en format jour-mois-année.",
+      "example": "01-01-2030",
+      "rejection_risk": true,
+      "rejection_reason": "Le format de date doit être respecté (JJ-MM-AAAA) et le document doit être valide."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. Délivré par (pays) *",
+      "legible": true,
+      "meaning": "Indiquez le pays qui a délivré votre document de voyage.",
+      "example": "FRANCE",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. Adresse du domicile du demandeur et adresse e-mail *",
+      "legible": true,
+      "meaning": "Indiquez votre adresse complète de domicile et votre adresse e-mail.",
+      "example": "10 Rue de la Paix, 75001 PARIS, FRANCE, email@example.com",
+      "rejection_risk": true,
+      "rejection_reason": "Une adresse complète et une adresse e-mail valide sont nécessaires pour la communication."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. Numéro(s) de téléphone *",
+      "legible": true,
+      "meaning": "Indiquez votre numéro de téléphone, y compris l'indicatif du pays.",
+      "example": "+33123456789",
+      "rejection_risk": true,
+      "rejection_reason": "Un numéro de téléphone valide est nécessaire pour vous contacter."
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. Résidence dans un pays autre que le pays de nationalité actuelle",
+      "legible": true,
+      "meaning": "Cochez 'Oui' si vous résidez actuellement dans un pays différent de votre nationalité, et précisez le numéro de permis de résidence ou équivalent et sa date de validité.",
+      "example": "Cochez 'Yes', Numéro: XXXXXX, Valide jusqu'au: 31-12-2025",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. Profession actuelle *",
+      "legible": true,
+      "meaning": "Indiquez votre profession actuelle.",
+      "example": "INGÉNIEUR",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - DOCUMENT DE VOYAGE",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. Employeur et adresse et numéro de téléphone de l'employeur. Pour les étudiants, nom et adresse de l'établissement d'enseignement *",
+      "legible": true,
+      "meaning": "Indiquez les informations concernant votre employeur ou votre établissement d'enseignement si vous êtes étudiant.",
+      "example": "Nom: SOCIÉTÉ XYZ, Adresse: 10 Avenue des Champs-Élysées, 75008 PARIS, FRANCE, Téléphone: +33198765432",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. Motif(s) principal(aux) du voyage *",
+      "legible": true,
+      "meaning": "Cochez la case qui correspond au motif principal de votre voyage.",
+      "example": "Cochez 'Tourism'",
+      "rejection_risk": true,
+      "rejection_reason": "Le motif du voyage doit être clairement indiqué."
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. Nombre d'entrées demandées *",
+      "legible": true,
+      "meaning": "Cochez le nombre d'entrées dont vous avez besoin (une seule, deux, ou multiples).",
+      "example": "Cochez 'Multiple'",
+      "rejection_risk": true,
+      "rejection_reason": "Le nombre d'entrées doit être sélectionné."
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. Date d'arrivée prévue *",
+      "legible": true,
+      "meaning": "Indiquez la date à laquelle vous prévoyez d'arriver, en format jour-mois-année.",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Le format de date doit être respecté (JJ-MM-AAAA)."
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. Date de départ prévue *",
+      "legible": true,
+      "meaning": "Indiquez la date à laquelle vous prévoyez de repartir, en format jour-mois-année.",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Le format de date doit être respecté (JJ-MM-AAAA)."
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. Visas délivrés par la République de Meridia au cours des trois dernières années",
+      "legible": true,
+      "meaning": "Cochez 'Oui' si vous avez obtenu des visas de la République de Meridia au cours des trois dernières années et précisez les dates de validité.",
+      "example": "Cochez 'Yes', Date(s) de validité du: 01-01-2022 au 31-12-2022",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. Empreintes digitales collectées précédemment pour une demande de visa",
+      "legible": true,
+      "meaning": "Cochez 'Oui' si vos empreintes digitales ont déjà été collectées pour une demande de visa, et précisez la date si connue.",
+      "example": "Cochez 'Yes', Date, if known: 01-01-2023",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. Nom et prénom de la ou des personnes invitantes au Meridia. Si non applicable, nom de l'hôtel ou de l'hébergement temporaire *",
+      "legible": true,
+      "meaning": "Indiquez le nom et prénom de la personne qui vous invite au Meridia, ou le nom de l'hôtel ou de l'hébergement temporaire.",
+      "example": "Nom: SMITH, Prénom: JOHN, Hôtel: GRAND HOTEL MERIDIA",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. Adresse et e-mail de la ou des personnes invitantes / de l'hôtel *",
+      "legible": true,
+      "meaning": "Indiquez l'adresse et l'adresse e-mail de la personne qui vous invite ou de l'hôtel.",
+      "example": "1 Rue Principale, VILLE MERIDIA, MERIDIA, info@grandhotel.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PARTIE C - VOYAGE",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. Le coût du voyage et du séjour est couvert *",
+      "legible": true,
+      "meaning": "Cochez la case qui indique qui prend en charge les frais de votre voyage et de votre séjour. Vous pouvez cocher plusieurs cases si nécessaire.",
+      "example": "Cochez 'by the applicant himself/herself' et 'Cash'",
+      "rejection_risk": true,
+      "rejection_reason": "La manière dont le séjour sera financé doit être clairement indiquée."
+    },
+    {
+      "section": "PART D - DÉCLARATION",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. Lieu et date *",
+      "legible": true,
+      "meaning": "Indiquez le lieu où vous remplissez le formulaire et la date actuelle, en format jour-mois-année.",
+      "example": "PARIS, 01-01-2024",
+      "rejection_risk": true,
+      "rejection_reason": "Le lieu et la date sont requis pour finaliser la déclaration."
+    },
+    {
+      "section": "PART D - DÉCLARATION",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. Signature * (signature de l'autorité parentale / tuteur légal, si applicable)",
+      "legible": true,
+      "meaning": "Signez ici. Si le demandeur est mineur, l'autorité parentale ou le tuteur légal doit signer.",
+      "example": "Signature manuscrite de la personne",
+      "rejection_risk": true,
+      "rejection_reason": "La signature est obligatoire pour valider la demande."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Short-stay visa",
+      "meaning": "Un visa qui permet à son titulaire de séjourner dans un pays pour une période limitée, généralement jusqu'à 90 jours sur une période de 180 jours."
+    },
+    {
+      "term": "Directorate of Immigration and Consular Affairs",
+      "meaning": "Un département gouvernemental responsable de la gestion des questions d'immigration et des services consulaires pour les citoyens à l'étranger."
+    },
+    {
+      "term": "Block Capitals",
+      "meaning": "Écrire en lettres majuscules, comme dans un dictionnaire."
+    },
+    {
+      "term": "Parental authority",
+      "meaning": "Le droit et la responsabilité d'un parent de prendre des décisions concernant son enfant mineur, y compris sa garde, son éducation et sa santé."
+    },
+    {
+      "term": "Legal guardian",
+      "meaning": "Une personne désignée par un tribunal pour prendre soin d'une personne qui ne peut pas s'en occuper elle-même, comme un enfant mineur ou une personne incapable."
+    },
+    {
+      "term": "Travel document",
+      "meaning": "Un document officiel qui prouve l'identité et la nationalité d'une personne et qui est nécessaire pour voyager à l'étranger, comme un passeport."
+    },
+    {
+      "term": "Fingerprints",
+      "meaning": "Les empreintes laissées par les crêtes des doigts, qui sont uniques à chaque individu et souvent utilisées pour l'identification."
+    },
+    {
+      "term": "Annulment",
+      "meaning": "L'acte d'annuler ou de déclarer invalide quelque chose, comme un visa déjà accordé."
+    }
+  ]
+}

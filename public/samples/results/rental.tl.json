@@ -1,0 +1,253 @@
+{
+  "is_form": true,
+  "form_title": "Kasunduan sa Paninirahan",
+  "summary": "Ito ay isang kasunduan sa pagitan ng may-ari ng bahay (Landlord) at ng umuupa (Tenant) para sa paninirahan sa isang ari-arian. Karaniwang pinupunan ito ng parehong Landlord at Tenant. Pagkatapos mapunan, ito ay magiging legal na dokumento na naglalaman ng mga tuntunin at kundisyon ng pag-upa. Maaaring kailanganin itong isumite sa mga kinauukulan o gamitin bilang patunay sa hinaharap.",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 \n MGA PARTIDO",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "Buong pangalan ng Landlord (o tagapamahala sa ngalan ng Landlord)",
+      "legible": true,
+      "meaning": "Ilagay dito ang buong pangalan ng may-ari ng ari-arian o ng taong namamahala nito para sa may-ari.",
+      "example": "Juan Dela Cruz",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n MGA PARTIDO",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "Address ng Landlord para sa pagpapadala ng mga abiso",
+      "legible": true,
+      "meaning": "Ilagay dito ang address kung saan maaaring magpadala ng mga opisyal na sulat o abiso sa Landlord.",
+      "example": "123 Kalye Sampaguita, Lungsod ng Quezon",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n MGA PARTIDO",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "Buong legal na pangalan ng Umuupa 1",
+      "legible": true,
+      "meaning": "Ilagay dito ang buong legal na pangalan ng unang umuupa.",
+      "example": "Maria Santos",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n MGA PARTIDO",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "Buong legal na pangalan ng Umuupa 2 (kung mayroon)",
+      "legible": true,
+      "meaning": "Ilagay dito ang buong legal na pangalan ng pangalawang umuupa, kung mayroon.",
+      "example": "Pedro Reyes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 \n MGA PARTIDO",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "Mga pangalan ng lahat ng ibang tao na pinapayagang manirahan sa Ari-arian (pinayagang maninirahan)",
+      "legible": true,
+      "meaning": "Ilagay dito ang mga pangalan ng iba pang tao na maninirahan sa ari-arian, maliban sa mga pangunahing umuupa.",
+      "example": "Ana Santos, Jose Santos",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n ANG ARI-ARIAN AT TERMINO",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "Address ng Ari-arian, kasama ang numero ng unit at anumang nakalaang paradahan o imbakan",
+      "legible": true,
+      "meaning": "Ilagay ang kumpletong address ng lugar na uupahan, kasama ang numero ng unit, at kung may kasamang parking o storage.",
+      "example": "Unit 101, 123 Kalye Sampaguita, Lungsod ng Quezon",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 \n ANG ARI-ARIAN AT TERMINO",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "Petsa ng pagsisimula ng Termino",
+      "legible": true,
+      "meaning": "Ilagay ang petsa kung kailan magsisimula ang pag-upa. Dapat nasa format na AAAA-MM-DD.",
+      "example": "2024-01-15",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o ma-reject ang aplikasyon kung mali ang format ng petsa."
+    },
+    {
+      "section": "2 \n ANG ARI-ARIAN AT TERMINO",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "Petsa ng pagtatapos ng Termino",
+      "legible": true,
+      "meaning": "Ilagay ang petsa kung kailan matatapos ang pag-upa. Dapat nasa format na AAAA-MM-DD.",
+      "example": "2025-01-14",
+      "rejection_risk": true,
+      "rejection_reason": "Maaaring maantala o ma-reject ang aplikasyon kung mali ang format ng petsa."
+    },
+    {
+      "section": "2 \n ANG ARI-ARIAN AT TERMINO",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "Pagkatapos ng nakatakdang Termino, maliban kung ang alinmang Partido ay nagbigay ng hindi bababa sa ______ araw na nakasulat na paunawa, ang pag-upa ay magpapatuloy bilang pana-panahong pag-upa buwan-buwan sa ilalim ng parehong mga tuntunin na naaangkop.",
+      "legible": true,
+      "meaning": "Dito ilalagay ang bilang ng araw na kailangang ipaalam bago matapos ang kontrata kung nais itong ipagpatuloy bilang buwanang pag-upa. Ang 'mutatis mutandis' ay nangangahulugang ang mga tuntunin ay mananatili maliban sa mga bahaging hindi na naaangkop.",
+      "example": "60",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "Rentang babayaran: $______ bawat buwan",
+      "legible": true,
+      "meaning": "Ilagay dito ang halaga ng buwanang upa.",
+      "example": "15000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "Babayaran nang maaga sa ika-______ araw ng bawat buwan",
+      "legible": true,
+      "meaning": "Ilagay dito ang araw ng buwan kung kailan dapat bayaran ang upa nang maaga.",
+      "example": "1",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "Paraan ng pagbabayad",
+      "legible": true,
+      "meaning": "Lagyan ng check ang kahon na tumutukoy sa paraan ng pagbabayad ng upa.",
+      "example": "Ticked Bank transfer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "Bayad sa huling pagbabayad: $______ pagkatapos ng ______ araw na pagkakautang",
+      "legible": true,
+      "meaning": "Ilagay ang halaga ng multa kung mahuhuli sa pagbabayad ng upa, at kung ilang araw pagkalipas ng due date ito magsisimula.",
+      "example": "500 pagkatapos ng 3 araw",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "Deposito sa seguridad: $______",
+      "legible": true,
+      "meaning": "Ilagay dito ang halaga ng seguridad na ibibigay ng umuupa.",
+      "example": "15000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "Deposito na hahawakan ng / reference ng proteksyon ng iskema",
+      "legible": true,
+      "meaning": "Ilagay dito kung sino ang hahawak ng deposito o ang reference number kung ito ay nakalagay sa isang proteksyon na iskema.",
+      "example": "Landlord / Scheme Ref: XYZ123",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 \n RENTA AT DEPOSIT",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "Mga kagamitan at singil na babayaran ng Umuupa",
+      "legible": true,
+      "meaning": "Lagyan ng check ang mga uri ng bayarin na responsibilidad ng umuupa.",
+      "example": "Ticked Electricity, Ticked Water",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 \n MAGKASAMA AT MAGKAKAHIWALAY NA PANANAGUTAN",
+      "label_original": "4.1 Where the Tenancy comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "Kung ang Pag-upa ay binubuo ng higit sa isang tao, ang mga obligasyon ng Umuupa sa ilalim ng Kasunduang ito ay magkakasama at magkakahiwalay, at maaaring mabawi ng Landlord ang kabuuan ng anumang bayarin sa upa o iba pang halagang dapat bayaran mula sa isa o higit pa sa kanila. Inisyal ng bawat Umuupa:",
+      "legible": true,
+      "meaning": "Ito ay nagsasaad na kung higit sa isa ang umuupa, lahat sila ay may pananagutan sa kabuuan ng upa at iba pang bayarin. Kailangan nilang maglagay ng kanilang inisyal dito. Ang 'joint and several liability' ay nangangahulugang maaaring singilin ng Landlord ang sinuman sa mga umuupa para sa buong halaga ng utang.",
+      "example": "Initial of Tenant 1: [Initials] Initial of Tenant 2: [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "Kailangan ang inisyal ng lahat ng umuupa upang maging balido ang kasunduan."
+    },
+    {
+      "section": "5 \n GUARANTOR",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "Bilang konsiderasyon sa pagbibigay ng Landlord ng pag-uupahang ito, ang Guarantor na nakapangalan sa ibaba ay hindi na mababawi na ginagarantiyahan ang tamang pagbabayad ng upa at pagtupad sa mga kasunduan ng Umuupa at sumasang-ayon na bayaran ang Landlord para sa lahat ng pagkalugi, sa kabila ng anumang pagbabago sa Kasunduang ito o pagpapalawig ng oras na ibinigay sa Umuupa.",
+      "legible": true,
+      "meaning": "Ito ay isang pahayag kung saan ang Guarantor (tagagarantiya) ay nangangakong babayaran ang upa at iba pang obligasyon kung sakaling hindi ito magawa ng umuupa. Ito ay isang malakas na pangako.",
+      "example": "N/A",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 \n GUARANTOR",
+      "label_original": "5.2 Guarantor's full name, address and telephone \n Guarantor's initials:",
+      "label_translated": "Buong pangalan, address, at telepono ng Guarantor \n Inisyal ng Guarantor:",
+      "legible": true,
+      "meaning": "Ilagay dito ang kumpletong impormasyon ng Guarantor at ang kanilang inisyal.",
+      "example": "Buong pangalan: Jose Dela Cruz, Address: 456 Kalye Rosas, Lungsod ng Maynila, Telepono: 09171234567 \n Inisyal: [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "Kailangan ang kumpletong impormasyon at inisyal ng Guarantor para maging balido ang garantiya."
+    },
+    {
+      "section": "6 \n BREAK CLAUSE",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: \n Yes \n No",
+      "label_translated": "Maaaring wakasan ng alinmang Partido ang Kasunduang ito sa o pagkatapos ng pagtatapos ng ______ buwan ng Termino sa pamamagitan ng pagbibigay ng hindi bababa sa dalawang buwan na paunang nakasulat na abiso, sa kondisyon na ang Umuupa ay walang atraso sa upa. Nalalapat: \n Oo \n Hindi",
+      "legible": true,
+      "meaning": "Dito ilalagay kung ilang buwan pagkatapos ng simula ng kontrata maaaring mag-terminate (wakasan) ang kasunduan ang alinmang partido, basta't may dalawang buwan na paunang abiso at walang atraso sa bayad ang umuupa. Lagyan ng check ang 'Oo' kung nalalapat ito, o 'Hindi' kung hindi.",
+      "example": "6 months \n Ticked Yes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "Mga inisyal ng lahat ng partido sa bawat pahina: Landlord ______ Umuupa(s) ______ / ______",
+      "legible": true,
+      "meaning": "Dito ilalagay ng Landlord at ng lahat ng Umuupa ang kanilang mga inisyal sa bawat pahina ng kasunduan bilang kumpirmasyon na nabasa at sumasang-ayon sila sa nilalaman nito.",
+      "example": "Landlord: [Initials] Tenant(s): [Initials] / [Initials]",
+      "rejection_risk": true,
+      "rejection_reason": "Ang kakulangan ng inisyal sa bawat pahina ay maaaring maging sanhi ng pagkaantala o pagtanggi sa kasunduan."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "Isang pariralang Latin na nangangahulugang \"na may mga pagbabagong kinakailangan\". Ginagamit ito upang ipahiwatig na ang isang kasunduan o probisyon ay dapat ilapat sa isang bagong sitwasyon na may mga kinakailangang pagbabago upang maging angkop."
+    },
+    {
+      "term": "joint and several liability",
+      "meaning": "Isang legal na konsepto kung saan ang dalawa o higit pang tao ay parehong may pananagutan sa isang utang o obligasyon. Maaaring singilin ng pinagkakautangan ang sinuman sa kanila para sa buong halaga, o bahagi mula sa bawat isa."
+    },
+    {
+      "term": "indemnify",
+      "meaning": "Ang ibig sabihin nito ay protektahan ang isang tao mula sa anumang pagkalugi o pinsala, o bayaran sila para sa anumang pagkalugi o pinsala na kanilang naranasan."
+    },
+    {
+      "term": "covenants",
+      "meaning": "Mga pormal na pangako o kasunduan sa isang kontrata. Ito ay mga obligasyon na dapat tuparin ng mga partido."
+    },
+    {
+      "term": "arrears",
+      "meaning": "Mga bayarin na hindi nabayaran sa takdang oras. Ito ay tumutukoy sa mga atrasadong bayad."
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "Isang uri ng pag-upa na awtomatikong nagpapatuloy sa bawat takdang panahon (halimbawa, buwan-buwan) maliban kung isa sa mga partido ay magbigay ng paunawa upang wakasan ito."
+    },
+    {
+      "term": "Guarantor",
+      "meaning": "Isang tao o entidad na nangangakong sasagutin ang utang o obligasyon ng ibang tao kung sakaling hindi ito mabayaran ng orihinal na may utang."
+    },
+    {
+      "term": "terminate",
+      "meaning": "Ang ibig sabihin nito ay wakasan o tapusin ang isang kontrata o kasunduan bago ang orihinal na nakatakdang petsa ng pagtatapos nito."
+    }
+  ]
+}

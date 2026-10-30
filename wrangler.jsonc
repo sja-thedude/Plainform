@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "plainform",
+  "account_id": "60bc0d18ed5229edce6eb9712d7900d9",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-05-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "plainform"
+    }
+  ],
+  // Request logs only. Uploaded forms are never written anywhere.
+  "observability": {
+    "enabled": false
+  }
+}

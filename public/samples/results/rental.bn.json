@@ -1,0 +1,245 @@
+{
+  "is_form": true,
+  "form_title": "বাসস্থান ভাড়ার চুক্তিপত্র",
+  "summary": "এই চুক্তিপত্রটি বাড়িওয়ালা এবং ভাড়াটিয়ার মধ্যে একটি বাড়ি ভাড়ার শর্তাবলী নির্ধারণ করে। এটি সাধারণত বাড়িওয়ালা বা ভাড়াটিয়া পূরণ করে। এটি পূরণ করার পর, এটি উভয় পক্ষের দ্বারা স্বাক্ষরিত হয় এবং সাধারণত বাড়ি ভাড়ার প্রক্রিয়া শুরু করার জন্য বা কোনো বিরোধ নিষ্পত্তির জন্য ব্যবহৃত হয়।",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "১ · পক্ষগণ",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "১.১ বাড়িওয়ালার পুরো নাম (অথবা বাড়িওয়ালার পক্ষে পরিচালনাকারী এজেন্ট)",
+      "legible": true,
+      "meaning": "এখানে বাড়িওয়ালার পুরো নাম অথবা যদি কোনো এজেন্ট বাড়িওয়ালার পক্ষ থেকে কাজ করে তবে তার নাম লিখতে হবে।",
+      "example": "জন স্মিথ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "১ · পক্ষগণ",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "১.২ নোটিশ জারির জন্য বাড়িওয়ালার ঠিকানা",
+      "legible": true,
+      "meaning": "এখানে বাড়িওয়ালার ঠিকানা লিখতে হবে যেখানে নোটিশ পাঠানো হবে।",
+      "example": "১২৩ প্রধান সড়ক, ঢাকা",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "১ · পক্ষগণ",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "১.৩ ভাড়াটিয়া ১ এর পুরো আইনি নাম",
+      "legible": true,
+      "meaning": "এখানে প্রথম ভাড়াটিয়ার পুরো আইনি নাম লিখতে হবে।",
+      "example": "করিম খান",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "১ · পক্ষগণ",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "১.৪ ভাড়াটিয়া ২ এর পুরো আইনি নাম (যদি থাকে)",
+      "legible": true,
+      "meaning": "যদি দ্বিতীয় কোনো ভাড়াটিয়া থাকে, তবে তার পুরো আইনি নাম এখানে লিখতে হবে।",
+      "example": "রহিমা বেগম",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "১ · পক্ষগণ",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "১.৫ প্রাঙ্গনে থাকার অনুমতিপ্রাপ্ত অন্য সকল ব্যক্তির নাম (অনুমোদিত দখলদার)",
+      "legible": true,
+      "meaning": "যদি অন্য কোনো ব্যক্তি (যেমন পরিবারের সদস্য) এই ঠিকানায় থাকার অনুমতিপ্রাপ্ত হন, তবে তাদের নাম এখানে লিখতে হবে।",
+      "example": "আলী খান, ফাতেমা খান",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "২ · প্রাঙ্গন এবং মেয়াদ",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "২.১ প্রাঙ্গনের ঠিকানা, ইউনিট নম্বর এবং বরাদ্দকৃত কোনো পার্কিং স্থান বা স্টোরেজ সহ",
+      "legible": true,
+      "meaning": "এখানে ভাড়ার জন্য নির্দিষ্ট সম্পত্তির সম্পূর্ণ ঠিকানা লিখতে হবে, যার মধ্যে ইউনিট নম্বর, পার্কিং বা স্টোরেজের তথ্যও অন্তর্ভুক্ত থাকতে পারে।",
+      "example": "ফ্ল্যাট এ/৩, বাড়ি নং ৫, রোড নং ৬, ধানমন্ডি, ঢাকা",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "২ · প্রাঙ্গন এবং মেয়াদ",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "২.২ মেয়াদ শুরুর তারিখ",
+      "legible": true,
+      "meaning": "ভাড়া চুক্তির মেয়াদ কবে থেকে শুরু হবে সেই তারিখটি এখানে লিখতে হবে। তারিখ DD/MM/YYYY ফরম্যাটে লিখতে হবে।",
+      "example": "০১/০৮/২০২৪",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল তারিখ ফরম্যাট বা অস্পষ্ট তারিখের কারণে চুক্তি প্রক্রিয়াকরণে বিলম্ব হতে পারে।"
+    },
+    {
+      "section": "২ · প্রাঙ্গন এবং মেয়াদ",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "২.৩ মেয়াদ শেষের তারিখ",
+      "legible": true,
+      "meaning": "ভাড়া চুক্তির মেয়াদ কবে শেষ হবে সেই তারিখটি এখানে লিখতে হবে। তারিখ DD/MM/YYYY ফরম্যাটে লিখতে হবে।",
+      "example": "৩১/০৭/২০২৫",
+      "rejection_risk": true,
+      "rejection_reason": "ভুল তারিখ ফরম্যাট বা অস্পষ্ট তারিখের কারণে চুক্তি প্রক্রিয়াকরণে বিলম্ব হতে পারে।"
+    },
+    {
+      "section": "২ · প্রাঙ্গন এবং মেয়াদ",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "২.৪ নির্দিষ্ট মেয়াদ শেষ হওয়ার পর, যদি কোনো পক্ষ ______ দিনের লিখিত নোটিশ না দেয়, তবে চুক্তিটি একই শর্তাবলী mutatis mutandis সহ মাস-থেকে-মাস পর্যায়ক্রমিক ভাড়ায় চলতে থাকবে।",
+      "legible": true,
+      "meaning": "এই অংশটি নির্দিষ্ট করে যে মেয়াদ শেষ হওয়ার পর যদি কোনো পক্ষ নির্দিষ্ট দিনের নোটিশ না দেয়, তবে ভাড়া চুক্তিটি স্বয়ংক্রিয়ভাবে মাস-থেকে-মাস ভিত্তিতে চলতে থাকবে। এখানে নোটিশ দেওয়ার দিনের সংখ্যা লিখতে হবে।",
+      "example": "৩০",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "৩.১ প্রদেয় ভাড়া: $______ প্রতি ক্যালেন্ডার মাস",
+      "legible": true,
+      "meaning": "প্রতি মাসে ভাড়ার পরিমাণ এখানে লিখতে হবে।",
+      "example": "১৫,০০০",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "৩.২ প্রতি মাসের ______ তারিখে অগ্রিম প্রদেয়",
+      "legible": true,
+      "meaning": "প্রতি মাসের কত তারিখে ভাড়া অগ্রিম পরিশোধ করতে হবে, সেই তারিখটি এখানে লিখতে হবে।",
+      "example": "৫",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "৩.৩ পরিশোধের পদ্ধতি",
+      "legible": true,
+      "meaning": "ভাড়া পরিশোধের পদ্ধতি নির্বাচন করুন: ব্যাংক ট্রান্সফার, চেক, নাকি অন্য কোনো পদ্ধতি।",
+      "example": "ব্যাংক ট্রান্সফার",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "৩.৪ দেরিতে ভাড়া পরিশোধের ফি: ______ দিন বকেয়া থাকার পর $______",
+      "legible": true,
+      "meaning": "যদি ভাড়া দেরিতে পরিশোধ করা হয়, তবে কত দিন পর এবং কত টাকা জরিমানা হবে তা এখানে উল্লেখ করতে হবে।",
+      "example": "৫০০ টাকা, ৭ দিন পর",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "৩.৫ নিরাপত্তা আমানত: $______",
+      "legible": true,
+      "meaning": "চুক্তি শুরু করার সময় যে নিরাপত্তা আমানত প্রদান করা হবে তার পরিমাণ এখানে লিখতে হবে।",
+      "example": "৩০,০০০",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "৩.৬ আমানত সংরক্ষিত থাকবে / সুরক্ষা প্রকল্পের রেফারেন্স",
+      "legible": true,
+      "meaning": "নিরাপত্তা আমানত কোথায় রাখা হবে বা কোনো সুরক্ষা প্রকল্পের রেফারেন্স থাকলে তা এখানে লিখতে হবে।",
+      "example": "সুরক্ষা প্রকল্প আইডি: XYZ123",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৩ · ভাড়া এবং আমানত",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "৩.৭ ভাড়াটিয়া কর্তৃক প্রদেয় ইউটিলিটি এবং চার্জ",
+      "legible": true,
+      "meaning": "ভাড়াটিয়ার কোন কোন ইউটিলিটি বিল (যেমন বিদ্যুৎ, গ্যাস, পানি, ইন্টারনেট, পৌর কর ইত্যাদি) পরিশোধ করতে হবে তা এখানে টিক চিহ্ন দিয়ে নির্দেশ করতে হবে।",
+      "example": "বিদ্যুৎ, গ্যাস, পানি",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৪ · যৌথ এবং একক দায়",
+      "label_original": "4.1 Where the Tenancy comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "৪.১ যেখানে ভাড়ার মধ্যে একাধিক ব্যক্তি অন্তর্ভুক্ত, সেখানে এই চুক্তির অধীনে ভাড়াটিয়ার বাধ্যবাধকতা যৌথ এবং এককভাবে প্রযোজ্য হবে, এবং বাড়িওয়ালা যেকোনো ভাড়া বকেয়া বা অন্য কোনো পাওনা যেকোনো একজন বা একাধিক ব্যক্তির কাছ থেকে আদায় করতে পারবে। প্রত্যেক ভাড়াটিয়ার প্রাথমিক স্বাক্ষর:",
+      "legible": true,
+      "meaning": "যদি একাধিক ভাড়াটিয়া থাকে, তবে তাদের প্রত্যেকের দায়বদ্ধতা যৌথ এবং একক হবে। বাড়িওয়ালা বকেয়া ভাড়া বা অন্য কোনো পাওনা যেকোনো একজন বা একাধিক ভাড়াটিয়ার কাছ থেকে আদায় করতে পারবে। এখানে প্রত্যেক ভাড়াটিয়ার প্রাথমিক স্বাক্ষর দিতে হবে।",
+      "example": "এখানে আপনার নামের আদ্যক্ষর লিখুন।",
+      "rejection_risk": true,
+      "rejection_reason": "প্রত্যেক ভাড়াটিয়ার প্রাথমিক স্বাক্ষর না থাকলে চুক্তিটি অসম্পূর্ণ বলে বিবেচিত হতে পারে।"
+    },
+    {
+      "section": "৫ · গ্যারান্টর",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "৫.১ বাড়িওয়ালাকে এই ভাড়ার অনুমতি দেওয়ার জন্য, নীচে উল্লেখিত গ্যারান্টর অপরিবর্তনীয়ভাবে ভাড়ার সঠিক পরিশোধ এবং ভাড়াটিয়ার প্রতিশ্রুতির কার্যকারিতা নিশ্চিত করে এবং ভাড়াটিয়ার চুক্তি বা সময়সীমা বাড়ানো সত্ত্বেও বাড়িওয়ালাকে সমস্ত ক্ষতির জন্য ক্ষতিপূরণ দিতে সম্মত হয়।",
+      "legible": true,
+      "meaning": "এই অংশটি গ্যারান্টরের দায়িত্ব ব্যাখ্যা করে। গ্যারান্টর ভাড়া পরিশোধ এবং ভাড়াটিয়ার অন্যান্য বাধ্যবাধকতা পূরণের নিশ্চয়তা দেয় এবং কোনো ক্ষতি হলে বাড়িওয়ালাকে ক্ষতিপূরণ দিতে সম্মত হয়।",
+      "example": "",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৫ · গ্যারান্টর",
+      "label_original": "5.2 Guarantor's full name, address and telephone · Guarantor's initials:",
+      "label_translated": "৫.২ গ্যারান্টরের পুরো নাম, ঠিকানা এবং টেলিফোন · গ্যারান্টরের প্রাথমিক স্বাক্ষর:",
+      "legible": true,
+      "meaning": "এখানে গ্যারান্টরের পুরো নাম, ঠিকানা, ফোন নম্বর এবং প্রাথমিক স্বাক্ষর লিখতে হবে।",
+      "example": "গ্যারান্টরের নাম: XYZ, ঠিকানা: ABC, ফোন: 1234567890, প্রাথমিক স্বাক্ষর: [এখানে আদ্যক্ষর লিখুন]",
+      "rejection_risk": true,
+      "rejection_reason": "গ্যারান্টরের সম্পূর্ণ তথ্য বা প্রাথমিক স্বাক্ষর না থাকলে চুক্তিটি বৈধ নাও হতে পারে।"
+    },
+    {
+      "section": "৬ · ব্রেক ক্লজ",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: ☐ Yes ☐ No",
+      "label_translated": "৬.১ মেয়াদ শেষ হওয়ার ______ মাস পর বা তার পরে, উভয় পক্ষ দুই মাসের কম নয় এমন লিখিত নোটিশ দিয়ে এই চুক্তি বাতিল করতে পারে, তবে শর্ত থাকে যে ভাড়াটিয়ার কোনো ভাড়া বকেয়া থাকবে না। প্রযোজ্য: ☐ হ্যাঁ ☐ না",
+      "legible": true,
+      "meaning": "এই ধারাটি চুক্তি বাতিলের শর্তাবলী বর্ণনা করে। মেয়াদ শেষ হওয়ার নির্দিষ্ট মাস পর, দুই মাসের নোটিশ দিয়ে চুক্তি বাতিল করা যেতে পারে, যদি ভাড়া পরিশোধিত থাকে। এখানে প্রযোজ্য ক্ষেত্রে 'হ্যাঁ' বা 'না' নির্বাচন করতে হবে এবং কত মাস পর চুক্তি বাতিল করা যাবে তা উল্লেখ করতে হবে।",
+      "example": "১২ মাস পর, প্রযোজ্য: ☐ হ্যাঁ",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "৬ · ব্রেক ক্লজ",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "প্রতি পৃষ্ঠায় সকল পক্ষের প্রাথমিক স্বাক্ষর: বাড়িওয়ালা ______ ভাড়াটিয়া(গণ) ______ / ______",
+      "legible": true,
+      "meaning": "চুক্তির প্রতিটি পৃষ্ঠার নীচে বাড়িওয়ালা এবং সকল ভাড়াটিয়ার প্রাথমিক স্বাক্ষর দিতে হবে। এটি নিশ্চিত করে যে তারা প্রতিটি পৃষ্ঠার বিষয়বস্তু দেখেছে।",
+      "example": "বাড়িওয়ালা: JS, ভাড়াটিয়া(গণ): KK / RB",
+      "rejection_risk": true,
+      "rejection_reason": "প্রতি পৃষ্ঠায় সকল পক্ষের প্রাথমিক স্বাক্ষর না থাকলে চুক্তিটি অসম্পূর্ণ বা অবৈধ বলে বিবেচিত হতে পারে।"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "এই ল্যাটিন শব্দগুচ্ছের অর্থ হল 'প্রয়োজনীয় পরিবর্তন সহ'। এটি বোঝায় যে পূর্ববর্তী শর্তাবলী নতুন পরিস্থিতিতে প্রযোজ্য হবে, তবে কিছু পরিবর্তন সাপেক্ষে।"
+    },
+    {
+      "term": "joint and several",
+      "meaning": "এর অর্থ হল একাধিক ব্যক্তি সম্মিলিতভাবে এবং পৃথকভাবে কোনো কিছুর জন্য দায়ী। এক্ষেত্রে, একাধিক ভাড়াটিয়া একসাথে এবং প্রত্যেকে আলাদাভাবে ভাড়ার জন্য দায়ী থাকবে।"
+    },
+    {
+      "term": "indemnify",
+      "meaning": "এর অর্থ হল কোনো ক্ষতি বা দায় থেকে অন্য পক্ষকে রক্ষা করা বা ক্ষতিপূরণ দেওয়া।"
+    },
+    {
+      "term": "covenants",
+      "meaning": "চুক্তিতে উল্লেখিত প্রতিশ্রুতি বা অঙ্গীকার।"
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "একটি ভাড়া চুক্তি যা একটি নির্দিষ্ট সময়ের জন্য নয়, বরং নিয়মিত বিরতিতে (যেমন মাসিক) স্বয়ংক্রিয়ভাবে নবায়ন হয়।"
+    },
+    {
+      "term": "arrears",
+      "meaning": "বকেয়া পরিশোধ যা পরিশোধের নির্ধারিত তারিখ পেরিয়ে গেছে।"
+    }
+  ]
+}

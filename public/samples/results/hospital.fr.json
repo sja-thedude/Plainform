@@ -1,0 +1,596 @@
+{
+  "is_form": true,
+  "form_title": "Nouveau formulaire d'enregistrement du patient et historique médical",
+  "summary": "Ce formulaire est utilisé par l'hôpital Riverside General pour recueillir des informations sur les nouveaux patients. Il comprend des informations personnelles, des contacts d'urgence, des détails sur l'assurance et des antécédents médicaux. Une fois soumis, le formulaire est généralement examiné par le personnel de l'hôpital pour l'enregistrement du patient et la création d'un dossier médical.",
+  "image_note": "",
+  "documents_needed": [
+    "Pièce d'identité avec photo",
+    "Carte d'assurance"
+  ],
+  "fields": [
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Legal last name",
+      "label_translated": "Nom de famille légal",
+      "legible": true,
+      "meaning": "Votre nom de famille tel qu'il apparaît sur vos documents officiels.",
+      "example": "DUPONT",
+      "rejection_risk": true,
+      "rejection_reason": "Le nom de famille doit correspondre exactement à celui figurant sur les documents d'identité officiels pour éviter les problèmes d'identification."
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Legal first name",
+      "label_translated": "Prénom légal",
+      "legible": true,
+      "meaning": "Votre prénom tel qu'il apparaît sur vos documents officiels.",
+      "example": "JEAN",
+      "rejection_risk": true,
+      "rejection_reason": "Le prénom doit correspondre exactement à celui figurant sur les documents d'identité officiels pour éviter les problèmes d'identification."
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "M.I.",
+      "label_translated": "Initiales",
+      "legible": true,
+      "meaning": "Votre deuxième prénom ou initiale.",
+      "example": "P",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Preferred name (if different)",
+      "label_translated": "Nom préféré (si différent)",
+      "legible": true,
+      "meaning": "Le nom par lequel vous préférez être appelé, s'il est différent de votre prénom légal.",
+      "example": "JEAN",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "Date de naissance (MM/JJ/AAAA)",
+      "legible": true,
+      "meaning": "Votre date de naissance, au format mois/jour/année.",
+      "example": "01/15/1980",
+      "rejection_risk": true,
+      "rejection_reason": "Un format de date incorrect peut entraîner des retards dans le traitement du dossier."
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "Sexe à la naissance",
+      "legible": true,
+      "meaning": "Cochez la case correspondant à votre sexe à la naissance.",
+      "example": "M",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Home address (street, apt., city, state, ZIP)",
+      "label_translated": "Adresse de domicile (rue, apt., ville, état, code postal)",
+      "legible": true,
+      "meaning": "Votre adresse postale complète.",
+      "example": "123 Rue Principale, Apt 4B, Ville, CA 90210",
+      "rejection_risk": true,
+      "rejection_reason": "Une adresse incomplète ou incorrecte peut entraîner des problèmes de correspondance et de facturation."
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Primary phone",
+      "label_translated": "Numéro de téléphone principal",
+      "legible": true,
+      "meaning": "Votre numéro de téléphone principal où vous pouvez être joint.",
+      "example": "555-123-4567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "E-mail",
+      "label_translated": "Courriel",
+      "legible": true,
+      "meaning": "Votre adresse électronique.",
+      "example": "jean.dupont@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Preferred language",
+      "label_translated": "Langue préférée",
+      "legible": true,
+      "meaning": "La langue dans laquelle vous préférez communiquer.",
+      "example": "Français",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Interpreter required?",
+      "label_translated": "Interprète requis ?",
+      "legible": true,
+      "meaning": "Cochez Oui si vous avez besoin d'un interprète pour communiquer.",
+      "example": "Non",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Marital status",
+      "label_translated": "État civil",
+      "legible": true,
+      "meaning": "Votre état civil actuel.",
+      "example": "Marié",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "Employer / occupation",
+      "label_translated": "Employeur / profession",
+      "legible": true,
+      "meaning": "Votre employeur actuel et votre profession.",
+      "example": "Ingénieur chez TechCorp",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 \r\nPATIENT INFORMATION",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "Numéro de sécurité sociale (4 derniers chiffres seulement)",
+      "legible": true,
+      "meaning": "Les quatre derniers chiffres de votre numéro de sécurité sociale.",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 \r\nEMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Name",
+      "label_translated": "Nom",
+      "legible": true,
+      "meaning": "Le nom de votre personne à contacter en cas d'urgence.",
+      "example": "Marie Dupont",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 \r\nEMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Relationship to patient",
+      "label_translated": "Lien de parenté avec le patient",
+      "legible": true,
+      "meaning": "Votre lien de parenté avec la personne à contacter.",
+      "example": "Épouse",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 \r\nEMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Phone",
+      "label_translated": "Téléphone",
+      "legible": true,
+      "meaning": "Le numéro de téléphone de la personne à contacter.",
+      "example": "555-987-6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "Compagnie d'assurance principale",
+      "legible": true,
+      "meaning": "Le nom de votre compagnie d'assurance maladie principale.",
+      "example": "Assurance Santé Plus",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "Identifiant du membre / souscripteur",
+      "legible": true,
+      "meaning": "Votre numéro d'identification de membre ou de souscripteur sur votre carte d'assurance.",
+      "example": "ABC123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Group no.",
+      "label_translated": "Numéro de groupe",
+      "legible": true,
+      "meaning": "Le numéro de groupe de votre police d'assurance, s'il y en a un.",
+      "example": "G98765",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "Nom du titulaire de la police (si différent du patient)",
+      "legible": true,
+      "meaning": "Le nom de la personne qui détient la police d'assurance, si ce n'est pas vous.",
+      "example": "Marie Dupont",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder DOB",
+      "label_translated": "Date de naissance du titulaire de la police",
+      "legible": true,
+      "meaning": "La date de naissance du titulaire de la police d'assurance.",
+      "example": "05/20/1975",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Relationship to patient",
+      "label_translated": "Lien de parenté avec le patient",
+      "legible": true,
+      "meaning": "Le lien de parenté entre le titulaire de la police et le patient.",
+      "example": "Épouse",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 \r\nINSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "Paiement personnel / non assuré. Je comprends qu'un conseiller financier me contactera concernant les options de paiement et l'éligibilité aux soins caritatifs.",
+      "legible": true,
+      "meaning": "Cochez cette case si vous n'avez pas d'assurance et que vous paierez vous-même les soins. Vous acceptez qu'un conseiller vous contacte.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "Médecin traitant (nom et clinique)",
+      "legible": true,
+      "meaning": "Le nom de votre médecin traitant et le nom de sa clinique.",
+      "example": "Dr. Martin, Clinique Santé",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "Médicaments actuels, y compris les médicaments en vente libre et les suppléments (nom, dose, fréquence)",
+      "legible": true,
+      "meaning": "Listez tous les médicaments, y compris ceux en vente libre et les suppléments, que vous prenez actuellement. Indiquez le nom, la dose et la fréquence.",
+      "example": "Paracétamol, 500mg, au besoin",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "Allergies aux médicaments, aliments ou latex, et la réaction",
+      "legible": true,
+      "meaning": "Indiquez si vous avez des allergies à des médicaments, des aliments ou du latex, et décrivez la réaction.",
+      "example": "Pénicilline - éruption cutanée",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "NKDA",
+      "label_translated": "Aucune allergie médicamenteuse connue",
+      "legible": true,
+      "meaning": "Cochez cette case si vous n'avez aucune allergie médicamenteuse connue.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "Chirurgies / hospitalisations précédentes (année)",
+      "legible": true,
+      "meaning": "Listez les chirurgies ou hospitalisations que vous avez subies et l'année correspondante.",
+      "example": "Appendicectomie - 2010",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Do you have, or have you ever had:",
+      "label_translated": "Avez-vous, ou avez-vous jamais eu :",
+      "legible": true,
+      "meaning": "Cochez les cases correspondant aux conditions médicales que vous avez ou avez eues.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Diabetes",
+      "label_translated": "Diabète",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu le diabète.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "High blood pressure",
+      "label_translated": "Hypertension artérielle",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu de l'hypertension artérielle.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Heart disease",
+      "label_translated": "Maladie cardiaque",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu une maladie cardiaque.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Asthma/COPD",
+      "label_translated": "Asthme/BPCO",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu de l'asthme ou une bronchopneumopathie chronique obstructive (BPCO).",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Kidney disease",
+      "label_translated": "Maladie rénale",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu une maladie rénale.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Cancer",
+      "label_translated": "Cancer",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu un cancer.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Seizures",
+      "label_translated": "Convulsions",
+      "legible": true,
+      "meaning": "Cochez si vous avez ou avez eu des convulsions.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "None of these",
+      "label_translated": "Aucune de ces conditions",
+      "legible": true,
+      "meaning": "Cochez cette case si vous n'avez aucune des conditions médicales listées ci-dessus.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Tobacco use",
+      "label_translated": "Consommation de tabac",
+      "legible": true,
+      "meaning": "Indiquez votre statut actuel concernant la consommation de tabac.",
+      "example": "Current",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Never",
+      "label_translated": "Jamais",
+      "legible": true,
+      "meaning": "Cochez si vous n'avez jamais consommé de tabac.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Former",
+      "label_translated": "Ancien",
+      "legible": true,
+      "meaning": "Cochez si vous avez consommé du tabac par le passé mais que vous avez arrêté.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Current",
+      "label_translated": "Actuel",
+      "legible": true,
+      "meaning": "Cochez si vous consommez du tabac actuellement.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "Alcool (verres/semaine)",
+      "legible": true,
+      "meaning": "Indiquez le nombre moyen de verres d'alcool que vous consommez par semaine.",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Pregnant or possibly pregnant?",
+      "label_translated": "Enceinte ou potentiellement enceinte ?",
+      "legible": true,
+      "meaning": "Cochez la case appropriée si vous êtes enceinte ou pourriez l'être.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Yes",
+      "label_translated": "Oui",
+      "legible": true,
+      "meaning": "Cochez si vous êtes enceinte ou potentiellement enceinte.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "No",
+      "label_translated": "Non",
+      "legible": true,
+      "meaning": "Cochez si vous n'êtes pas enceinte et ne pourriez pas l'être.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "N/A",
+      "label_translated": "Non applicable",
+      "legible": true,
+      "meaning": "Cochez si la question n'est pas applicable.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Do you have an advance directive or living will?",
+      "label_translated": "Avez-vous une directive anticipée ou un testament de vie ?",
+      "legible": true,
+      "meaning": "Cochez si vous avez un document légal qui exprime vos souhaits concernant vos soins médicaux futurs.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Yes (please provide a copy)",
+      "label_translated": "Oui (veuillez fournir une copie)",
+      "legible": true,
+      "meaning": "Cochez si vous avez une directive anticipée et que vous pouvez en fournir une copie.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "No",
+      "label_translated": "Non",
+      "legible": true,
+      "meaning": "Cochez si vous n'avez pas de directive anticipée.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 \r\nMEDICAL HISTORY",
+      "label_original": "Would like information",
+      "label_translated": "Souhaiterait des informations",
+      "legible": true,
+      "meaning": "Cochez si vous souhaitez recevoir des informations sur les directives anticipées.",
+      "example": "X",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 5 \r\nCONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Initials:",
+      "label_translated": "Initiales :",
+      "legible": true,
+      "meaning": "Votre signature abrégée pour confirmer que vous avez lu et compris la section de consentement.",
+      "example": "JP",
+      "rejection_risk": true,
+      "rejection_reason": "Les initiales manquantes dans la section de consentement peuvent entraîner un retard dans le traitement du dossier car le consentement est requis."
+    },
+    {
+      "section": "SECTION 5 \r\nCONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "Signature du patient ou du représentant légal",
+      "legible": true,
+      "meaning": "Votre signature complète pour confirmer que vous acceptez les termes du formulaire.",
+      "example": "Signature de Jean Dupont",
+      "rejection_risk": true,
+      "rejection_reason": "Une signature manquante ou illisible peut entraîner le rejet du formulaire ou des retards."
+    },
+    {
+      "section": "SECTION 5 \r\nCONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "Nom en lettres moulées et lien de parenté, si différent du patient",
+      "legible": true,
+      "meaning": "Écrivez votre nom complet en lettres moulées et votre lien de parenté si vous signez en tant que représentant légal.",
+      "example": "Jean Dupont, Patient",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 5 \r\nCONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Date",
+      "label_translated": "Date",
+      "legible": true,
+      "meaning": "La date à laquelle vous signez le formulaire, au format mois/jour/année.",
+      "example": "01/15/2024",
+      "rejection_risk": true,
+      "rejection_reason": "Une date incorrecte ou manquante peut entraîner des retards dans le traitement du dossier."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "M.I.",
+      "meaning": "Abréviation pour 'Middle Initial', qui signifie initiale du deuxième prénom."
+    },
+    {
+      "term": "SSN",
+      "meaning": "Abréviation pour 'Social Security Number', le numéro d'identification fiscale aux États-Unis."
+    },
+    {
+      "term": "DOB",
+      "meaning": "Abréviation pour 'Date of Birth', qui signifie date de naissance."
+    },
+    {
+      "term": "COPD",
+      "meaning": "Abréviation pour 'Chronic Obstructive Pulmonary Disease', une maladie pulmonaire chronique qui rend la respiration difficile."
+    },
+    {
+      "term": "NKDA",
+      "meaning": "Abréviation pour 'No Known Drug Allergies', signifiant qu'il n'y a pas d'allergies médicamenteuses connues."
+    },
+    {
+      "term": "Advance directive",
+      "meaning": "Un document légal qui indique vos souhaits concernant les soins médicaux si vous ne pouvez plus les exprimer vous-même."
+    },
+    {
+      "term": "Living will",
+      "meaning": "Un type de directive anticipée qui spécifie les traitements médicaux que vous souhaitez ou ne souhaitez pas recevoir dans certaines situations."
+    },
+    {
+      "term": "ASSIGNMENT OF BENEFITS",
+      "meaning": "Une clause qui autorise l'hôpital à recevoir directement les paiements d'assurance pour les services rendus."
+    }
+  ]
+}

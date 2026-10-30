@@ -1,0 +1,359 @@
+{
+  "is_form": true,
+  "form_title": "APPLICATION FOR SHORT-STAY VISA",
+  "summary": "This form is used to apply for a short-stay visa to the Republic of Meridia. It is filled out by the applicant seeking the visa. After submission, it is typically reviewed by immigration or consular officials, and a decision on the visa application is made.",
+  "image_note": "",
+  "documents_needed": [
+    "Recent photograph (35 x 45 mm, white background, taken within the last 6 months)",
+    "Passport",
+    "Supporting documents"
+  ],
+  "fields": [
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "1. Surname(s) (family name(s)) *",
+      "label_translated": "1. Surname(s) (family name(s)) *",
+      "legible": true,
+      "meaning": "Enter your surname(s) or family name(s) exactly as they appear on your passport. Write in BLOCK CAPITALS.",
+      "example": "SMITH",
+      "rejection_risk": true,
+      "rejection_reason": "The surname must match the one on your passport exactly."
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "2. Surname(s) at birth (former family name(s)) *",
+      "label_translated": "2. Surname(s) at birth (former family name(s)) *",
+      "legible": true,
+      "meaning": "Enter your surname(s) or family name(s) at birth if they are different from your current surname. Write in BLOCK CAPITALS.",
+      "example": "JONES",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "3. First name(s) (given name(s)) *",
+      "label_translated": "3. First name(s) (given name(s)) *",
+      "legible": true,
+      "meaning": "Enter your first name(s) or given name(s) exactly as they appear on your passport. Write in BLOCK CAPITALS.",
+      "example": "JOHN",
+      "rejection_risk": true,
+      "rejection_reason": "The first name(s) must match the ones on your passport exactly."
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "4. Date of birth (day-month-year) *",
+      "label_translated": "4. Date of birth (day-month-year) *",
+      "legible": true,
+      "meaning": "Enter your date of birth in the format day-month-year. For example, 01-01-2000.",
+      "example": "01-01-2000",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be correct (day-month-year)."
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "5. Place of birth *",
+      "label_translated": "5. Place of birth *",
+      "legible": true,
+      "meaning": "Enter the city or town where you were born. Write in BLOCK CAPITALS.",
+      "example": "LONDON",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "6. Country of birth *",
+      "label_translated": "6. Country of birth *",
+      "legible": true,
+      "meaning": "Enter the country where you were born. Write in BLOCK CAPITALS.",
+      "example": "UNITED KINGDOM",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "7. Current nationality *",
+      "label_translated": "7. Current nationality *",
+      "legible": true,
+      "meaning": "Enter your current nationality. Write in BLOCK CAPITALS.",
+      "example": "BRITISH",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "8. Nationality at birth, if different",
+      "label_translated": "8. Nationality at birth, if different",
+      "legible": true,
+      "meaning": "Enter your nationality at birth if it is different from your current nationality. Write in BLOCK CAPITALS.",
+      "example": "N/A",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "9. Sex *",
+      "label_translated": "9. Sex *",
+      "legible": true,
+      "meaning": "Tick the box that corresponds to your sex.",
+      "example": "Male",
+      "rejection_risk": true,
+      "rejection_reason": "One option must be selected."
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "10. Civil status *",
+      "label_translated": "10. Civil status *",
+      "legible": true,
+      "meaning": "Tick the box that corresponds to your current civil status.",
+      "example": "Married",
+      "rejection_risk": true,
+      "rejection_reason": "One option must be selected."
+    },
+    {
+      "section": "PART A - PERSONAL DETAILS",
+      "label_original": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "label_translated": "11. Parental authority (in case of minors) / legal guardian: surname, first name, address, telephone, e-mail and nationality",
+      "legible": true,
+      "meaning": "If the applicant is a minor (under 18), provide the surname, first name, address, telephone number, e-mail address, and nationality of the parent or legal guardian. Write in BLOCK CAPITALS.",
+      "example": "Surname: DOE, First name: JANE, Address: 123 MAIN ST, LONDON, UK, Telephone: +442071234567, E-mail: jane.doe@email.com, Nationality: BRITISH",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "12. Type of travel document *",
+      "label_translated": "12. Type of travel document *",
+      "legible": true,
+      "meaning": "Tick the box that corresponds to the type of travel document you will be using. If you select 'Other', please specify.",
+      "example": "Ordinary passport",
+      "rejection_risk": true,
+      "rejection_reason": "One option must be selected."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "13. Number of travel document *",
+      "label_translated": "13. Number of travel document *",
+      "legible": true,
+      "meaning": "Enter the number of your travel document (e.g., passport number). Write in BLOCK CAPITALS.",
+      "example": "A12345678",
+      "rejection_risk": true,
+      "rejection_reason": "The travel document number must be entered correctly."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "14. Date of issue *",
+      "label_translated": "14. Date of issue *",
+      "legible": true,
+      "meaning": "Enter the date when your travel document was issued, in day-month-year format.",
+      "example": "01-01-2020",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be correct (day-month-year)."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "15. Valid until *",
+      "label_translated": "15. Valid until *",
+      "legible": true,
+      "meaning": "Enter the expiry date of your travel document, in day-month-year format.",
+      "example": "01-01-2030",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be correct (day-month-year) and the document must be valid for the duration of the stay."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "16. Issued by (country) *",
+      "label_translated": "16. Issued by (country) *",
+      "legible": true,
+      "meaning": "Enter the country that issued your travel document. Write in BLOCK CAPITALS.",
+      "example": "UNITED KINGDOM",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "17. Applicant's home address and e-mail address *",
+      "label_translated": "17. Applicant's home address and e-mail address *",
+      "legible": true,
+      "meaning": "Enter your full home address and your e-mail address. Write in BLOCK CAPITALS.",
+      "example": "123 MAIN ST, LONDON, UK, SW1A 0AA, applicant@email.com",
+      "rejection_risk": true,
+      "rejection_reason": "A complete and accurate address and e-mail are necessary for communication."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "18. Telephone number(s) *",
+      "label_translated": "18. Telephone number(s) *",
+      "legible": true,
+      "meaning": "Enter your telephone number(s), including country and area codes. Write in BLOCK CAPITALS.",
+      "example": "+442071234567",
+      "rejection_risk": true,
+      "rejection_reason": "A contact telephone number is required."
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "19. Residence in a country other than the country of current nationality",
+      "label_translated": "19. Residence in a country other than the country of current nationality",
+      "legible": true,
+      "meaning": "Indicate if you are residing in a country that is not your country of nationality. If 'Yes', provide the residence permit or equivalent number and its validity date.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "20. Current occupation *",
+      "label_translated": "20. Current occupation *",
+      "legible": true,
+      "meaning": "State your current occupation. Write in BLOCK CAPITALS.",
+      "example": "ENGINEER",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART B - TRAVEL DOCUMENT",
+      "label_original": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "label_translated": "21. Employer and employer's address and telephone number. For students, name and address of educational establishment *",
+      "legible": true,
+      "meaning": "Provide the name, address, and telephone number of your employer. If you are a student, provide the name and address of your educational institution.",
+      "example": "XYZ Corp, 123 BUSINESS RD, LONDON, UK, +442079876543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "22. Main purpose(s) of the journey *",
+      "label_translated": "22. Main purpose(s) of the journey *",
+      "legible": true,
+      "meaning": "Tick the box(es) that best describe the main purpose(s) of your journey. If you select 'Other', please specify.",
+      "example": "Tourism",
+      "rejection_risk": true,
+      "rejection_reason": "The purpose of the journey must be clearly indicated."
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "23. Number of entries requested *",
+      "label_translated": "23. Number of entries requested *",
+      "legible": true,
+      "meaning": "Tick the box that indicates the number of entries you are requesting into the country.",
+      "example": "Single",
+      "rejection_risk": true,
+      "rejection_reason": "The number of entries must be specified."
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "24. Intended date of arrival *",
+      "label_translated": "24. Intended date of arrival *",
+      "legible": true,
+      "meaning": "Enter your intended date of arrival in the country, in day-month-year format.",
+      "example": "15-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be correct (day-month-year)."
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "25. Intended date of departure *",
+      "label_translated": "25. Intended date of departure *",
+      "legible": true,
+      "meaning": "Enter your intended date of departure from the country, in day-month-year format.",
+      "example": "30-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "The date format must be correct (day-month-year)."
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "26. Visas issued by the Republic of Meridia during the past three years",
+      "label_translated": "26. Visas issued by the Republic of Meridia during the past three years",
+      "legible": true,
+      "meaning": "Indicate if you have been issued any visas by the Republic of Meridia in the last three years. If 'Yes', provide the dates of validity.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "label_translated": "27. Fingerprints collected previously for the purpose of applying for a visa",
+      "legible": true,
+      "meaning": "Indicate if your fingerprints have been collected for a visa application previously. If 'Yes', provide the date if known.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "label_translated": "28. Surname and first name of the inviting person(s) in Meridia. If not applicable, name of hotel(s) or temporary accommodation(s) *",
+      "legible": true,
+      "meaning": "Provide the surname and first name of the person inviting you to Meridia. If you are not being invited by a person, provide the name of the hotel or temporary accommodation where you will be staying. Write in BLOCK CAPITALS.",
+      "example": "HOTEL PARADISE, 123 TOURIST AVE, MERIDIA CITY",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "label_translated": "29. Address and e-mail of inviting person(s) / hotel(s) *",
+      "legible": true,
+      "meaning": "Provide the address and e-mail address of the inviting person or the hotel/accommodation. Write in BLOCK CAPITALS.",
+      "example": "123 TOURIST AVE, MERIDIA CITY, hotel.paradise@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "PART C - JOURNEY",
+      "label_original": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "label_translated": "30. Cost of travelling and living during the applicant's stay is covered *",
+      "legible": true,
+      "meaning": "Indicate who will cover the costs of your travel and stay. Tick the appropriate box(es) and specify the means of support if applicable.",
+      "example": "by the applicant himself/herself",
+      "rejection_risk": true,
+      "rejection_reason": "Proof of sufficient funds for the stay is required."
+    },
+    {
+      "section": "PART D - DECLARATION",
+      "label_original": "31. Place and date *",
+      "label_translated": "31. Place and date *",
+      "legible": true,
+      "meaning": "Enter the place where you are filling out the form and the current date in day-month-year format.",
+      "example": "LONDON, 01-08-2024",
+      "rejection_risk": true,
+      "rejection_reason": "The place and date must be provided."
+    },
+    {
+      "section": "PART D - DECLARATION",
+      "label_original": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "label_translated": "32. Signature * (signature of parental authority / legal guardian, if applicable)",
+      "legible": true,
+      "meaning": "Sign here. If the applicant is a minor, the parent or legal guardian must sign.",
+      "example": "Applicant's signature",
+      "rejection_risk": true,
+      "rejection_reason": "The form must be signed by the applicant or their legal representative."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "BLOCK CAPITALS",
+      "meaning": "Writing in uppercase letters, like this: ALL CAPS."
+    },
+    {
+      "term": "minors",
+      "meaning": "People who are under the legal age of adulthood, which is typically 18 years old."
+    },
+    {
+      "term": "legal guardian",
+      "meaning": "A person who is legally responsible for a child or someone who cannot make their own decisions."
+    },
+    {
+      "term": "residence permit",
+      "meaning": "An official document that allows a foreign national to live in a country for a specific period."
+    },
+    {
+      "term": "annulment",
+      "meaning": "The act of declaring a marriage or a visa invalid or void from the beginning."
+    },
+    {
+      "term": "prosecution",
+      "meaning": "The legal process of charging someone with a crime and trying them in court."
+    }
+  ]
+}

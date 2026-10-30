@@ -1,1 +1,130 @@
 # Plainform
+
+**Live demo: [plainform.sja-affu765.workers.dev](https://plainform.sja-affu765.workers.dev)**
+
+**Demo video: [youtu.be/fi-Lk7D8HXQ](https://youtu.be/fi-Lk7D8HXQ)**
+
+Any official form, explained in plain words, in your own language.
+
+Official forms are written in bureaucratic language, often in a language the person filling them in doesn't read well: visa applications, hospital intake, tenancy agreements, school enrolment, bank account opening. People guess, make mistakes, and get rejected or sign things they didn't understand.
+
+Plainform is one page. No signup, no account, nothing to install. Photograph or upload a form, pick a language, and get:
+
+- **Live results**: the explanation streams in as the page is read, field by field, instead of after a long wait.
+- **A one-paragraph summary** of what the form is for and what happens after you submit it.
+- **Every field, one by one:** the label as printed, what it is actually asking for in plain words, and an example of a correctly formatted answer.
+- **A warning flag** on fields that commonly cause rejections, such as a name that doesn't match the passport, a wrong date format, or a missing signature.
+- **Ask about this form**: follow-up questions in your own language, like "what is a guarantor?". Answers explain; they never advise what to write or whether to sign.
+- **Read aloud**: every explanation can be listened to in the chosen language, using the device's own voices, for people who find reading hard. Nothing is sent anywhere for this.
+- **Documents you may need**: a checklist of what to bring or attach, such as passport, photos or insurance card.
+- **Difficult words explained**: plain definitions of the legal and medical jargon on the page, like "joint and several" or "advance directive".
+- **A rejection-risk filter** that shows only the fields most likely to get the form sent back.
+- **An honest "couldn't read this"** when part of the page is blurred or cut off, instead of a guess. A wrong explanation on a visa form is worse than none.
+
+Explanations are available in English, Arabic, Urdu, Hindi, Bengali, Tagalog, French and Spanish. Arabic and Urdu render right to left, Urdu in proper Nastaliq script. Results are readable on a phone, print cleanly, and the whole page has light and dark modes that follow your system setting, with a toggle.
+
+Three sample blank forms (a visa application, a hospital intake form and a rental agreement) are built in, so you can see it working in one tap.
+
+## Demo video
+
+[![Watch the two-minute Plainform demo on YouTube](https://img.youtube.com/vi/fi-Lk7D8HXQ/hqdefault.jpg)](https://youtu.be/fi-Lk7D8HXQ)
+
+## Screenshots
+
+| Start page | Every field explained |
+| --- | --- |
+| ![Plainform start page with language picker, camera and upload buttons, and three sample forms](docs/screenshots/1-home.webp) | ![A visa application explained field by field, with a summary, documents checklist and rejection warnings](docs/screenshots/2-fields.webp) |
+| **Difficult words and follow-up questions** | **Arabic, right to left, dark mode** |
+| ![Plain explanations of legal terms on a rental agreement](docs/screenshots/3-terms-and-questions.webp) | ![A hospital intake form explained in Arabic, laid out right to left in dark mode](docs/screenshots/4-arabic-dark.webp) |
+
+<p align="center">
+  <img src="docs/screenshots/5-phone-light.webp" width="300" alt="Plainform on a phone in light mode">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/5-phone-dark.webp" width="300" alt="A visa form explained on a phone in dark mode">
+</p>
+
+All screenshots use the built-in sample blank forms. They contain no personal data.
+
+## Privacy
+
+Forms contain passport numbers, medical history and home addresses, so Plainform keeps nothing:
+
+- No database, no accounts, no file storage. The image is held in memory for the length of one request and then dropped.
+- The server does not log uploaded images or their contents, and the page has no analytics.
+- Images are resized in your browser before upload, and PDFs are turned into a picture of their first page there too, so less data leaves your phone.
+
+## Not advice
+
+Plainform explains what a field asks for. It does not tell anyone what to write, whether they qualify, or whether to sign. It is not legal, medical or immigration advice.
+
+## Run it locally
+
+Requirements: Node.js 22 or later and an OpenRouter API key.
+
+```bash
+git clone https://github.com/sja-thedude/Plainform.git
+cd Plainform
+npm install
+cp .env.example .env.local   # then put your OpenRouter key in .env.local
+npm run dev
+```
+
+Open http://localhost:3000.
+
+### Environment variables
+
+| Name | Purpose |
+| --- | --- |
+| `OPENROUTER_API_KEY` | OpenRouter key, used to read the form image and answer follow-up questions. |
+| `OPENROUTER_MODEL` | Vision model to use. Optional, defaults to `google/gemini-2.5-flash-lite`. |
+| `OPENROUTER_FALLBACK_MODEL` | Second model, used if the first fails or gets stuck. Optional, defaults to `google/gemma-4-26b-a4b-it`. |
+
+Any OpenRouter model that accepts images and supports structured output can be swapped in without a code change.
+
+## Deploy
+
+Plainform runs on Cloudflare Workers through the OpenNext adapter.
+
+```bash
+npx wrangler login
+npx wrangler secret put OPENROUTER_API_KEY
+npx wrangler secret put OPENROUTER_MODEL            # optional
+npx wrangler secret put OPENROUTER_FALLBACK_MODEL   # optional
+npm run deploy
+```
+
+`npm run preview` builds the Worker and runs it locally in the Workers runtime. Secrets are only ever set with `wrangler secret put`, never in a file in the repo.
+
+## Stack
+
+- Next.js 15 (App Router) and TypeScript
+- Tailwind CSS 4, no component library
+- OpenRouter (OpenAI-compatible chat completions, streamed over SSE) with a vision model and a strict JSON schema to read the form; Gemini 2.5 Flash Lite by default, Gemma 4 as the fallback
+- pdf.js in the browser to turn the first page of a PDF into an image
+- Noto fonts for Arabic (Naskh), Urdu (Nastaliq), Devanagari and Bengali
+- Cloudflare Workers via `@opennextjs/cloudflare`, deployed with Wrangler
+
+## How it works
+
+1. The browser resizes the photo and re-encodes it as JPEG. HEIC photos from iPhones are converted on browsers that can decode them. PDFs are opened in the browser with pdf.js and only their first page is drawn and sent, as an image.
+2. `POST /api/explain` sends the page to the model through OpenRouter, as a base64 image, with instructions to list every field in reading order, explain it in the chosen language, flag known rejection risks, mark anything it cannot read as unreadable, and never give advice.
+3. The response is a fixed JSON schema. It streams to the browser as newline-delimited events and is parsed as it arrives, so cards appear while the model is still writing. If the first model fails or gets stuck part way, the fallback model takes over and the browser starts again cleanly. The finished result is validated on the server before the final event. The explanation container takes `dir="rtl"` for Arabic and Urdu, while each printed label keeps its own direction.
+4. The three sample forms have pre-computed results in `public/samples/results/`, so the demo loads instantly.
+
+## Project layout
+
+```
+src/app/page.tsx              the single page: language picker, upload, camera, samples
+src/app/api/explain/route.ts  upload endpoint, streams the explanation, in memory only
+src/app/api/ask/route.ts      follow-up questions, stateless
+src/lib/explain.ts            prompt and form reading call
+src/lib/openrouter.ts         OpenRouter streaming client with fallback
+src/lib/languages.ts          supported languages and translated interface text
+src/components/Result.tsx     summary, documents, field cards, key terms, read aloud
+src/components/AskPanel.tsx   follow-up question chat
+scripts/                      sample form templates and the result cache builder
+```
+
+## License
+
+[MIT](LICENSE)

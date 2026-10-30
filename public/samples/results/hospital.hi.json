@@ -1,0 +1,592 @@
+{
+  "is_form": true,
+  "form_title": "नया रोगी पंजीकरण और स्वास्थ्य इतिहास",
+  "summary": "यह फॉर्म किसी नए मरीज के अस्पताल में भर्ती होने या आउट पेशेंट सेवाओं के लिए पंजीकरण करने के लिए है। इसमें मरीज की व्यक्तिगत जानकारी, आपातकालीन संपर्क, बीमा और वित्तीय जिम्मेदारी, चिकित्सा इतिहास और उपचार के लिए सहमति जैसी जानकारी मांगी जाती है। यह फॉर्म मरीज या उनके कानूनी प्रतिनिधि द्वारा भरा जाता है और अस्पताल के कर्मचारियों द्वारा समीक्षा के बाद मरीज का रिकॉर्ड बनाया जाता है।",
+  "image_note": "",
+  "documents_needed": [
+    "फोटो आईडी",
+    "बीमा कार्ड"
+  ],
+  "fields": [
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Legal last name",
+      "label_translated": "कानूनी अंतिम नाम",
+      "legible": true,
+      "meaning": "आपका कानूनी अंतिम नाम लिखें जैसा कि सरकारी पहचान पत्र पर लिखा है।",
+      "example": "वर्मा",
+      "rejection_risk": true,
+      "rejection_reason": "अंतिम नाम का मेल न खाना या गलत लिखा होना आपके आवेदन को अस्वीकार कर सकता है।"
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Legal first name",
+      "label_translated": "कानूनी पहला नाम",
+      "legible": true,
+      "meaning": "आपका कानूनी पहला नाम लिखें जैसा कि सरकारी पहचान पत्र पर लिखा है।",
+      "example": "सुरेश",
+      "rejection_risk": true,
+      "rejection_reason": "पहले नाम का मेल न खाना या गलत लिखा होना आपके आवेदन को अस्वीकार कर सकता है।"
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "M.I.",
+      "label_translated": "मध्य नाम का पहला अक्षर",
+      "legible": true,
+      "meaning": "अपने मध्य नाम का पहला अक्षर लिखें।",
+      "example": "एस",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Preferred name (if different)",
+      "label_translated": "पसंदीदा नाम (यदि अलग है)",
+      "legible": true,
+      "meaning": "वह नाम लिखें जिससे आप पुकारे जाना पसंद करते हैं, यदि यह आपके कानूनी नाम से अलग है।",
+      "example": "सैम",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "जन्म तिथि (महीना/दिन/वर्ष)",
+      "legible": true,
+      "meaning": "अपनी जन्म तिथि लिखें। महीना, दिन और चार अंकों वाला वर्ष लिखें।",
+      "example": "05/15/1990",
+      "rejection_risk": true,
+      "rejection_reason": "जन्म तिथि का गलत प्रारूप या गलत जानकारी आपके आवेदन को अस्वीकार कर सकती है।"
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "जन्म के समय लिंग",
+      "legible": true,
+      "meaning": "जन्म के समय आपको पुरुष (M) या महिला (F) के रूप में सौंपा गया लिंग चुनें।",
+      "example": "M",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Home address (street, apt, city, state, ZIP)",
+      "label_translated": "घर का पता (गली, अपार्टमेंट, शहर, राज्य, पिन कोड)",
+      "legible": true,
+      "meaning": "अपना पूरा घर का पता लिखें।",
+      "example": "123 मुख्य सड़क, अपार्टमेंट 4B, कोई भी शहर, कोई भी राज्य, 12345",
+      "rejection_risk": true,
+      "rejection_reason": "अधूरा या गलत पता संचार में समस्याएँ पैदा कर सकता है।"
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Primary phone",
+      "label_translated": "प्राथमिक फोन",
+      "legible": true,
+      "meaning": "वह फोन नंबर लिखें जिस पर आपसे संपर्क किया जा सके।",
+      "example": "555-123-4567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "E-mail",
+      "label_translated": "ईमेल",
+      "legible": true,
+      "meaning": "अपना ईमेल पता लिखें।",
+      "example": "example@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Preferred language",
+      "label_translated": "पसंदीदा भाषा",
+      "legible": true,
+      "meaning": "वह भाषा लिखें जिसे आप सबसे अच्छी तरह समझते हैं।",
+      "example": "हिंदी",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Interpreter required?",
+      "label_translated": "दुभाषिया आवश्यक है?",
+      "legible": true,
+      "meaning": "यदि आपको संवाद करने में सहायता के लिए किसी दुभाषिया की आवश्यकता है तो 'हाँ' चुनें, अन्यथा 'नहीं' चुनें।",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Marital status",
+      "label_translated": "वैवाहिक स्थिति",
+      "legible": true,
+      "meaning": "अपनी वैवाहिक स्थिति चुनें (जैसे अविवाहित, विवाहित, तलाकशुदा, विधवा)।",
+      "example": "विवाहित",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "Employer / occupation",
+      "label_translated": "नियोक्ता / व्यवसाय",
+      "legible": true,
+      "meaning": "आप जहाँ काम करते हैं उसका नाम और आपका पद लिखें।",
+      "example": "ABC कंपनी, इंजीनियर",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1. रोगी की जानकारी",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "सामाजिक सुरक्षा संख्या (केवल अंतिम 4 अंक)",
+      "legible": true,
+      "meaning": "अपने सामाजिक सुरक्षा नंबर के अंतिम चार अंक लिखें।",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. आपातकालीन संपर्क / अगले रिश्तेदार",
+      "label_original": "Name",
+      "label_translated": "नाम",
+      "legible": true,
+      "meaning": "उस व्यक्ति का नाम लिखें जिससे आपात स्थिति में संपर्क किया जा सके।",
+      "example": "अजय कुमार",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. आपातकालीन संपर्क / अगले रिश्तेदार",
+      "label_original": "Relationship to patient",
+      "label_translated": "रोगी से संबंध",
+      "legible": true,
+      "meaning": "बताएं कि यह व्यक्ति आपका क्या लगता है (जैसे पति/पत्नी, माता-पिता, भाई/बहन)।",
+      "example": "भाई",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2. आपातकालीन संपर्क / अगले रिश्तेदार",
+      "label_original": "Phone",
+      "label_translated": "फोन",
+      "legible": true,
+      "meaning": "उस व्यक्ति का फोन नंबर लिखें जिससे आपात स्थिति में संपर्क किया जा सके।",
+      "example": "555-987-6543",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "प्राथमिक बीमा कंपनी",
+      "legible": true,
+      "meaning": "अपनी मुख्य स्वास्थ्य बीमा कंपनी का नाम लिखें।",
+      "example": "XYZ स्वास्थ्य बीमा",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "सदस्य / ग्राहक आईडी",
+      "legible": true,
+      "meaning": "अपनी बीमा पॉलिसी पर दिया गया सदस्य या ग्राहक आईडी नंबर लिखें।",
+      "example": "ABC123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Group no.",
+      "label_translated": "समूह संख्या",
+      "legible": true,
+      "meaning": "यदि आपकी बीमा पॉलिसी किसी समूह (जैसे नियोक्ता) से संबंधित है, तो समूह संख्या लिखें।",
+      "example": "G9876",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "पॉलिसीधारक का नाम (यदि मरीज नहीं है)",
+      "legible": true,
+      "meaning": "यदि बीमा पॉलिसी किसी और के नाम पर है (जैसे पति/पत्नी या माता-पिता), तो उनका नाम लिखें।",
+      "example": "मीना वर्मा",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Policyholder DOB",
+      "label_translated": "पॉलिसीधारक की जन्म तिथि",
+      "legible": true,
+      "meaning": "पॉलिसीधारक की जन्म तिथि लिखें (महीना/दिन/वर्ष)।",
+      "example": "01/01/1970",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Relationship to patient",
+      "label_translated": "रोगी से संबंध",
+      "legible": true,
+      "meaning": "पॉलिसीधारक का मरीज से क्या संबंध है, यह बताएं।",
+      "example": "पति",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3. बीमा और वित्तीय जिम्मेदारी",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "स्व-भुगतान / बिना बीमा के। मैं समझता हूं कि भुगतान विकल्प और चैरिटी देखभाल पात्रता के संबंध में एक वित्तीय परामर्शदाता मुझसे संपर्क करेगा।",
+      "legible": true,
+      "meaning": "यदि आप स्वयं भुगतान कर रहे हैं या आपके पास बीमा नहीं है, तो इस बॉक्स को टिक करें। यह बताता है कि आप भुगतान या सहायता के बारे में बात करने के लिए वित्तीय परामर्शदाता से मिलने के लिए सहमत हैं।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "प्राथमिक देखभाल चिकित्सक (नाम और क्लिनिक)",
+      "legible": true,
+      "meaning": "अपने मुख्य डॉक्टर का नाम और उनके क्लिनिक का नाम लिखें।",
+      "example": "डॉ. शर्मा, सिटी हेल्थ क्लिनिक",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "वर्तमान दवाएं, ओवर-द-काउंटर और सप्लीमेंट्स सहित (नाम, खुराक, कितनी बार)",
+      "legible": true,
+      "meaning": "आप जो भी दवाएं, ओवर-द-काउंटर दवाएं या सप्लीमेंट्स ले रहे हैं, उनके नाम, खुराक और कितनी बार लेते हैं, लिखें।",
+      "example": "पैरासिटामोल, 500mg, आवश्यकतानुसार",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "दवाओं, भोजन या लेटेक्स से एलर्जी, और प्रतिक्रिया",
+      "legible": true,
+      "meaning": "यदि आपको किसी दवा, भोजन या लेटेक्स से एलर्जी है, तो उसका नाम और क्या प्रतिक्रिया होती है, लिखें। यदि कोई एलर्जी नहीं है, तो 'NKDA' (कोई ज्ञात दवा एलर्जी नहीं) चुनें।",
+      "example": "पेनिसिलिन - चकत्ते",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "NKDA",
+      "label_translated": "कोई ज्ञात दवा एलर्जी नहीं",
+      "legible": true,
+      "meaning": "यदि आपको किसी दवा, भोजन या लेटेक्स से कोई ज्ञात एलर्जी नहीं है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "पिछली सर्जरी / अस्पताल में भर्ती (वर्ष)",
+      "legible": true,
+      "meaning": "यदि आपकी कोई पिछली सर्जरी हुई है या आप अस्पताल में भर्ती हुए हैं, तो वर्ष लिखें।",
+      "example": "2018 - अपेंडिक्स सर्जरी",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Do you have, or have you ever had:",
+      "label_translated": "क्या आपको है, या कभी हुआ है:",
+      "legible": true,
+      "meaning": "उन चिकित्सा स्थितियों के लिए बॉक्स टिक करें जो आपको वर्तमान में हैं या कभी हुई हैं।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Diabetes",
+      "label_translated": "मधुमेह",
+      "legible": true,
+      "meaning": "यदि आपको मधुमेह है या कभी था, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "High blood pressure",
+      "label_translated": "उच्च रक्तचाप",
+      "legible": true,
+      "meaning": "यदि आपको उच्च रक्तचाप है या कभी था, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Heart disease",
+      "label_translated": "हृदय रोग",
+      "legible": true,
+      "meaning": "यदि आपको हृदय रोग है या कभी था, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Asthma/COPD",
+      "label_translated": "अस्थमा/सीओपीडी",
+      "legible": true,
+      "meaning": "यदि आपको अस्थमा या सीओपीडी है या कभी था, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Kidney disease",
+      "label_translated": "गुर्दे की बीमारी",
+      "legible": true,
+      "meaning": "यदि आपको गुर्दे की बीमारी है या कभी थी, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Cancer",
+      "label_translated": "कैंसर",
+      "legible": true,
+      "meaning": "यदि आपको कैंसर है या कभी था, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Seizures",
+      "label_translated": "दौरे",
+      "legible": true,
+      "meaning": "यदि आपको दौरे पड़ते हैं या कभी पड़े हैं, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "None of these",
+      "label_translated": "इनमें से कोई नहीं",
+      "legible": true,
+      "meaning": "यदि आपको ऊपर सूचीबद्ध कोई भी बीमारी नहीं है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Tobacco use",
+      "label_translated": "तंबाकू का उपयोग",
+      "legible": true,
+      "meaning": "तंबाकू के उपयोग की अपनी वर्तमान स्थिति चुनें (कभी नहीं, पूर्व, वर्तमान)।",
+      "example": "Never",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Never",
+      "label_translated": "कभी नहीं",
+      "legible": true,
+      "meaning": "यदि आप कभी तंबाकू का उपयोग नहीं करते हैं, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Former",
+      "label_translated": "पूर्व",
+      "legible": true,
+      "meaning": "यदि आप पहले तंबाकू का उपयोग करते थे लेकिन अब नहीं करते हैं, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Current",
+      "label_translated": "वर्तमान",
+      "legible": true,
+      "meaning": "यदि आप वर्तमान में तंबाकू का उपयोग करते हैं, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "शराब (पेय/सप्ताह)",
+      "legible": true,
+      "meaning": "प्रति सप्ताह आप औसतन कितने अल्कोहलिक पेय पीते हैं, उसकी संख्या लिखें।",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Pregnant or possibly pregnant?",
+      "label_translated": "गर्भवती हैं या संभवतः गर्भवती हैं?",
+      "legible": true,
+      "meaning": "यदि आप गर्भवती हैं या गर्भवती होने की संभावना है, तो 'हाँ' चुनें। यदि नहीं, तो 'नहीं' चुनें। यदि यह लागू नहीं होता है, तो 'N/A' चुनें।",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Yes",
+      "label_translated": "हाँ",
+      "legible": true,
+      "meaning": "यदि आप गर्भवती हैं या गर्भवती होने की संभावना है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "No",
+      "label_translated": "नहीं",
+      "legible": true,
+      "meaning": "यदि आप गर्भवती नहीं हैं और गर्भवती होने की संभावना नहीं है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "N/A",
+      "label_translated": "लागू नहीं",
+      "legible": true,
+      "meaning": "यदि गर्भावस्था का प्रश्न आप पर लागू नहीं होता है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Do you have an advance directive or living will?",
+      "label_translated": "क्या आपके पास एक अग्रिम निर्देश या जीवित वसीयत है?",
+      "legible": true,
+      "meaning": "क्या आपके पास कोई कानूनी दस्तावेज है जो बताता है कि आप चिकित्सा उपचार के बारे में क्या चाहते हैं यदि आप खुद निर्णय लेने में असमर्थ हों? यदि हाँ, तो 'हाँ' चुनें और एक प्रति प्रदान करें। यदि नहीं, तो 'नहीं' चुनें। यदि आप इसके बारे में जानकारी चाहते हैं, तो 'जानकारी चाहते हैं' चुनें।",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Yes (please provide a copy)",
+      "label_translated": "हाँ (कृपया एक प्रति प्रदान करें)",
+      "legible": true,
+      "meaning": "यदि आपके पास अग्रिम निर्देश या जीवित वसीयत है, तो इस बॉक्स को टिक करें और एक प्रति प्रदान करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "No",
+      "label_translated": "नहीं",
+      "legible": true,
+      "meaning": "यदि आपके पास अग्रिम निर्देश या जीवित वसीयत नहीं है, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4. चिकित्सा इतिहास",
+      "label_original": "Would like information",
+      "label_translated": "जानकारी चाहते हैं",
+      "legible": true,
+      "meaning": "यदि आप अग्रिम निर्देश या जीवित वसीयत के बारे में अधिक जानकारी चाहते हैं, तो इस बॉक्स को टिक करें।",
+      "example": "Checked",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. सहमति और पावती",
+      "label_original": "Initials",
+      "label_translated": "आद्याक्षर",
+      "legible": true,
+      "meaning": "यहां अपने आद्याक्षर लिखें। यह दर्शाता है कि आपने उपचार के लिए सहमति दी है और बीमा लाभ सौंपे हैं।",
+      "example": "एस.वी.",
+      "rejection_risk": true,
+      "rejection_reason": "हस्ताक्षर या आद्याक्षर न होने से फॉर्म अस्वीकृत हो सकता है।"
+    },
+    {
+      "section": "5. सहमति और पावती",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "रोगी या कानूनी प्रतिनिधि के हस्ताक्षर",
+      "legible": true,
+      "meaning": "यहां अपना पूरा हस्ताक्षर करें। यह दर्शाता है कि आप फॉर्म में दी गई जानकारी से सहमत हैं और उपचार के लिए सहमति देते हैं।",
+      "example": "सुरेश वर्मा",
+      "rejection_risk": true,
+      "rejection_reason": "हस्ताक्षर न होने से फॉर्म अस्वीकृत हो सकता है।"
+    },
+    {
+      "section": "5. सहमति और पावती",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "मुद्रित नाम और संबंध, यदि मरीज नहीं है",
+      "legible": true,
+      "meaning": "यदि आप मरीज के कानूनी प्रतिनिधि के रूप में हस्ताक्षर कर रहे हैं, तो अपना पूरा नाम और मरीज से अपना संबंध लिखें। यदि आप स्वयं मरीज हैं, तो इसे खाली छोड़ दें।",
+      "example": "अजय कुमार (भाई)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5. सहमति और पावती",
+      "label_original": "Date",
+      "label_translated": "दिनांक",
+      "legible": true,
+      "meaning": "जिस तारीख को आपने हस्ताक्षर किए हैं, वह लिखें (महीना/दिन/वर्ष)।",
+      "example": "05/20/2024",
+      "rejection_risk": true,
+      "rejection_reason": "दिनांक का गलत प्रारूप या दिनांक न होने से फॉर्म अस्वीकृत हो सकता है।"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "M.I.",
+      "meaning": "यह 'Middle Initial' का संक्षिप्त रूप है, जिसका अर्थ है मध्य नाम का पहला अक्षर।"
+    },
+    {
+      "term": "SSN",
+      "meaning": "यह 'Social Security Number' का संक्षिप्त रूप है, जो संयुक्त राज्य अमेरिका में व्यक्तियों को दिया जाने वाला एक नौ अंकों का पहचान नंबर है।"
+    },
+    {
+      "term": "NKDA",
+      "meaning": "यह 'No Known Drug Allergies' का संक्षिप्त रूप है, जिसका अर्थ है कि व्यक्ति को किसी भी ज्ञात दवा से एलर्जी नहीं है।"
+    },
+    {
+      "term": "Asthma/COPD",
+      "meaning": "अस्थमा एक पुरानी श्वसन स्थिति है जो वायुमार्ग को सूज देती है, जबकि सीओपीडी (क्रॉनिक ऑब्सट्रक्टिव पल्मोनरी डिजीज) फेफड़ों की बीमारियों का एक समूह है जो सांस लेने में कठिनाई पैदा करता है।"
+    },
+    {
+      "term": "Advance directive or living will",
+      "meaning": "यह एक कानूनी दस्तावेज है जो बताता है कि यदि आप स्वयं निर्णय लेने में असमर्थ हों तो आप किस प्रकार का चिकित्सा उपचार चाहते हैं या नहीं चाहते हैं।"
+    },
+    {
+      "term": "ASSIGNMENT OF BENEFITS",
+      "meaning": "इसका मतलब है कि आप अपने बीमाकर्ता से सीधे अस्पताल को भुगतान करने की अनुमति देते हैं।"
+    },
+    {
+      "term": "Notice of Privacy Practices",
+      "meaning": "यह एक कानूनी दस्तावेज है जो बताता है कि आपकी स्वास्थ्य जानकारी का उपयोग और खुलासा कैसे किया जाएगा।"
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "is_form": true,
+  "form_title": "BAGONG PAGPAPATALA NG PASYENTE AT KASAYSAYANG MEDIKAL",
+  "summary": "Ang form na ito ay ginagamit para sa pagpaparehistro ng bagong pasyente sa ospital. Kinokolekta nito ang iyong personal na impormasyon, detalye ng contact sa oras ng emergency, impormasyon sa insurance, at iyong kasaysayang medikal. Pagkatapos itong punan, ito ay susuriin ng ospital para sa iyong pagpapagamot.",
+  "image_note": "",
+  "documents_needed": [
+    "Valid ID (tulad ng passport o driver's license)",
+    "Insurance card"
+  ],
+  "fields": [
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Legal last name",
+      "label_translated": "Apelyido ayon sa batas",
+      "legible": true,
+      "meaning": "Isulat ang iyong apelyido ayon sa iyong legal na dokumento.",
+      "example": "Dela Cruz",
+      "rejection_risk": true,
+      "rejection_reason": "Dapat tugma ang apelyido sa iyong ID."
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Legal first name",
+      "label_translated": "Unang pangalan ayon sa batas",
+      "legible": true,
+      "meaning": "Isulat ang iyong unang pangalan ayon sa iyong legal na dokumento.",
+      "example": "Juan",
+      "rejection_risk": true,
+      "rejection_reason": "Dapat tugma ang pangalan sa iyong ID."
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "M.I.",
+      "label_translated": "Middle Initial",
+      "legible": true,
+      "meaning": "Isulat ang unang letra ng iyong middle name.",
+      "example": "P",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Preferred (name if different)",
+      "label_translated": "Paboritong pangalan (kung iba sa legal na pangalan)",
+      "legible": true,
+      "meaning": "Isulat ang pangalang gusto mong itawag sa iyo kung iba ito sa iyong legal na pangalan.",
+      "example": "Jun",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Date of birth (MM/DD/YYYY)",
+      "label_translated": "Petsa ng kapanganakan (Buwan/Araw/Taon)",
+      "legible": true,
+      "meaning": "Isulat ang iyong kaarawan gamit ang format na Buwan/Araw/Taon.",
+      "example": "01/25/1990",
+      "rejection_risk": true,
+      "rejection_reason": "Siguraduhing tama ang pagkakasunod-sunod ng buwan at araw."
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Sex assigned at birth",
+      "label_translated": "Kasarian noong ipinanganak",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang lalaki (F) o babae (M) base sa iyong kasarian noong ipinanganak.",
+      "example": "M",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Home address (street, apt., city, state, ZIP)",
+      "label_translated": "Tirahan (kalye, apartment, lungsod, estado, ZIP code)",
+      "legible": true,
+      "meaning": "Isulat ang kumpletong address ng iyong bahay.",
+      "example": "123 Mabini St., Manila, 1000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Primary phone",
+      "label_translated": "Pangunahing numero ng telepono",
+      "legible": true,
+      "meaning": "Isulat ang iyong numero ng telepono kung saan ka pwedeng tawagan.",
+      "example": "09171234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "E-mail",
+      "label_translated": "E-mail",
+      "legible": true,
+      "meaning": "Isulat ang iyong email address.",
+      "example": "juan.delacruz@email.com",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Preferred language",
+      "label_translated": "Paboritong wika",
+      "legible": true,
+      "meaning": "Isulat ang wika na mas komportable kang gamitin.",
+      "example": "Tagalog",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Interpreter required?",
+      "label_translated": "Kailangan ng interpreter?",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang Yes kung kailangan mo ng tagasalin o No kung hindi.",
+      "example": "Yes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Marital status",
+      "label_translated": "Katayuang sibil",
+      "legible": true,
+      "meaning": "Isulat kung ikaw ay single, may asawa, atbp.",
+      "example": "Single",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "Employer / occupation",
+      "label_translated": "Trabaho / Propesyon",
+      "legible": true,
+      "meaning": "Isulat ang iyong trabaho o kung saan ka nagtatrabaho.",
+      "example": "Teacher",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 1 - IMPORMASYON NG PASYENTE",
+      "label_original": "SSN (last 4 digits only)",
+      "label_translated": "SSN (huling 4 na numero lamang)",
+      "legible": true,
+      "meaning": "Isulat ang huling apat na numero ng iyong Social Security Number.",
+      "example": "1234",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 - EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Name",
+      "label_translated": "Pangalan",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng taong tatawagan sa oras ng emergency.",
+      "example": "Maria Dela Cruz",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 - EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Relationship to patient",
+      "label_translated": "Relasyon sa pasyente",
+      "legible": true,
+      "meaning": "Isulat kung ano ang relasyon ng taong ito sa iyo (halimbawa: Ina, Ama, Kapatid).",
+      "example": "Mother",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 2 - EMERGENCY CONTACT / NEXT OF KIN",
+      "label_original": "Phone",
+      "label_translated": "Telepono",
+      "legible": true,
+      "meaning": "Isulat ang numero ng telepono ng iyong emergency contact.",
+      "example": "09181234567",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Primary insurance carrier",
+      "label_translated": "Pangunahing kumpanya ng insurance",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng iyong insurance provider.",
+      "example": "Blue Cross",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Member / Subscriber ID",
+      "label_translated": "ID ng Miyembro / Subscriber",
+      "legible": true,
+      "meaning": "Isulat ang iyong membership o subscriber ID number.",
+      "example": "ABC123456789",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Group no.",
+      "label_translated": "Numero ng Grupo",
+      "legible": true,
+      "meaning": "Isulat ang iyong group number kung meron.",
+      "example": "98765",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder name (if not patient)",
+      "label_translated": "Pangalan ng may-ari ng polisiya (kung hindi ang pasyente)",
+      "legible": true,
+      "meaning": "Isulat ang pangalan ng taong nagmamay-ari ng insurance kung hindi ikaw ang pasyente.",
+      "example": "Robert Dela Cruz",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Policyholder DOB",
+      "label_translated": "Petsa ng kapanganakan ng may-ari ng polisiya",
+      "legible": true,
+      "meaning": "Isulat ang kaarawan ng may-ari ng insurance (Buwan/Araw/Taon).",
+      "example": "05/12/1965",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Relationship to patient",
+      "label_translated": "Relasyon sa pasyente",
+      "legible": true,
+      "meaning": "Isulat ang relasyon ng may-ari ng insurance sa pasyente.",
+      "example": "Father",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 3 - INSURANCE & FINANCIAL RESPONSIBILITY",
+      "label_original": "Self-pay / uninsured. I understand a financial counsellor will contact me regarding payment options and charity care eligibility.",
+      "label_translated": "Magbabayad nang sarili / walang insurance. Naiintindihan ko na ang isang financial counsellor ay makikipag-ugnayan sa akin tungkol sa mga opsyon sa pagbabayad at eligibility sa charity care.",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay magbabayad nang sarili at naiintindihan ang proseso ng pagbabayad.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Primary care physician (name & clinic)",
+      "label_translated": "Pangunahing doktor (pangalan at klinika)",
+      "legible": true,
+      "meaning": "Isulat ang pangalan at klinika ng iyong regular na doktor.",
+      "example": "Dr. Jose Rizal, Rizal Clinic",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Current medications, including over-the-counter and supplements (name, dose, how often)",
+      "label_translated": "Kasalukuyang mga gamot, kasama ang mga over-the-counter at supplements (pangalan, dosis, gaano kadalas)",
+      "legible": true,
+      "meaning": "Isulat ang lahat ng gamot na iniinom mo ngayon, kasama ang dosis at kung gaano kadalas.",
+      "example": "Paracetamol, 500mg, tatlong beses sa isang araw",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Allergies to medications, food or latex, and the reaction",
+      "label_translated": "Mga allergy sa gamot, pagkain, o latex, at ang reaksyon nito",
+      "legible": true,
+      "meaning": "Isulat ang mga bagay na nagdudulot sa iyo ng allergy at kung ano ang nangyayari sa katawan mo.",
+      "example": "Penicillin, rashes",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "NKDA",
+      "label_translated": "Walang kilalang allergy sa gamot",
+      "legible": true,
+      "meaning": "Lagyan ng tsek kung wala kang kilalang allergy sa anumang gamot.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Previous surgeries / hospitalizations (year)",
+      "label_translated": "Mga nakaraang operasyon / pagkaka-ospital (taon)",
+      "legible": true,
+      "meaning": "Isulat ang mga nakaraang operasyon o pagkaka-ospital at ang taon kung kailan ito nangyari.",
+      "example": "Appendectomy, 2015",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Do you have, or have you ever had: Diabetes",
+      "label_translated": "Mayroon ka ba, o nagkaroon ka ba ng: Diabetes",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may o nagkaroon ng diabetes.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "High blood pressure",
+      "label_translated": "High blood pressure",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may high blood pressure.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Heart disease",
+      "label_translated": "Sakit sa puso",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may sakit sa puso.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Asthma/COPD",
+      "label_translated": "Asthma/COPD",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may asthma o COPD.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Kidney disease",
+      "label_translated": "Sakit sa bato",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may sakit sa bato.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Cancer",
+      "label_translated": "Kanser",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may kanser.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Seizures",
+      "label_translated": "Seizures",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung ikaw ay may seizures.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "None of these",
+      "label_translated": "Wala sa mga ito",
+      "legible": true,
+      "meaning": "Lagyan ng tsek ang kahon kung wala kang anumang sakit na nabanggit sa itaas.",
+      "example": "[X]",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Tobacco use: Never / Former / Current",
+      "label_translated": "Paggamit ng tabako: Hindi kailanman / Dati / Kasalukuyan",
+      "legible": true,
+      "meaning": "Piliin kung ikaw ay hindi kailanman gumamit, dating gumamit, o kasalukuyang gumagamit ng tabako.",
+      "example": "Former",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Alcohol (drinks/week)",
+      "label_translated": "Alak (inumin bawat linggo)",
+      "legible": true,
+      "meaning": "Isulat kung ilang baso ng alak ang iniinom mo sa loob ng isang linggo.",
+      "example": "2",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 4 - MEDICAL HISTORY",
+      "label_original": "Pregnant or possibly pregnant? Yes / No / N/A",
+      "label_translated": "Buntis o posibleng buntis? Oo / Hindi / Hindi applicable",
+      "legible": true,
+      "meaning": "Lagyan ng tsek kung ikaw ay buntis o posibleng buntis.",
+      "example": "No",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 5 - CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "CONSENT TO TREATMENT: I voluntarily consent to such routine diagnostic examinations, examinations and medical treatment as the attending physician(s) and hospital staff deem necessary. ASSIGNMENT OF BENEFITS: I assign to Riverside General Hospital all insurance benefits otherwise payable to me and I understand that I am financially responsible for any balance not covered by insurance, including deductibles, co-insurance and non-covered services. I acknowledge receipt of the Notice of Privacy Practices.",
+      "label_translated": "PAHINTULOT SA PAGGAMOT: Kusang-loob akong pumapayag sa mga routine na pagsusuri at medikal na gamutan na ituturing na kailangan ng doktor at staff ng ospital. PAGLALAYAG NG MGA BENEPISYO: Ibinibigay ko sa Riverside General Hospital ang lahat ng benepisyo ng insurance na dapat ay para sa akin at naiintindihan ko na ako ang mananagot sa anumang balanse na hindi sakop ng insurance. Kinikilala ko rin ang pagtanggap ng Notice of Privacy Practices.",
+      "legible": true,
+      "meaning": "Sa pamamagitan ng paglagda rito, pumapayag ka sa mga gamutan at inaamin mong ikaw ang magbabayad sa mga hindi sakop ng insurance.",
+      "example": "Dito ilalagay ang iyong lagda.",
+      "rejection_risk": true,
+      "rejection_reason": "Ang hindi paglagda ay maaaring maging sanhi ng hindi pagtanggap ng serbisyo."
+    },
+    {
+      "section": "SECTION 5 - CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Initials:",
+      "label_translated": "Initial:",
+      "legible": true,
+      "meaning": "Isulat ang iyong mga unang letra ng pangalan bilang pagpapatunay sa pahayag sa itaas.",
+      "example": "JD",
+      "rejection_risk": true,
+      "rejection_reason": "Dapat mayroong initials para maging valid ang pahayag."
+    },
+    {
+      "section": "SECTION 5 - CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Signature of patient or legal representative",
+      "label_translated": "Lagda ng pasyente o legal na kinatawan",
+      "legible": true,
+      "meaning": "Dito ilalagay ang iyong buong lagda.",
+      "example": "[Lagda]",
+      "rejection_risk": true,
+      "rejection_reason": "Kailangan ang buong lagda para sa legal na pagtanggap."
+    },
+    {
+      "section": "SECTION 5 - CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Printed name & relationship, if not patient",
+      "label_translated": "Nakalimbag na pangalan at relasyon, kung hindi pasyente",
+      "legible": true,
+      "meaning": "Kung ang kinatawan ang pumirma, isulat ang malinaw na pangalan at relasyon sa pasyente.",
+      "example": "Maria Dela Cruz (Mother)",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "SECTION 5 - CONSENT & ACKNOWLEDGEMENTS",
+      "label_original": "Date",
+      "label_translated": "Petsa",
+      "legible": true,
+      "meaning": "Isulat ang petsa kung kailan mo pinirmahan ang form (Buwan/Araw/Taon).",
+      "example": "08/15/2023",
+      "rejection_risk": true,
+      "rejection_reason": "Dapat may petsa ang iyong lagda."
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "Assignment of Benefits",
+      "meaning": "Isang kasunduan kung saan ang iyong insurance payments ay direktang ibibigay sa ospital sa halip na sa iyo."
+    },
+    {
+      "term": "Deductibles",
+      "meaning": "Ang halaga na dapat mong bayaran mula sa iyong sariling bulsa bago magsimulang magbayad ang iyong insurance."
+    },
+    {
+      "term": "Co-insurance",
+      "meaning": "Ang bahagi ng gastos sa medikal na kailangang bayaran ng pasyente kasama ang insurance."
+    },
+    {
+      "term": "NKDA",
+      "meaning": "Isang acronym para sa 'No Known Drug Allergies' o walang kilalang allergy sa gamot."
+    },
+    {
+      "term": "Over-the-counter",
+      "meaning": "Mga gamot na pwedeng bilhin nang walang reseta mula sa doktor."
+    },
+    {
+      "term": "Notice of Privacy Practices",
+      "meaning": "Isang dokumento na nagpapaliwanag kung paano pinoprotektahan at ginagamit ng ospital ang iyong personal na impormasyon."
+    }
+  ]
+}

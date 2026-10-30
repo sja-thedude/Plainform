@@ -1,0 +1,245 @@
+{
+  "is_form": true,
+  "form_title": "رہائشی کرایہ داری کا معاہدہ",
+  "summary": "یہ فارم ایک رہائشی جائیداد کے لیے کرایہ داری کا معاہدہ ہے۔ یہ مالک مکان اور کرایہ دار کے درمیان تعلقات اور ذمہ داریوں کو بیان کرتا ہے۔ اس فارم کو عام طور پر مالک مکان یا پراپرٹی مینجمنٹ کمپنی اور کرایہ دار بھرتے ہیں۔ اس پر دستخط کرنے کے بعد، یہ ایک قانونی دستاویز بن جاتا ہے جو کرایہ داری کی شرائط و ضوابط کو بیان کرتا ہے۔",
+  "image_note": "",
+  "documents_needed": [],
+  "fields": [
+    {
+      "section": "1 · فریقین",
+      "label_original": "1.1 Landlord's full name (or managing agent on behalf of the Landlord)",
+      "label_translated": "1.1 مالک مکان کا پورا نام (یا مالک مکان کی جانب سے انتظام کرنے والا ایجنٹ)",
+      "legible": true,
+      "meaning": "یہاں مالک مکان یا ان کے ایجنٹ کا پورا نام لکھیں۔",
+      "example": "محمد احمد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · فریقین",
+      "label_original": "1.2 Landlord's address for service of notices",
+      "label_translated": "1.2 نوٹس بھیجنے کے لیے مالک مکان کا پتہ",
+      "legible": true,
+      "meaning": "وہ پتہ لکھیں جہاں مالک مکان کو باضابطہ نوٹس بھیجے جا سکتے ہیں۔",
+      "example": "123 مین سٹریٹ، لاہور",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · فریقین",
+      "label_original": "1.3 Tenant 1 full legal name",
+      "label_translated": "1.3 کرایہ دار 1 کا پورا قانونی نام",
+      "legible": true,
+      "meaning": "پہلے کرایہ دار کا پورا قانونی نام لکھیں۔",
+      "example": "علی رضا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · فریقین",
+      "label_original": "1.4 Tenant 2 full legal name (if any)",
+      "label_translated": "1.4 کرایہ دار 2 کا پورا قانونی نام (اگر کوئی ہو)",
+      "legible": true,
+      "meaning": "اگر کوئی دوسرا کرایہ دار ہے تو اس کا پورا قانونی نام لکھیں۔",
+      "example": "فاطمہ بی بی",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "1 · فریقین",
+      "label_original": "1.5 Names of all other persons permitted to occupy the Premises (permitted occupiers)",
+      "label_translated": "1.5 جائیداد میں رہنے کی اجازت رکھنے والے دیگر تمام افراد کے نام (مجاز قابضین)",
+      "legible": true,
+      "meaning": "ان تمام لوگوں کے نام لکھیں جنہیں کرایہ دار کے ساتھ رہنے کی اجازت ہے۔",
+      "example": "زینب علی، احمد رضا",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 · احاطہ اور مدت",
+      "label_original": "2.1 Address of the Premises, including unit number and any parking space or storage allocated",
+      "label_translated": "2.1 جائیداد کا پتہ، یونٹ نمبر اور مختص کوئی بھی پارکنگ یا اسٹوریج کی جگہ شامل ہے",
+      "legible": true,
+      "meaning": "کرایہ پر دی جانے والی جائیداد کا مکمل پتہ لکھیں، بشمول یونٹ نمبر اور اگر کوئی پارکنگ یا اسٹوریج کی جگہ مختص ہے۔",
+      "example": "فلیٹ نمبر 5، 123 مین سٹریٹ، لاہور، پارکنگ بے نمبر 10",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "2 · احاطہ اور مدت",
+      "label_original": "2.2 Commencement date of the Term",
+      "label_translated": "2.2 مدت کا شروع ہونے کی تاریخ",
+      "legible": true,
+      "meaning": "کرایہ داری کے معاہدے کے شروع ہونے کی تاریخ لکھیں۔ تاریخ DD/MM/YYYY فارمیٹ میں ہونی چاہیے۔",
+      "example": "01/01/2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ سے تاخیر ہو سکتی ہے۔"
+    },
+    {
+      "section": "2 · احاطہ اور مدت",
+      "label_original": "2.3 Expiry date of the Term",
+      "label_translated": "2.3 مدت کی ختم ہونے کی تاریخ",
+      "legible": true,
+      "meaning": "کرایہ داری کے معاہدے کے ختم ہونے کی تاریخ لکھیں۔ تاریخ DD/MM/YYYY فارمیٹ میں ہونی چاہیے۔",
+      "example": "31/12/2024",
+      "rejection_risk": true,
+      "rejection_reason": "تاریخ کی غلط فارمیٹنگ سے تاخیر ہو سکتی ہے۔"
+    },
+    {
+      "section": "2 · احاطہ اور مدت",
+      "label_original": "2.4 Upon expiry of the fixed Term, unless either Party has served not less than ______ days' written notice, the tenancy shall continue as a periodic tenancy from month to month upon the same terms mutatis mutandis.",
+      "label_translated": "2.4 مقررہ مدت کے ختم ہونے پر، جب تک کہ کسی بھی فریق نے کم از کم ______ دن کا تحریری نوٹس نہ دیا ہو، کرایہ داری اسی شرائط پر ماہ بہ ماہ مدت کے حساب سے جاری رہے گی.",
+      "legible": true,
+      "meaning": "یہاں وہ دنوں کی تعداد لکھیں جو کسی بھی فریق کو معاہدہ ختم کرنے کے لیے تحریری نوٹس دینے کے لیے درکار ہے۔",
+      "example": "60",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.1 Rent payable: $______ per calendar month",
+      "label_translated": "3.1 قابل ادائیگی کرایہ: $______ فی کیلنڈر مہینہ",
+      "legible": true,
+      "meaning": "فی مہینہ کرایہ کی رقم لکھیں۔",
+      "example": "50000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.2 Payable in advance on day ______ of each month",
+      "label_translated": "3.2 ہر مہینے کی ______ تاریخ کو پیشگی قابل ادائیگی",
+      "legible": true,
+      "meaning": "وہ دن لکھیں جب کرایہ ہر مہینے پیشگی ادا کیا جائے گا۔",
+      "example": "1",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.3 Method of payment",
+      "label_translated": "3.3 ادائیگی کا طریقہ",
+      "legible": true,
+      "meaning": "کرایہ ادا کرنے کا طریقہ منتخب کریں: بینک ٹرانسفر، چیک، یا دیگر۔",
+      "example": "Bank transfer",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.4 Late payment fee: $______ after ______ days arrears",
+      "label_translated": "3.4 تاخیر سے ادائیگی کی فیس: ______ دن کی بقایا جات کے بعد $______",
+      "legible": true,
+      "meaning": "اگر کرایہ تاخیر سے ادا کیا جاتا ہے تو جرمانہ کی رقم اور کتنے دن کی تاخیر پر یہ لاگو ہوگی، لکھیں۔",
+      "example": "1000 روپے 5 دن کی بقایا جات کے بعد",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.5 Security deposit: $______",
+      "label_translated": "3.5 سیکورٹی ڈپازٹ: $______",
+      "legible": true,
+      "meaning": "سیکورٹی ڈپازٹ کی رقم لکھیں۔",
+      "example": "100000",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.6 Deposit to be held by / protection scheme reference",
+      "label_translated": "3.6 ڈپازٹ کی حفاظت کے لیے / تحفظ سکیم کا حوالہ",
+      "legible": true,
+      "meaning": "یہاں وہ تفصیلات لکھیں کہ سیکورٹی ڈپازٹ کہاں محفوظ کیا جائے گا، یا اگر کوئی تحفظ سکیم استعمال ہو رہی ہے تو اس کا حوالہ نمبر لکھیں۔",
+      "example": "حفاظت سکیم کا حوالہ نمبر XYZ123",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "3 · کرایہ اور ڈپازٹ",
+      "label_original": "3.7 Utilities and charges payable by the Tenant",
+      "label_translated": "3.7 کرایہ دار کے زیرِ ادائیگی کے یوٹیلیٹیز اور چارجز",
+      "legible": true,
+      "meaning": "ان یوٹیلیٹیز اور چارجز کے لیے متعلقہ باکس کو ٹک کریں جو کرایہ دار ادا کرنے کا ذمہ دار ہے۔",
+      "example": "Electricity",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "4 · مشترکہ اور انفرادی ذمہ داری",
+      "label_original": "4.1 Where the tenancy comprises more than one person, the obligations of the Tenant under this Agreement are joint and several, and the Landlord may recover the whole of any rent arrears or other sum due from any one or more of them. Each Tenant initial:",
+      "label_translated": "4.1 جہاں کرایہ داری میں ایک سے زیادہ افراد شامل ہوں، اس معاہدے کے تحت کرایہ دار کی ذمہ داریاں مشترکہ اور انفرادی ہوں گی، اور مالک مکان ان میں سے کسی ایک یا زیادہ سے واجب الادا کرایہ کے بقایا جات یا دیگر رقم کی پوری وصولی کر سکتا ہے۔ ہر کرایہ دار کی ابتدائی مہر:",
+      "legible": true,
+      "meaning": "اگر ایک سے زیادہ کرایہ دار ہیں، تو اس شق کو قبول کرنے کے لیے ہر کرایہ دار کو یہاں اپنے ابتدائی دستخط (initials) کرنے ہوں گے۔ یہ اس بات کی تصدیق کرتا ہے کہ تمام کرایہ دار کرایہ اور دیگر واجبات کی مشترکہ اور انفرادی طور پر ادائیگی کے ذمہ دار ہیں۔",
+      "example": "AH",
+      "rejection_risk": true,
+      "rejection_reason": "تمام کرایہ داروں کے ابتدائی دستخط نہ ہونے کی صورت میں معاہدہ نامکمل سمجھا جا سکتا ہے۔"
+    },
+    {
+      "section": "5 · گارنٹر",
+      "label_original": "5.1 In consideration of the Landlord granting this tenancy, the Guarantor named below irrevocably guarantees the due payment of the rent and performance of the Tenant's covenants and agrees to indemnify the Landlord against all losses, notwithstanding any variation of this Agreement or extension of time granted to the Tenant.",
+      "label_translated": "5.1 مالک مکان کی طرف سے یہ کرایہ داری دینے کے بدلے میں، ذیل میں نامزد گارنٹر ناقابلِ تنسیخ طور پر کرایہ کی بروقت ادائیگی اور کرایہ دار کے وعدوں کی تعمیل کی ضمانت دیتا ہے اور مالک مکان کو تمام نقصانات سے محفوظ رکھنے پر راضی ہوتا ہے، خواہ اس معاہدے میں کوئی تبدیلی کی جائے یا کرایہ دار کو وقت میں توسیع دی جائے۔",
+      "legible": true,
+      "meaning": "یہ شق گارنٹر کی ذمہ داریوں کو بیان کرتی ہے کہ وہ کرایہ دار کی طرف سے کرایہ کی ادائیگی اور معاہدے کی شرائط کی تعمیل کی ضمانت دیتا ہے۔",
+      "example": "",
+      "rejection_risk": false,
+      "rejection_reason": ""
+    },
+    {
+      "section": "5 · گارنٹر",
+      "label_original": "5.2 Guarantor's full name, address and telephone · Guarantor's initials:",
+      "label_translated": "5.2 گارنٹر کا پورا نام، پتہ اور ٹیلی فون · گارنٹر کے ابتدائی دستخط:",
+      "legible": true,
+      "meaning": "گارنٹر کا پورا نام، پتہ اور فون نمبر لکھیں اور پھر اپنے ابتدائی دستخط (initials) کریں۔",
+      "example": "گارنٹر کا نام: خالد محمود، پتہ: 456 اولڈ روڈ، کراچی، فون: 0300-1234567، ابتدائی دستخط: KM",
+      "rejection_risk": true,
+      "rejection_reason": "گارنٹر کی معلومات مکمل نہ ہونے یا ابتدائی دستخط نہ ہونے کی صورت میں گارنٹی کو قبول نہیں کیا جائے گا۔"
+    },
+    {
+      "section": "6 · بریک شق",
+      "label_original": "6.1 Either Party may terminate this Agreement on or after the expiry of ______ months of the Term by giving not less than two months' prior written notice, provided that the Tenant is not in arrears of rent. Applies: Yes ☐ No ☐",
+      "label_translated": "6.1 کوئی بھی فریق مدت کے ______ مہینوں کے اختتام پر یا اس کے بعد، کم از کم دو ماہ کا پیشگی تحریری نوٹس دے کر اس معاہدے کو ختم کر سکتا ہے، بشرطیکہ کرایہ دار پر کرایہ کے بقایا جات نہ ہوں۔ لاگو ہوتا ہے: ہاں ☐ نہیں ☐",
+      "legible": true,
+      "meaning": "یہاں وہ مدت (مہینوں میں) لکھیں جس کے بعد معاہدہ ختم کیا جا سکتا ہے۔ پھر یہ بتائیں کہ آیا یہ شق لاگو ہوتی ہے (ہاں) یا نہیں (نہیں)۔",
+      "example": "12 مہینے، ہاں",
+      "rejection_risk": true,
+      "rejection_reason": "اگر 'ہاں' کا انتخاب کیا گیا ہے تو مدت کی وضاحت نہ کرنا یا 'نہیں' کا انتخاب نہ کرنا معاہدے کو متنازعہ بنا سکتا ہے۔"
+    },
+    {
+      "section": "",
+      "label_original": "Initials of all parties on each page: Landlord ______ Tenant(s) ______ / ______",
+      "label_translated": "ہر صفحہ پر تمام فریقین کے ابتدائی دستخط: مالک مکان ______ کرایہ دار(ان) ______ / ______",
+      "legible": true,
+      "meaning": "یہاں ہر صفحے کے آخر میں مالک مکان اور کرایہ دار (یا کرایہ داروں) کو اپنے ابتدائی دستخط (initials) کرنے ہوں گے تاکہ یہ تصدیق ہو سکے کہ انہوں نے صفحہ پڑھ لیا ہے۔",
+      "example": "مالک مکان: AH، کرایہ دار(ان): AR / FB",
+      "rejection_risk": true,
+      "rejection_reason": "ہر صفحے پر تمام فریقین کے ابتدائی دستخط نہ ہونے کی صورت میں معاہدہ نامکمل سمجھا جا سکتا ہے۔"
+    }
+  ],
+  "key_terms": [
+    {
+      "term": "mutatis mutandis",
+      "meaning": "یہ ایک لاطینی اصطلاح ہے جس کا مطلب ہے 'ضروری تبدیلیوں کے ساتھ'۔ اس کا مطلب ہے کہ معاہدے کی شرائط کو اسی طرح لاگو کیا جائے گا، لیکن جہاں ضروری ہو وہاں مناسب تبدیلیاں کی جائیں گی۔"
+    },
+    {
+      "term": "joint and several",
+      "meaning": "اس کا مطلب ہے کہ ذمہ داری مشترکہ طور پر (سب مل کر) اور انفرادی طور پر (ہر ایک اکیلے) ہوتی ہے۔ اگر معاہدے میں ایک سے زیادہ کرایہ دار ہیں، تو مالک مکان کسی بھی کرایہ دار سے پوری رقم وصول کر سکتا ہے۔"
+    },
+    {
+      "term": "indemnify",
+      "meaning": "اس کا مطلب ہے کہ کسی دوسرے فریق کو کسی نقصان، ذمہ داری یا دعوے سے محفوظ رکھنا یا اس کا معاوضہ ادا کرنا۔"
+    },
+    {
+      "term": "covenants",
+      "meaning": "یہ معاہدے میں کیے گئے رسمی وعدے یا شرائط ہیں۔"
+    },
+    {
+      "term": "periodic tenancy",
+      "meaning": "یہ ایک کرایہ داری ہے جو ایک مقررہ مدت کے بجائے وقتاً فوقتاً (مثلاً ماہ بہ ماہ) جاری رہتی ہے، جب تک کہ کوئی فریق اسے ختم نہ کر دے۔"
+    },
+    {
+      "term": "arrears",
+      "meaning": "یہ وہ رقم ہے جو واجب الادا ہے اور ادا نہیں کی گئی ہے، خاص طور پر کرایہ یا قرض کی ادائیگی میں تاخیر۔"
+    }
+  ]
+}
