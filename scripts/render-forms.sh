@@ -11,3 +11,13 @@ for name in visa hospital rental; do
     "file://$PWD/scripts/forms/$name.html" 2>/dev/null
   echo "rendered public/samples/$name.png"
 done
+
+# Small WebP thumbnails for the sample cards on the landing page.
+mkdir -p public/samples/thumbs
+node -e '
+const sharp = require("sharp");
+for (const n of ["visa", "hospital", "rental"]) {
+  sharp(`public/samples/${n}.png`).extract({ left: 0, top: 0, width: 1240, height: 930 })
+    .resize(480).webp({ quality: 78 }).toFile(`public/samples/thumbs/${n}.webp`)
+    .then((i) => console.log(`thumb ${n}.webp ${i.size} bytes`));
+}'

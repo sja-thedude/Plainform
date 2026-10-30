@@ -11,7 +11,7 @@ Plainform is one page. No signup, no account, nothing to install. Photograph or 
 - **A warning flag** on fields that commonly cause rejections, such as a name that doesn't match the passport, a wrong date format, or a missing signature.
 - **An honest "couldn't read this"** when part of the page is blurred or cut off, instead of a guess. A wrong explanation on a visa form is worse than none.
 
-Explanations are available in English, Arabic, Urdu, Hindi, Bengali, Tagalog, French and Spanish. Arabic and Urdu render right to left. Results are readable on a phone and print cleanly.
+Explanations are available in English, Arabic, Urdu, Hindi, Bengali, Tagalog, French and Spanish. Arabic and Urdu render right to left, Urdu in proper Nastaliq script. Results are readable on a phone, print cleanly, and the whole page has light and dark modes that follow your system setting, with a toggle.
 
 Three sample blank forms (a visa application, a hospital intake form and a rental agreement) are built in, so you can see it working in one tap.
 
