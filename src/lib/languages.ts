@@ -11,6 +11,17 @@ export type UiStrings = {
   print: string;
   imageNote: string;
   notAForm: string;
+  documents: string;
+  terms: string;
+  onlyRisky: string;
+  showAll: string;
+  writing: string;
+  listen: string;
+  stop: string;
+  askTitle: string;
+  askPlaceholder: string;
+  ask: string;
+  askNote: string;
 };
 
 export type Language = {
@@ -39,6 +50,17 @@ export const LANGUAGES: Language[] = [
       print: "Print",
       imageNote: "Note about the image",
       notAForm: "This does not look like a form",
+      documents: "Documents you may need",
+      terms: "Difficult words explained",
+      onlyRisky: "Show only fields that often cause rejections",
+      showAll: "Show all fields",
+      writing: "Still writing…",
+      listen: "Listen",
+      stop: "Stop",
+      askTitle: "Ask about this form",
+      askPlaceholder: "For example: what does “guarantor” mean?",
+      ask: "Ask",
+      askNote: "Answers explain the form. They are not advice.",
     },
   },
   {
@@ -58,6 +80,17 @@ export const LANGUAGES: Language[] = [
       print: "طباعة",
       imageNote: "ملاحظة حول الصورة",
       notAForm: "لا يبدو أن هذا نموذج",
+      documents: "مستندات قد تحتاجها",
+      terms: "شرح الكلمات الصعبة",
+      onlyRisky: "اعرض فقط الحقول التي تسبب الرفض كثيرًا",
+      showAll: "اعرض كل الحقول",
+      writing: "ما زال يكتب…",
+      listen: "استمع",
+      stop: "إيقاف",
+      askTitle: "اسأل عن هذا النموذج",
+      askPlaceholder: "مثال: ماذا تعني كلمة «الضامن»؟",
+      ask: "اسأل",
+      askNote: "الإجابات تشرح النموذج فقط، وليست استشارة.",
     },
   },
   {
@@ -77,6 +110,17 @@ export const LANGUAGES: Language[] = [
       print: "پرنٹ کریں",
       imageNote: "تصویر کے بارے میں نوٹ",
       notAForm: "یہ فارم نہیں لگتا",
+      documents: "دستاویزات جن کی ضرورت ہو سکتی ہے",
+      terms: "مشکل الفاظ کی وضاحت",
+      onlyRisky: "صرف وہ خانے دکھائیں جو اکثر مسترد ہونے کی وجہ بنتے ہیں",
+      showAll: "تمام خانے دکھائیں",
+      writing: "ابھی لکھا جا رہا ہے…",
+      listen: "سنیں",
+      stop: "روکیں",
+      askTitle: "اس فارم کے بارے میں پوچھیں",
+      askPlaceholder: "مثال: «ضامن» کا کیا مطلب ہے؟",
+      ask: "پوچھیں",
+      askNote: "جوابات صرف فارم کی وضاحت کرتے ہیں، یہ مشورہ نہیں ہیں۔",
     },
   },
   {
@@ -96,6 +140,17 @@ export const LANGUAGES: Language[] = [
       print: "प्रिंट करें",
       imageNote: "तस्वीर के बारे में नोट",
       notAForm: "यह फ़ॉर्म नहीं लगता",
+      documents: "ज़रूरी दस्तावेज़",
+      terms: "कठिन शब्दों का अर्थ",
+      onlyRisky: "केवल वे खाने दिखाएँ जिनसे अक्सर अस्वीकृति होती है",
+      showAll: "सभी खाने दिखाएँ",
+      writing: "अभी लिखा जा रहा है…",
+      listen: "सुनें",
+      stop: "रोकें",
+      askTitle: "इस फ़ॉर्म के बारे में पूछें",
+      askPlaceholder: "उदाहरण: “गारंटर” का क्या मतलब है?",
+      ask: "पूछें",
+      askNote: "जवाब सिर्फ़ फ़ॉर्म समझाते हैं, ये सलाह नहीं हैं।",
     },
   },
   {
@@ -115,6 +170,17 @@ export const LANGUAGES: Language[] = [
       print: "প্রিন্ট করুন",
       imageNote: "ছবি সম্পর্কে নোট",
       notAForm: "এটি ফর্ম বলে মনে হচ্ছে না",
+      documents: "যে কাগজপত্র লাগতে পারে",
+      terms: "কঠিন শব্দের ব্যাখ্যা",
+      onlyRisky: "শুধু যে ঘরগুলো প্রায়ই প্রত্যাখ্যানের কারণ হয় সেগুলো দেখান",
+      showAll: "সব ঘর দেখান",
+      writing: "এখনও লেখা হচ্ছে…",
+      listen: "শুনুন",
+      stop: "থামান",
+      askTitle: "এই ফর্ম সম্পর্কে জিজ্ঞাসা করুন",
+      askPlaceholder: "যেমন: “জামিনদার” মানে কী?",
+      ask: "জিজ্ঞাসা করুন",
+      askNote: "উত্তরগুলো শুধু ফর্মটি ব্যাখ্যা করে, এগুলো পরামর্শ নয়।",
     },
   },
   {
@@ -134,6 +200,17 @@ export const LANGUAGES: Language[] = [
       print: "I-print",
       imageNote: "Paalala tungkol sa larawan",
       notAForm: "Mukhang hindi ito isang form",
+      documents: "Mga dokumentong maaaring kailanganin",
+      terms: "Paliwanag sa mahihirap na salita",
+      onlyRisky: "Ipakita lang ang mga field na madalas dahilan ng pagtanggi",
+      showAll: "Ipakita lahat ng field",
+      writing: "Isinusulat pa…",
+      listen: "Pakinggan",
+      stop: "Ihinto",
+      askTitle: "Magtanong tungkol sa form na ito",
+      askPlaceholder: "Halimbawa: ano ang ibig sabihin ng “guarantor”?",
+      ask: "Itanong",
+      askNote: "Ipinapaliwanag lang ng mga sagot ang form. Hindi ito payo.",
     },
   },
   {
@@ -153,6 +230,17 @@ export const LANGUAGES: Language[] = [
       print: "Imprimer",
       imageNote: "Remarque sur l’image",
       notAForm: "Cela ne ressemble pas à un formulaire",
+      documents: "Documents dont vous pourriez avoir besoin",
+      terms: "Mots difficiles expliqués",
+      onlyRisky: "Afficher seulement les champs qui causent souvent un refus",
+      showAll: "Afficher tous les champs",
+      writing: "Rédaction en cours…",
+      listen: "Écouter",
+      stop: "Arrêter",
+      askTitle: "Poser une question sur ce formulaire",
+      askPlaceholder: "Par exemple : que veut dire « garant » ?",
+      ask: "Demander",
+      askNote: "Les réponses expliquent le formulaire. Ce ne sont pas des conseils.",
     },
   },
   {
@@ -172,6 +260,17 @@ export const LANGUAGES: Language[] = [
       print: "Imprimir",
       imageNote: "Nota sobre la imagen",
       notAForm: "Esto no parece un formulario",
+      documents: "Documentos que puede necesitar",
+      terms: "Palabras difíciles explicadas",
+      onlyRisky: "Mostrar solo los campos que suelen causar rechazos",
+      showAll: "Mostrar todos los campos",
+      writing: "Todavía escribiendo…",
+      listen: "Escuchar",
+      stop: "Detener",
+      askTitle: "Preguntar sobre este formulario",
+      askPlaceholder: "Por ejemplo: ¿qué significa «avalista»?",
+      ask: "Preguntar",
+      askNote: "Las respuestas explican el formulario. No son asesoramiento.",
     },
   },
 ];
