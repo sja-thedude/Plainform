@@ -10,6 +10,7 @@ Plainform is one page. No signup, no account, nothing to install. Photograph or 
 - **A one-paragraph summary** of what the form is for and what happens after you submit it.
 - **Every field, one by one:** the label as printed, what it is actually asking for in plain words, and an example of a correctly formatted answer.
 - **A warning flag** on fields that commonly cause rejections, such as a name that doesn't match the passport, a wrong date format, or a missing signature.
+- **Read aloud**: every explanation can be listened to in the chosen language, using the device's own voices, for people who find reading hard. Nothing is sent anywhere for this.
 - **Documents you may need**: a checklist of what to bring or attach, such as passport, photos or insurance card.
 - **Difficult words explained**: plain definitions of the legal and medical jargon on the page, like "joint and several" or "advance directive".
 - **A rejection-risk filter** that shows only the fields most likely to get the form sent back.
