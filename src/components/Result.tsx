@@ -7,7 +7,7 @@ import type { Language } from "@/lib/languages";
 // The display serif only covers Latin script.
 const LATIN = new Set(["en", "fr", "es", "tl"]);
 
-export function Result({ data, lang }: { data: Explanation; lang: Language }) {
+export function Result({ data, lang, streaming = false }: { data: Explanation; lang: Language; streaming?: boolean }) {
   const t = lang.ui;
   const [onlyRisky, setOnlyRisky] = useState(false);
   const risky = data.fields.filter((f) => f.rejection_risk).length;
@@ -123,6 +123,21 @@ export function Result({ data, lang }: { data: Explanation; lang: Language }) {
             </div>
           ))}
         </section>
+      )}
+
+      {streaming && (
+        <div role="status" className="flex items-center gap-3 rounded-2xl border border-dashed border-line px-4 py-3 text-ink-3">
+          <span className="flex gap-1" aria-hidden>
+            {[0, 1, 2].map((i) => (
+              <span
+                key={i}
+                className="size-2 animate-bounce rounded-full bg-accent"
+                style={{ animationDelay: `${i * 150}ms` }}
+              />
+            ))}
+          </span>
+          {t.writing}
+        </div>
       )}
 
       {data.key_terms.length > 0 && (

@@ -62,10 +62,20 @@ async function firstPageOfPdf(bytes: Uint8Array): Promise<string> {
   return Buffer.from(await out.save()).toString("base64");
 }
 
-export async function explainForm(
+export async function explainForm(bytes: Uint8Array, mediaType: string, lang: Language): Promise<Explanation> {
+  return streamExplanation(bytes, mediaType, lang, () => {});
+}
+
+// Streams the raw JSON text as the model writes it, then returns the
+// validated result. `restart` is true when a new text block begins, which
+// happens if a fallback model takes over mid-answer: the client must then
+// discard what it has so far.
+export async function streamExplanation(
   bytes: Uint8Array,
   mediaType: string,
   lang: Language,
+  onText: (delta: string, restart: boolean) => void,
+  signal?: AbortSignal,
 ): Promise<Explanation> {
   let fileBlock: Anthropic.Beta.BetaContentBlockParam;
   if (mediaType === "application/pdf") {
@@ -87,8 +97,8 @@ export async function explainForm(
   }
 
   client ??= new Anthropic();
-  const message = await client.beta.messages
-    .stream({
+  const stream = client.beta.messages.stream(
+    {
       model: "claude-opus-5-5",
       max_tokens: 32000,
       betas: ["server-side-fallback-2026-07-01"],
@@ -105,8 +115,11 @@ export async function explainForm(
           content: [fileBlock, { type: "text", text: `Explain this form in ${lang.english}.` }],
         },
       ],
-    })
-    .finalMessage();
+    },
+    { signal },
+  );
+  stream.on("text", (delta, snapshot) => onText(delta, snapshot.length === delta.length));
+  const message = await stream.finalMessage();
 
   if (message.stop_reason === "refusal") {
     throw new ExplainError("This page could not be explained. Try a clearer photo of a form.", 422);
