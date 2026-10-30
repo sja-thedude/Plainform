@@ -23,6 +23,22 @@ Explanations are available in English, Arabic, Urdu, Hindi, Bengali, Tagalog, Fr
 
 Three sample blank forms (a visa application, a hospital intake form and a rental agreement) are built in, so you can see it working in one tap.
 
+## Screenshots
+
+| Start page | Every field explained |
+| --- | --- |
+| ![Plainform start page with language picker, camera and upload buttons, and three sample forms](docs/screenshots/1-home.webp) | ![A visa application explained field by field, with a summary, documents checklist and rejection warnings](docs/screenshots/2-fields.webp) |
+| **Difficult words and follow-up questions** | **Arabic, right to left, dark mode** |
+| ![Plain explanations of legal terms on a rental agreement](docs/screenshots/3-terms-and-questions.webp) | ![A hospital intake form explained in Arabic, laid out right to left in dark mode](docs/screenshots/4-arabic-dark.webp) |
+
+<p align="center">
+  <img src="docs/screenshots/5-phone-light.webp" width="300" alt="Plainform on a phone in light mode">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/5-phone-dark.webp" width="300" alt="A visa form explained on a phone in dark mode">
+</p>
+
+All screenshots use the built-in sample blank forms. They contain no personal data.
+
 ## Privacy
 
 Forms contain passport numbers, medical history and home addresses, so Plainform keeps nothing:
