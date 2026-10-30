@@ -1,5 +1,4 @@
 import Anthropic from "@anthropic-ai/sdk";
-import { PDFDocument } from "pdf-lib";
 import { EXPLANATION_JSON_SCHEMA, ExplanationSchema, type Explanation } from "./schema";
 import type { Language } from "./languages";
 
@@ -48,20 +47,6 @@ Rules that override everything else:
 3. If the form has already been filled in, do not repeat any personal details written on it. Explain the fields only.`;
 }
 
-async function firstPageOfPdf(bytes: Uint8Array): Promise<string> {
-  let src: PDFDocument;
-  try {
-    src = await PDFDocument.load(bytes, { ignoreEncryption: true });
-  } catch {
-    throw new ExplainError("This PDF could not be opened. Try a photo of the page instead.", 400);
-  }
-  if (src.getPageCount() === 0) throw new ExplainError("This PDF has no pages.", 400);
-  const out = await PDFDocument.create();
-  const [page] = await out.copyPages(src, [0]);
-  out.addPage(page);
-  return Buffer.from(await out.save()).toString("base64");
-}
-
 export async function explainForm(bytes: Uint8Array, mediaType: string, lang: Language): Promise<Explanation> {
   return streamExplanation(bytes, mediaType, lang, () => {});
 }
@@ -77,24 +62,18 @@ export async function streamExplanation(
   onText: (delta: string, restart: boolean) => void,
   signal?: AbortSignal,
 ): Promise<Explanation> {
-  let fileBlock: Anthropic.Beta.BetaContentBlockParam;
-  if (mediaType === "application/pdf") {
-    fileBlock = {
-      type: "document",
-      source: { type: "base64", media_type: "application/pdf", data: await firstPageOfPdf(bytes) },
-    };
-  } else if ((IMAGE_TYPES as readonly string[]).includes(mediaType)) {
-    fileBlock = {
-      type: "image",
-      source: {
-        type: "base64",
-        media_type: mediaType as ImageType,
-        data: Buffer.from(bytes).toString("base64"),
-      },
-    };
-  } else {
+  // PDFs are turned into an image of their first page in the browser.
+  if (!(IMAGE_TYPES as readonly string[]).includes(mediaType)) {
     throw new ExplainError("Please upload a JPG, PNG or PDF.", 415);
   }
+  const fileBlock: Anthropic.Beta.BetaContentBlockParam = {
+    type: "image",
+    source: {
+      type: "base64",
+      media_type: mediaType as ImageType,
+      data: Buffer.from(bytes).toString("base64"),
+    },
+  };
 
   client ??= new Anthropic();
   const stream = client.beta.messages.stream(
