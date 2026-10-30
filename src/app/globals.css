@@ -1,16 +1,116 @@
 @import "tailwindcss";
 
+/* Palette: warm paper and ink, one ink-green accent. Red and amber are
+   reserved for meaning (rejection risk, unreadable), never decoration. */
+:root {
+  --bg: #f6f3ec;
+  --surface: #fffdf8;
+  --surface-2: #efeadf;
+  --line: #e0d9ca;
+  --ink: #1d1b16;
+  --ink-2: #4f4a40;
+  --ink-3: #6f695c;
+  --accent: #1f5f4f;
+  --accent-hover: #174a3d;
+  --accent-soft: #dcebe4;
+  --on-accent: #ffffff;
+  --danger-bg: #fbeceb;
+  --danger-ink: #8a1f17;
+  --danger-line: #c8372b;
+  --warn-bg: #fbf3dc;
+  --warn-ink: #5f4300;
+  --warn-line: #d4a20f;
+  --shadow: 0 1px 2px rgb(60 50 30 / 0.06), 0 4px 16px rgb(60 50 30 / 0.06);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131412;
+    --surface: #1b1d1a;
+    --surface-2: #252822;
+    --line: #353930;
+    --ink: #edeae2;
+    --ink-2: #bdb8ac;
+    --ink-3: #959083;
+    --accent: #7cc9ae;
+    --accent-hover: #9adbc3;
+    --accent-soft: #1d3830;
+    --on-accent: #0d1a15;
+    --danger-bg: #361c19;
+    --danger-ink: #f6bab3;
+    --danger-line: #e5675c;
+    --warn-bg: #352d16;
+    --warn-ink: #f0d68e;
+    --warn-line: #c9a43a;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #131412;
+  --surface: #1b1d1a;
+  --surface-2: #252822;
+  --line: #353930;
+  --ink: #edeae2;
+  --ink-2: #bdb8ac;
+  --ink-3: #959083;
+  --accent: #7cc9ae;
+  --accent-hover: #9adbc3;
+  --accent-soft: #1d3830;
+  --on-accent: #0d1a15;
+  --danger-bg: #361c19;
+  --danger-ink: #f6bab3;
+  --danger-line: #e5675c;
+  --warn-bg: #352d16;
+  --warn-ink: #f0d68e;
+  --warn-line: #c9a43a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  color-scheme: dark;
+}
+
 @theme inline {
   --font-sans: var(--font-latin), system-ui, sans-serif;
-  --color-brand: #0f766e;
-  --color-brand-dark: #115e59;
-  --color-brand-soft: #ccfbf1;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --color-danger-bg: var(--danger-bg);
+  --color-danger-ink: var(--danger-ink);
+  --color-danger-line: var(--danger-line);
+  --color-warn-bg: var(--warn-bg);
+  --color-warn-ink: var(--warn-ink);
+  --color-warn-line: var(--warn-line);
+  --shadow-card: var(--shadow);
+}
+
+html {
+  background: var(--bg);
 }
 
 body {
-  background: #f7f7f4;
-  color: #1c1917;
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--font-sans);
+  line-height: 1.6;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
 }
 
 /* Each script gets a font that renders it properly. Latin stays as the
@@ -23,6 +123,11 @@ body {
   font-family: var(--font-nastaliq), var(--font-latin), sans-serif;
   line-height: 2.3;
 }
+/* Nastaliq stacks diagonally and needs tall lines everywhere. Unlayered,
+   so this wins over Tailwind's leading-* utilities. */
+[lang="ur"] * {
+  line-height: 2.2;
+}
 [lang="hi"] {
   font-family: var(--font-devanagari), var(--font-latin), sans-serif;
   line-height: 1.8;
@@ -32,9 +137,78 @@ body {
   line-height: 1.8;
 }
 
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.4s ease-out both;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: rotate(-3deg) translateY(0);
+  }
+  50% {
+    transform: rotate(-2deg) translateY(-6px);
+  }
+}
+.hero-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -22;
+  }
+}
+.hero-dash {
+  animation: dash 1.2s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 50%, var(--surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 @media print {
-  body {
-    background: white;
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #f3f3f3;
+    --line: #bbb;
+    --ink: #000;
+    --ink-2: #222;
+    --ink-3: #444;
+    --accent: #1f5f4f;
+    --shadow: none;
   }
   .field-card {
     break-inside: avoid;
