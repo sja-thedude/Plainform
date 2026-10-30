@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { AskPanel } from "@/components/AskPanel";
 import { EmptyState } from "@/components/EmptyState";
 import { HeroArt } from "@/components/HeroArt";
 import { Loading } from "@/components/Loading";
@@ -330,6 +331,9 @@ export default function Home() {
                   </div>
                 </div>
                 <Result data={status.data} lang={lang} streaming={status.state === "streaming"} />
+                {status.state === "done" && status.data.is_form && (
+                  <AskPanel key={`${langCode}-${status.data.form_title}`} form={status.data} lang={lang} />
+                )}
                 <p className="mt-8 hidden text-xs text-ink-3 print:block">
                   Explained by Plainform. Not legal, medical or immigration advice.
                 </p>
