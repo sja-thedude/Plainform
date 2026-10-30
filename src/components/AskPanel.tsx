@@ -17,7 +17,11 @@ export function AskPanel({ form, lang }: { form: Explanation; lang: Language }) 
   const busy = turns.at(-1)?.state === "streaming";
 
   useEffect(() => () => abortRef.current?.abort(), []);
-  useEffect(() => endRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }), [turns.length]);
+  // Braces matter: newer browsers return a promise from scrollIntoView, and
+  // React would treat a returned value as the cleanup function.
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [turns.length]);
 
   async function ask(question: string) {
     question = question.trim();
